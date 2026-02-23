@@ -1,0 +1,22 @@
+---
+import "../styles/global.css";
+// Component Imports
+import { BentoGrid1 } from "@/components/pro-blocks/landing-page/bento-grids/bento-grid-1";
+import Main from "@/layouts/main.astro";
+import HeroSection22 from "@/components/pro-blocks/landing-page/hero-sections/hero-section-22";
+import { FeatureSection3 } from "@/components/pro-blocks/landing-page/feature-sections/feature-section-3";
+import { ContactSection4 } from "@/components/pro-blocks/landing-page/contact-sections/contact-section-4";
+
+const content = {
+    title: "Welcome to Astro!",
+    description:
+        "A modern web framework for building fast and powerful websites.",
+};
+---
+
+<Main content={content}>
+    <HeroSection22 />
+    <FeatureSection3 />
+    <BentoGrid1 />
+    <ContactSection4 />
+</Main>

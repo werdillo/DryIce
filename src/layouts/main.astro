@@ -1,0 +1,21 @@
+---
+import { LpNavbar4 } from "@/components/pro-blocks/landing-page/lp-navbars/lp-navbar-4";
+import "../styles/global.css";
+const { content } = Astro.props;
+import { Footer2 } from "@/components/pro-blocks/landing-page/footers/footer-2";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" />
+        <title>{content.title}</title>
+    </head>
+    <body>
+        <LpNavbar4 />
+        <slot />
+        <Footer2 />
+    </body>
+</html>
