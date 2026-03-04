@@ -1,0 +1,21 @@
+import type { BenefitItem } from "./types";
+
+interface BenefitCardProps {
+  benefit: BenefitItem;
+}
+
+export function BenefitCard({ benefit }: BenefitCardProps) {
+  const Icon = benefit.icon;
+  return (
+    <div className="flex flex-col items-center gap-5 text-center">
+      <div className="flex flex-col gap-2">
+        <h3 className="text-primary-foreground font-semibold tracking-tight">
+          {benefit.title}
+        </h3>
+        <p className="text-primary-foreground text-pretty">
+          {benefit.description}
+        </p>
+      </div>
+    </div>
+  );
+}

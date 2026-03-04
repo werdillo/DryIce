@@ -12,23 +12,17 @@ interface FaqHeaderProps {
 }
 
 export function FaqHeader({
-  tagline,
   heading,
   description,
-  contactLink,
   ariaLabelledBy,
 }: FaqHeaderProps) {
   return (
     <div className="section-title-gap-lg flex flex-1 flex-col">
-      <Tagline>{tagline}</Tagline>
-      <h1 id={ariaLabelledBy} className="heading-lg text-foreground">
+      <h3 id={ariaLabelledBy} className="text-primary text-lg">
         {heading}
-      </h1>
-      <p className="text-muted-foreground text-lg/8 text-pretty">
-        {description}{" "}
-        <a href={contactLink.href} className="text-primary underline">
-          {contactLink.text}
-        </a>
+      </h3>
+      <p className="text-muted-foreground text-base text-pretty">
+        {description}
       </p>
     </div>
   );

@@ -14,7 +14,9 @@ import { Footer } from "./footer";
         <title>{content.title}</title>
     </head>
     <body class="dark">
-        <slot />
+        <div class="flex flex-col gap-30">
+            <slot />
+        </div>
         <Footer />
     </body>
 </html>

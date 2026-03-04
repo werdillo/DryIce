@@ -15,7 +15,7 @@ export function FaqCategories({ categories }: FaqCategoriesProps) {
     <div className="flex flex-1 flex-col gap-8">
       {categories.map((category) => (
         <div key={category.title} className="flex flex-col gap-2">
-          <h2 className="text-foreground heading-sm">{category.title}</h2>
+          <h4 className="text-foreground/60 text-lg">{category.title}</h4>
           <Accordion type="single" collapsible aria-label={category.ariaLabel}>
             {category.items.map((item, itemIndex) => (
               <AccordionItem

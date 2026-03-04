@@ -3,10 +3,13 @@ import "../styles/global.css";
 // Component Imports
 import { BentoGrid1 } from "@/components/pro-blocks/landing-page/bento-grids/bento-grid-1";
 import Main from "@/layouts/main.astro";
-import HeroSection22 from "@/components/pro-blocks/landing-page/hero-sections/hero-section-22";
-import { FeatureSection3 } from "@/components/pro-blocks/landing-page/feature-sections/feature-section-3";
-import { ContactSection4 } from "@/components/pro-blocks/landing-page/contact-sections/contact-section-4";
+import { HeroSection } from "@/components/hero-section";
+import { ContactsSection } from "@/components/contacts-section";
+import { GallerySection } from "@/components/gallery-section";
 import { Faq } from "@/components/faq";
+import { FeatureSection } from "@/components/feature-section";
+import { BenefitsSection } from "@/components/benefits-section";
+import { SolutionSection } from "@/components/solution-section";
 
 const content = {
     title: "Welcome to Astro!",
@@ -16,8 +19,11 @@ const content = {
 ---
 
 <Main content={content}>
-    <HeroSection22 />
-    <FeatureSection3 />
-    <ContactSection4 />
+    <HeroSection client:load />
+    <BenefitsSection client:load />
+    <SolutionSection client:load />
+    <FeatureSection client:load />
+    <GallerySection client:load />
+    <ContactsSection client:load />
     <Faq client:only />
 </Main>
