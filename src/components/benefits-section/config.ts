@@ -1,35 +1,35 @@
-import { Rocket } from "lucide-react";
+import { Rocket, Shield, Clock, Award } from "lucide-react";
 import type { BenefitsSectionProps } from "./types";
 
 export const benefitsConfig: BenefitsSectionProps = {
-  tagline: "Benefits section",
-  title: "Show your solution's impact on user success",
+  tagline: "Kāpēc izvēlēties mūs",
+  title: "Profesionāli sausā ledus risinājumi Baltijā",
   description:
-    "Explain in one or two concise sentences how your solution transforms users' challenges into positive outcomes.",
+    "DryIce Baltic piedāvā augstākās kvalitātes pakalpojumus, nodrošinot efektivitāti un uzticamību katrā pasūtījumā.",
   benefits: [
     {
-      title: "Benefit driven feature title",
+      title: "Augsta kvalitāte",
       description:
-        "Shortly describe how this feature solves a specific user problem.",
+        "Mūsu sausais ledus atbilst visaugstākajiem standartiem, nodrošinot ilgu aukstuma saglabāšanu.",
+      icon: Shield,
+    },
+    {
+      title: "Ātra piegāde",
+      description:
+        "Operatīva loģistika visā Latvijā un Baltijā, lai jūsu darbi neapstātos ne uz mirkli.",
+      icon: Clock,
+    },
+    {
+      title: "Inovācijas",
+      description:
+        "Izmantojam modernākās tehnoloģijas sausā ledus ražošanā un tīrīšanas pakalpojumos.",
       icon: Rocket,
     },
     {
-      title: "Benefit driven feature title",
+      title: "Sertificēti produkti",
       description:
-        "Shortly describe how this feature solves a specific user problem.",
-      icon: Rocket,
-    },
-    {
-      title: "Benefit driven feature title",
-      description:
-        "Shortly describe how this feature solves a specific user problem.",
-      icon: Rocket,
-    },
-    {
-      title: "Benefit driven feature title",
-      description:
-        "Shortly describe how this feature solves a specific user problem.",
-      icon: Rocket,
+        "Visi mūsu produkti un procesi ir sertificēti, garantējot drošību un profesionalitāti.",
+      icon: Award,
     },
   ],
 };

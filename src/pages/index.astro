@@ -1,20 +1,19 @@
 ---
 import "../styles/global.css";
 // Component Imports
-import { BentoGrid1 } from "@/components/pro-blocks/landing-page/bento-grids/bento-grid-1";
 import Main from "@/layouts/main.astro";
 import { HeroSection } from "@/components/hero-section";
-import { ContactsSection } from "@/components/contacts-section";
-import { GallerySection } from "@/components/gallery-section";
-import { Faq } from "@/components/faq";
-import { FeatureSection } from "@/components/feature-section";
 import { BenefitsSection } from "@/components/benefits-section";
 import { SolutionSection } from "@/components/solution-section";
+import { FeatureSection } from "@/components/feature-section";
+import { GallerySection } from "@/components/gallery-section";
+import { Faq } from "@/components/faq";
+import { ContactsSection } from "@/components/contacts-section";
 
 const content = {
-    title: "Welcome to Astro!",
+    title: "DryIce Baltic | Sausā ledus piegāde un pakalpojumi",
     description:
-        "A modern web framework for building fast and powerful websites.",
+        "Sausā ledus piegāde un pakalpojumi Latvijā un Baltijā. Profesionāli risinājumi tīrīšanai, pasākumiem un rūpniecībai.",
 };
 ---
 
@@ -24,6 +23,6 @@ const content = {
     <SolutionSection client:load />
     <FeatureSection client:load />
     <GallerySection client:load />
+    <Faq client:only="react" />
     <ContactsSection client:load />
-    <Faq client:only />
 </Main>

@@ -1,40 +1,39 @@
-import {
-  SiFacebook,
-  SiInstagram,
-  SiGithub,
-  SiDribbble,
-} from "@icons-pack/react-simple-icons";
+import { SiFacebook, SiInstagram } from "@icons-pack/react-simple-icons";
+import { Linkedin } from "lucide-react";
 import type { ContactSectionProps } from "./types";
 
 export const contactConfig: ContactSectionProps = {
-  tagline: "Contact Section",
-  title: "Get in touch",
-  description: "Write one or two welcoming sentences that encourage contact and include your response time commitment.",
-  officesTitle: "Visit our offices",
-  officesDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit interdum hendrerit ex vitae sodales.",
+  tagline: "Kontakti",
+  title: "Sazinieties ar mums",
+  description:
+    "Mūsu speciālisti palīdzēs jums atrast piemērotāko sausā ledus risinājumu. Atbildam darba laikā 1 stundas ietvaros.",
+  officesTitle: "Mūsu noliktavas",
+  officesDescription:
+    "Nodrošinām ērtu sausā ledus saņemšanu Rīgā un operatīvu piegādi visā Baltijā.",
   offices: [
     {
-      city: "New Mexico",
-      address: "4140 Parker Rd. Allentown New Mexico, 31134",
+      city: "Rīga",
+      address: "Katlakalna iela 11, Rīga, LV-1073, Latvija",
     },
     {
-      city: "Hawaii",
-      address: "1901 Thornridge Cir. Shiloh Hawaii, 81063",
+      city: "Piegādes punkts",
+      address: "Nodrošinām piegādi tieši pie jūsu durvīm visā Baltijā.",
     },
   ],
-  emailTitle: "Email us",
-  emailDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit interdum hendrerit ex vitae sodales.",
+  emailTitle: "Rakstiet mums",
+  emailDescription:
+    "Sūtiet savus jautājumus vai cenu pieprasījumus uz mūsu e-pasta adresēm.",
   emails: [
     {
-      label: "Sales",
-      email: "sales@example.com",
+      label: "Pārdošana",
+      email: "info@dryicebaltic.lv",
     },
     {
-      label: "Careers",
-      email: "careers@example.com",
+      label: "Sadarbība",
+      email: "partners@dryicebaltic.lv",
     },
   ],
-  socialsTitle: "Follow us",
+  socialsTitle: "Sekojiet mums",
   socials: [
     {
       icon: SiFacebook,
@@ -47,15 +46,10 @@ export const contactConfig: ContactSectionProps = {
       label: "Instagram",
     },
     {
-      icon: SiGithub,
+      icon: Linkedin,
       href: "#",
-      label: "GitHub",
-    },
-    {
-      icon: SiDribbble,
-      href: "#",
-      label: "Dribbble",
+      label: "LinkedIn",
     },
   ],
-  privacyPolicyLink: "#",
+  privacyPolicyLink: "/privatuma-politika",
 };

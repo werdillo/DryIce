@@ -1,36 +1,36 @@
 import type { FeatureSectionProps } from "./types";
 
 export const featureConfig: FeatureSectionProps = {
-  tagline: "Feature section",
-  title: "Show your solution's impact on user success",
+  tagline: "Par mums",
+  title: "DryIce Baltic – Jūsu uzticamais sausā ledus partneris",
   description:
-    "Explain in one or two concise sentences how your solution transforms users' challenges into positive outcomes.",
+    "Mēs esam vadošais sausā ledus piegādātājs un pakalpojumu sniedzējs Baltijā, piedāvājot inovatīvus un ekoloģiskus risinājumus rūpniecībai un izklaidei.",
   features: [
     {
-      title: "Benefit driven feature title",
+      title: "Mūsu misija",
       description:
-        "Shortly describe how this feature solves a specific user problem. Focus on user's benefits not on technical details.",
+        "Nodrošināt augstākās kvalitātes sauso ledu un profesionālus tīrīšanas pakalpojumus, veicinot efektīvu un videi draudzīgu uzņēmējdarbību.",
       image: {
-        src: "https://ui.shadcn.com/placeholder.svg",
-        alt: "Card image",
+        src: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
+        alt: "Mūsu misija un komanda",
       },
     },
     {
-      title: "Benefit driven feature title",
+      title: "Pieredze un profesionalitāte",
       description:
-        "Shortly describe how this feature solves a specific user problem. Focus on user's benefits not on technical details.",
+        "Mūsu komanda sastāv no nozares ekspertiem ar gadu desmitu pieredzi, garantējot drošību, precizitāti un izcilu servisu katrā pasūtījumā.",
       image: {
-        src: "https://ui.shadcn.com/placeholder.svg",
-        alt: "Card image",
+        src: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
+        alt: "Profesionālā komanda",
       },
     },
     {
-      title: "Benefit driven feature title",
+      title: "Kvalitātes sertifikāti",
       description:
-        "Shortly describe how this feature solves a specific user problem. Focus on user's benefits not on technical details.",
+        "Mēs strādājam atbilstoši augstākajiem Eiropas standartiem un esam ieguvuši visus nepieciešamos sertifikātus drošai pārtikas un industriālai lietošanai.",
       image: {
-        src: "https://ui.shadcn.com/placeholder.svg",
-        alt: "Card image",
+        src: "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?q=80&w=800&auto=format&fit=crop",
+        alt: "Sertifikācija un kvalitāte",
       },
     },
   ],

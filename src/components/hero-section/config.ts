@@ -1,11 +1,11 @@
 import type { HeroSectionProps } from "./types";
 
 export const heroConfig: HeroSectionProps = {
-  tagline: "Hero Section",
-  title: "Solve your customer's main problem",
+  tagline: "DryIce Baltic",
+  title: "Sausā ledus piegāde un pakalpojumi Latvijā un Baltijā",
   description:
-    "Follow with one or two sentences that expand on your value proposition and focus on key benefits.",
+    "Nodrošinām augstākās kvalitātes sauso ledu rūpniecībai, pasākumiem un tīrīšanai. Ātra piegāde un profesionāli risinājumi jūsu vajadzībām.",
   videoSrc: "https://www.shadcndesign.com/videos/academy-looped.mp4",
-  buttonText: "Get started",
-  buttonHref: "#",
+  buttonText: "Veikt pasūtījumu",
+  buttonHref: "#pasutijuma-forma",
 };

@@ -1,36 +1,36 @@
 import type { SolutionSectionProps } from "./types";
 
 export const solutionConfig: SolutionSectionProps = {
-  tagline: "Feature section",
-  title: "Show your solution's impact on user success",
+  tagline: "Pakalpojumi un Produkti",
+  title: "Mūsu risinājumi jūsu biznesam un ikdienai",
   description:
-    "Explain in one or two concise sentences how your solution transforms users' challenges into positive outcomes.",
+    "No industriālās tīrīšanas līdz pasākumu efektiem – DryIce Baltic piedāvā visaptverošus sausā ledus risinājumus visā Baltijā.",
   solutions: [
     {
-      title: "Benefit driven feature title",
+      title: "Sausā ledus piegāde",
       description:
-        "Shortly describe how this feature solves a specific user problem. Focus on user's benefits not on technical details.",
+        "Augstākās kvalitātes sausais ledus granulās un blokos. Piegāde visā Latvijā un Baltijā 24 stundu laikā.",
       image: {
-        src: "https://ui.shadcn.com/placeholder.svg",
-        alt: "Card image",
+        src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+        alt: "Sausā ledus piegāde",
       },
     },
     {
-      title: "Benefit driven feature title",
+      title: "Sausā ledus tīrīšana",
       description:
-        "Shortly describe how this feature solves a specific user problem. Focus on user's benefits not on technical details.",
+        "Inovatīva un ekoloģiska virsmu tīrīšana ar sauso ledu. Nesabojā virsmas, nav ķīmisku atkritumu.",
       image: {
-        src: "https://ui.shadcn.com/placeholder.svg",
-        alt: "Card image",
+        src: "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?q=80&w=800&auto=format&fit=crop",
+        alt: "Sausā ledus tīrīšana",
       },
     },
     {
-      title: "Benefit driven feature title",
+      title: "Efekti pasākumiem",
       description:
-        "Shortly describe how this feature solves a specific user problem. Focus on user's benefits not on technical details.",
+        "Radām iespaidīgus dūmu un miglas efektus kāzām, koncertiem un privātām ballītēm.",
       image: {
-        src: "https://ui.shadcn.com/placeholder.svg",
-        alt: "Card image",
+        src: "https://images.unsplash.com/photo-1514525253344-ad81d22d252c?q=80&w=800&auto=format&fit=crop",
+        alt: "Pasākumu efekti",
       },
     },
   ],
