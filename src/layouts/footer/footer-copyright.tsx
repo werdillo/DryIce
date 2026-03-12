@@ -10,7 +10,7 @@ export function FooterCopyright({
   currentYear,
 }: FooterCopyrightProps) {
   return (
-    <p className="text-[#151515] opacity-60 order-2 md:order-1">
+    <p className="text-primary-foreground opacity-60 order-2 md:order-1">
       <span>Copyright © {currentYear}</span>{" "}
       <a href={siteUrl} className="hover:underline">
         {siteName}

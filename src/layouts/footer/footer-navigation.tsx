@@ -15,9 +15,9 @@ export function FooterNavigation({ links, ariaLabel }: FooterNavigationProps) {
         <a
           key={link.label}
           href={link.href}
-          className="text-[#151515] text-lg font-semibold uppercase hover:opacity-80 transition-opacity"
+          className="text-primary-foreground hover:opacity-80 transition-opacity"
         >
-          {link.label}
+          <h4>{link.label}</h4>
         </a>
       ))}
     </nav>

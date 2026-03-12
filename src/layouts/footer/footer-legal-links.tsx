@@ -12,13 +12,13 @@ export function FooterLegalLinks({ links, ariaLabel }: FooterLegalLinksProps) {
       aria-label={ariaLabel}
     >
       {links.map((link) => (
-        <a
+        <h5
           key={link.label}
           href={link.href}
-          className="text-[#151515] opacity-60 text-sm font-semibold uppercase hover:opacity-80 transition-opacity"
+          className="text-primary-foreground opacity-60 text-sm font-semibold hover:opacity-80 transition-opacity"
         >
           {link.label}
-        </a>
+        </h5>
       ))}
     </nav>
   );
