@@ -18,7 +18,7 @@ export function FaqHeader({
 }: FaqHeaderProps) {
   return (
     <div className="section-title-gap-lg flex flex-1 flex-col">
-      <h3 id={ariaLabelledBy} className="text-primary text-lg">
+      <h3 id={ariaLabelledBy} className="text-primary">
         {heading}
       </h3>
       <p className="text-muted-foreground text-base text-pretty">

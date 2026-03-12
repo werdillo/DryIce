@@ -58,7 +58,7 @@ export function GalleryCarousel({ images }: GalleryCarouselProps) {
                   : "",
               )}
             >
-              <div className="relative aspect-square overflow-hidden rounded-xl">
+              <div className="relative aspect-square overflow-hidden">
                 <img
                   src={image.src}
                   alt={image.alt}

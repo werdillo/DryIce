@@ -1,7 +1,6 @@
 import type { FeatureSectionProps } from "./types";
 
 export const featureConfig: FeatureSectionProps = {
-  tagline: "Par mums",
   title: "DryIce Baltic – Jūsu uzticamais sausā ledus partneris",
   description:
     "Mēs esam vadošais sausā ledus piegādātājs un pakalpojumu sniedzējs Baltijā, piedāvājot inovatīvus un ekoloģiskus risinājumus rūpniecībai un izklaidei.",

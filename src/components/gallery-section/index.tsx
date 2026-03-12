@@ -11,11 +11,8 @@ export function GallerySection(props: Partial<GallerySectionProps>) {
       <div className="container-padding-x mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="section-title-gap-lg mx-auto flex flex-col items-center text-center lg:items-start lg:text-left">
-            {settings.tagline && <Tagline>{settings.tagline}</Tagline>}
-            <h2 className="heading-lg text-foreground">{settings.title}</h2>
-            <p className="text-muted-foreground text-lg/8 text-pretty">
-              {settings.description}
-            </p>
+            <h3 className="text-primary">{settings.title}</h3>
+            <p className="text-foreground">{settings.description}</p>
           </div>
           <GalleryCarousel images={settings.images} />
         </div>

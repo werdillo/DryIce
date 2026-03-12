@@ -27,7 +27,7 @@ export function ContactDetails({
       {/* Offices Section */}
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-3">
-          <h2 className="text-foreground heading-sm">{officesTitle}</h2>
+          <h3 className="text-foreground">{officesTitle}</h3>
           <p className="text-muted-foreground text-base text-pretty">
             {officesDescription}
           </p>
@@ -36,12 +36,12 @@ export function ContactDetails({
         <div className="flex flex-col gap-6 md:flex-row">
           {offices.map((office, index) => (
             <div key={index} className="flex flex-1 flex-col gap-2">
-              <h3 className="text-card-foreground text-base font-semibold">
+              <h5 className="text-card-foreground font-semibold">
                 {office.city}
-              </h3>
-              <p className="text-muted-foreground text-base whitespace-pre-line">
+              </h5>
+              <h4 className="text-primary whitespace-pre-line">
                 {office.address}
-              </p>
+              </h4>
             </div>
           ))}
         </div>
@@ -61,39 +61,15 @@ export function ContactDetails({
         <div className="flex flex-col gap-6 md:flex-row">
           {emails.map((email, index) => (
             <div key={index} className="flex flex-1 flex-col gap-2">
-              <h3 className="text-card-foreground text-base font-semibold">
-                {email.label}
-              </h3>
+              <h5 className="text-card-foreground">{email.label}</h5>
               <a
                 href={`mailto:${email.email}`}
-                className="text-muted-foreground text-base underline hover:text-primary transition-colors"
+                className="text-primary underline hover:text-primary transition-colors"
               >
-                {email.email}
+                <h5>{email.email}</h5>
               </a>
             </div>
           ))}
-        </div>
-      </div>
-
-      <Separator />
-
-      {/* Socials Section */}
-      <div className="flex flex-col gap-6">
-        <h2 className="text-foreground heading-sm">{socialsTitle}</h2>
-        <div className="flex flex-row gap-5">
-          {socials.map((social, index) => {
-            const Icon = social.icon;
-            return (
-              <a
-                key={index}
-                href={social.href}
-                aria-label={social.label}
-                className="text-foreground transition-all duration-300 hover:scale-110 hover:text-primary"
-              >
-                <Icon className="size-5" />
-              </a>
-            );
-          })}
         </div>
       </div>
     </div>

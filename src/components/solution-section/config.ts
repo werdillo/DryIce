@@ -1,7 +1,6 @@
 import type { SolutionSectionProps } from "./types";
 
 export const solutionConfig: SolutionSectionProps = {
-  tagline: "Pakalpojumi un Produkti",
   title: "Mūsu risinājumi jūsu biznesam un ikdienai",
   description:
     "No industriālās tīrīšanas līdz pasākumu efektiem – DryIce Baltic piedāvā visaptverošus sausā ledus risinājumus visā Baltijā.",

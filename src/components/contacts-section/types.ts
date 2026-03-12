@@ -15,7 +15,6 @@ export interface SocialLink {
 }
 
 export interface ContactSectionProps {
-  tagline?: string;
   title?: string;
   description?: string;
   officesTitle?: string;
@@ -25,6 +24,6 @@ export interface ContactSectionProps {
   emailDescription?: string;
   emails: EmailContact[];
   socialsTitle?: string;
-  socials: SocialLink[];
+  socials?: SocialLink[];
   privacyPolicyLink?: string;
 }

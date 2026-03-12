@@ -1,7 +1,6 @@
 import type { GallerySectionProps } from "./types";
 
 export const galleryConfig: GallerySectionProps = {
-  tagline: "Galerija",
   title: "Sausais ledus darbībā",
   description:
     "Apskatiet mūsu produktus, pakalpojumus un sausā ledus pielietojuma piemērus dažādās industrijās un pasākumos.",

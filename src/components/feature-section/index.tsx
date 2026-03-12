@@ -9,7 +9,7 @@ export function FeatureSection(props: Partial<FeatureSectionProps>) {
   return (
     <section className="bg-primary section-padding-y">
       <div className="container-padding-x mx-auto flex max-w-7xl flex-col gap-10 md:gap-12">
-        <h3 className="heading-sm text-primary-foreground">{settings.title}</h3>
+        <h3 className="text-primary-foreground">{settings.title}</h3>
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-6">
           {settings.features.map((feature, index) => (
             <FeatureCard key={`${feature.title}-${index}`} feature={feature} />

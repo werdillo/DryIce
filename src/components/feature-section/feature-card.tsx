@@ -18,7 +18,7 @@ export function FeatureCard({ feature }: FeatureCardProps) {
         </AspectRatio>
       </div>
       <div className="flex flex-col gap-3">
-        <h3 className="text-primary-foreground heading-sm">{feature.title}</h3>
+        <h4 className="text-primary-foreground">{feature.title}</h4>
         <p className="text-primary-foreground text-pretty">
           {feature.description}
         </p>

@@ -18,12 +18,8 @@ export function SolutionCard({ solution }: SolutionCardProps) {
         </AspectRatio>
       </div>
       <div className="flex flex-col gap-3">
-        <h3 className="text-foreground heading-sm">
-          {solution.title}
-        </h3>
-        <p className="text-muted-foreground text-pretty">
-          {solution.description}
-        </p>
+        <h4 className="text-foreground">{solution.title}</h4>
+        <p className="text-foreground text-pretty">{solution.description}</p>
       </div>
     </div>
   );

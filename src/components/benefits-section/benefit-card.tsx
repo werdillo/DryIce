@@ -9,9 +9,9 @@ export function BenefitCard({ benefit }: BenefitCardProps) {
   return (
     <div className="flex flex-col items-center gap-5 text-center">
       <div className="flex flex-col gap-2">
-        <h3 className="text-primary-foreground font-semibold tracking-tight">
+        <h4 className="text-primary-foreground font-semibold tracking-tight">
           {benefit.title}
-        </h3>
+        </h4>
         <p className="text-primary-foreground text-pretty">
           {benefit.description}
         </p>

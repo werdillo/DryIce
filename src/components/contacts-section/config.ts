@@ -3,7 +3,6 @@ import { Linkedin } from "lucide-react";
 import type { ContactSectionProps } from "./types";
 
 export const contactConfig: ContactSectionProps = {
-  tagline: "Kontakti",
   title: "Sazinieties ar mums",
   description:
     "Mūsu speciālisti palīdzēs jums atrast piemērotāko sausā ledus risinājumu. Atbildam darba laikā 1 stundas ietvaros.",
@@ -14,10 +13,6 @@ export const contactConfig: ContactSectionProps = {
     {
       city: "Rīga",
       address: "Katlakalna iela 11, Rīga, LV-1073, Latvija",
-    },
-    {
-      city: "Piegādes punkts",
-      address: "Nodrošinām piegādi tieši pie jūsu durvīm visā Baltijā.",
     },
   ],
   emailTitle: "Rakstiet mums",

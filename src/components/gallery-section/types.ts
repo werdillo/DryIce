@@ -4,7 +4,6 @@ export interface GalleryImage {
 }
 
 export interface GallerySectionProps {
-  tagline?: string;
   title?: string;
   description?: string;
   images: GalleryImage[];

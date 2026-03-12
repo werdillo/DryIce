@@ -8,7 +8,6 @@ export interface SolutionItem {
 }
 
 export interface SolutionSectionProps {
-  tagline?: string;
   title?: string;
   description?: string;
   solutions: SolutionItem[];
