@@ -1,15 +1,20 @@
-import type { FaqProps } from "./types";
+import type { FaqConfig } from "./types";
 
-export const faqConfig: FaqProps = {
+export const FAQ_CONFIG: FaqConfig = {
   tagline: "BUJ",
-  title: "Biežāk uzdotie jautājumi",
+  heading: "Biežāk uzdotie jautājumi",
   description:
     "Atrodiet atbildes uz populārākajiem jautājumiem par sausā ledus lietošanu, piegādi un drošību.",
+  contactLink: {
+    text: "Sazināties ar mums",
+    href: "/contact",
+  },
+  ariaLabelledBy: "faq-heading",
   categories: [
     {
-      id: "general",
-      name: "Vispārīgi par sauso ledu",
-      questions: [
+      title: "Vispārīgi par sauso ledu",
+      ariaLabel: "Vispārīgi par sauso ledu",
+      items: [
         {
           question: "Kas ir sausais ledus?",
           answer:
@@ -28,9 +33,9 @@ export const faqConfig: FaqProps = {
       ],
     },
     {
-      id: "delivery",
-      name: "Piegāde un pasūtījumi",
-      questions: [
+      title: "Piegāde un pasūtījumi",
+      ariaLabel: "Piegāde un pasūtījumi",
+      items: [
         {
           question: "Kādos veidos ir pieejams sausais ledus?",
           answer:
@@ -49,9 +54,9 @@ export const faqConfig: FaqProps = {
       ],
     },
     {
-      id: "services",
-      name: "Pakalpojumi",
-      questions: [
+      title: "Pakalpojumi",
+      ariaLabel: "Pakalpojumi",
+      items: [
         {
           question: "Kas ir sausā ledus tīrīšana (strūklas apstrāde)?",
           answer:

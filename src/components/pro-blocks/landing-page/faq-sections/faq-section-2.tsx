@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Link from "next/link";
+
 import { Tagline } from "@/components/pro-blocks/landing-page/tagline";
 
 export function FaqSection2() {
@@ -25,9 +25,9 @@ export function FaqSection2() {
             <p className="text-muted-foreground text-lg/8 text-pretty">
               We've compiled the most important information to help you get the
               most out of your experience. Can't find what you're looking for?{" "}
-              <Link href="#" className="text-primary underline">
+              <a href="#" className="text-primary underline">
                 Contact us.
-              </Link>
+              </a>
             </p>
           </div>
 

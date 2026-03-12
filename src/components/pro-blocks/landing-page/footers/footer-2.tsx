@@ -1,7 +1,7 @@
 "use client";
 
 import { Logo } from "@/components/pro-blocks/logo";
-import Link from "next/link";
+
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Field, FieldLabel } from "@/components/ui/field";
@@ -35,9 +35,9 @@ export function Footer2() {
             {/* Logo and Navigation */}
             <div className="flex flex-col items-center gap-12 lg:flex-row">
               {/* Logo */}
-              <Link href="/" aria-label="Go to homepage">
+              <a href="/" aria-label="Go to homepage">
                 <Logo className="size-7" />
-              </Link>
+              </a>
 
               {/* Main Navigation */}
               <nav
@@ -45,13 +45,13 @@ export function Footer2() {
                 aria-label="Footer navigation"
               >
                 {MAIN_NAV_LINKS.map((link) => (
-                  <Link
+                  <a
                     key={link.label}
                     href={link.href}
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 ))}
               </nav>
             </div>
@@ -95,9 +95,9 @@ export function Footer2() {
             {/* Copyright Text */}
             <p className="text-muted-foreground order-2 md:order-1">
               <span>Copyright © {new Date().getFullYear()}</span>{" "}
-              <Link href="/" className="hover:underline">
+              <a href="/" className="hover:underline">
                 shadcndesign.com
-              </Link>
+              </a>
               . All rights reserved.
             </p>
 
@@ -107,13 +107,13 @@ export function Footer2() {
               aria-label="Legal links"
             >
               {LEGAL_LINKS.map((link) => (
-                <Link
+                <a
                   key={link.label}
                   href={link.href}
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {link.label}
-                </Link>
+                </a>
               ))}
             </nav>
           </div>
