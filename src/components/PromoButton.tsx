@@ -1,121 +1,59 @@
 "use client";
 
-import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { FileText } from "lucide-react";
 
 interface PromoButtonProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   href?: string;
   onClick?: () => void;
-  type?: "button" | "submit" | "reset";
   className?: string;
 }
 
 export function PromoButton({
-  children,
+  children = "All products in PDF file",
   href,
   onClick,
-  type = "button",
   className,
 }: PromoButtonProps) {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [isHovered, setIsHovered] = useState(false);
-  const ref = useRef<HTMLAnchorElement & HTMLButtonElement>(null);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
-    if (!ref.current) return;
-    const rect = ref.current.getBoundingClientRect();
-    setPosition({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-  };
-
   const inner = (
-    <>
-      {/* Spotlight that follows cursor */}
+    // Full-width dark bar, 86px tall
+    <span className="relative flex h-21.5 items-center bg-background">
+      {/* Text + icon row, padded so text starts 92px from left (60px square + 32px gap) */}
       <span
-        aria-hidden
-        className="pointer-events-none absolute inset-0 rounded-full transition-opacity duration-300"
-        style={{
-          opacity: isHovered ? 1 : 0,
-          background: `radial-gradient(100px circle at ${position.x}px ${position.y}px, rgba(255,255,255,0.12), transparent 70%)`,
-        }}
-      />
-
-      {/* Gradient border */}
-      <span
-        aria-hidden
-        className="absolute inset-0 rounded-full p-px"
-        style={{
-          background:
-            "linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.9) 100%)",
-          WebkitMask:
-            "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-          WebkitMaskComposite: "xor",
-          maskComposite: "exclude",
-        }}
-      />
-
-      {/* Button fill */}
-      <span
-        aria-hidden
-        className="absolute inset-px rounded-full transition-colors duration-300"
-        style={{
-          background: isHovered
-            ? "rgba(255,255,255,0.15)"
-            : "rgba(255,255,255,0.05)",
-        }}
-      />
-
-      {/* Outer glow */}
-      <span
-        aria-hidden
-        className="absolute inset-0 rounded-full transition-all duration-500"
-        style={{
-          boxShadow: isHovered
-            ? "0 0 18px 2px rgba(255,255,255,0.2)"
-            : "0 0 0px 0px transparent",
-        }}
-      />
-
-      {/* Label */}
-      <span className="relative z-10 flex items-center gap-2 px-6 py-3 text-sm font-semibold tracking-wide text-white">
-        {children}
+        className="relative z-10 flex items-center gap-2 whitespace-nowrap pl-8"
+        style={{ fontFamily: "'Orbitron', sans-serif" }}
+      >
+        <span className="text-lg font-semibold text-white">{children}</span>
+        <FileText className="size-5.5 shrink-0 text-white" />
       </span>
-    </>
+
+      {/* Square: 60px wide, positioned so its right edge is 32px before text start.
+          text starts at pl-23 = 92px, square width = 60px, so left = 92 - 60 - 32 = 0px
+          i.e. square left edge is at 0, right edge at 60px, gap to text = 92 - 60 = 32px */}
+      <span
+        className="absolute left-0 top-0 h-full w-15 bg-primary/20"
+        aria-hidden
+      />
+    </span>
   );
 
   const commonClassName = cn(
-    "relative inline-flex items-center justify-center",
-    "rounded-full cursor-pointer select-none outline-none",
-    "transition-transform duration-150 active:scale-95",
-    className
+    "block w-full cursor-pointer select-none outline-none",
+    "transition-opacity duration-200 hover:opacity-90 active:opacity-75",
+    className,
   );
 
   if (href) {
     return (
-      <a
-        ref={ref}
-        href={href}
-        className={commonClassName}
-        onMouseMove={handleMouseMove}
-        onMouseEnter={(e) => { setIsHovered(true); handleMouseMove(e); }}
-        onMouseLeave={() => setIsHovered(false)}
-        onClick={onClick}
-      >
+      <a href={href} onClick={onClick} className={commonClassName}>
         {inner}
       </a>
     );
   }
 
   return (
-    <button
-      ref={ref}
-      type={type}
-      className={commonClassName}
-      onMouseMove={handleMouseMove}
-      onMouseEnter={(e) => { setIsHovered(true); handleMouseMove(e); }}
-      onMouseLeave={() => setIsHovered(false)}
-      onClick={onClick}
-    >
+    <button type="button" onClick={onClick} className={commonClassName}>
       {inner}
     </button>
   );

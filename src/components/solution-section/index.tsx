@@ -2,6 +2,7 @@ import { Tagline } from "@/components/pro-blocks/landing-page/tagline";
 import { SolutionCard } from "./solution-card";
 import { solutionConfig } from "./config";
 import type { SolutionSectionProps } from "./types";
+import { PromoButton } from "../PromoButton";
 
 export function SolutionSection(props: Partial<SolutionSectionProps>) {
   const settings = { ...solutionConfig, ...props };
@@ -20,6 +21,9 @@ export function SolutionSection(props: Partial<SolutionSectionProps>) {
               solution={solution}
             />
           ))}
+        </div>
+        <div className="flex justify-center items-center w-full">
+          <PromoButton>All products in PDF file</PromoButton>
         </div>
       </div>
     </section>
