@@ -17,10 +17,10 @@ export function BookCall(props: BookCallProps) {
 
   return (
     <section
-      className="bg-primary w-full py-6 px-6 md:px-26"
+      className="bg-primary w-full py-8"
       aria-labelledby="book-call-heading"
     >
-      <div className="flex flex-col items-center gap-6">
+      <div className="flex flex-col mx-auto max-w-7xl items-center gap-6">
         {/* Heading — Orbitron 900 48px uppercase centered */}
         <h1
           id="book-call-heading"
