@@ -1,0 +1,47 @@
+h1 {
+    font-family: var(--font-syne);
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+        line-height: auto;
+    }
+}
+
+h2 {
+    font-family: var(--font-syne);
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: var(--font-manrope);
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: var(--font-manrope);
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 600;
+}
+
+h5 {
+    font-family: var(--font-manrope);
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 600;
+}
+
+p {
+    font-family: var(--font-manrope);
+    font-size: 16px;
+    line-height: 130%;
+}
