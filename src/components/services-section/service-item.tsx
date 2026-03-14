@@ -4,11 +4,13 @@ import type { ServiceItem } from "./types";
 interface ServiceItemProps {
   service: ServiceItem;
   showDivider?: boolean;
+  showDescription?: boolean;
 }
 
 export function ServiceListItem({
   service,
   showDivider = true,
+  showDescription = true,
 }: ServiceItemProps) {
   return (
     <div className="flex flex-col gap-5">
@@ -34,7 +36,7 @@ export function ServiceListItem({
             {service.title}
           </span>
 
-          {service.isActive && service.description && (
+          {showDescription && service.isActive && service.description && (
             <p className="text-foreground text-base leading-relaxed text-pretty">
               {service.description}
             </p>

@@ -6,12 +6,14 @@ import type { ServicesSectionProps } from "./types";
 export function ServicesSection(props: Partial<ServicesSectionProps>) {
   const settings = { ...servicesConfig, ...props };
 
+  const activeService = settings.services.find((s) => s.isActive);
+
   return (
     <section className="bg-background section-padding-y relative overflow-hidden">
       {/* Background oversized heading */}
       <span
         aria-hidden
-        className="pointer-events-none absolute left-0 top-0 w-full select-none whitespace-nowrap text-foreground/10 leading-none"
+        className="pointer-events-none absolute left-0 top-0 w-full select-none whitespace-nowrap leading-none text-foreground/10"
         style={{
           fontFamily: "'Orbitron', sans-serif",
           fontWeight: 900,
@@ -22,53 +24,55 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
         {settings.heading}
       </span>
 
-      <div className="container-padding-x mx-auto max-w-7xl">
-        <div className="relative grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-10">
-
-          {/* Left column: label + service list */}
-          <div className="flex flex-col gap-8 pt-16 lg:pt-24">
-            {/* Section label */}
+      <div className="container-padding-x relative mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 gap-12 pt-16 lg:grid-cols-[400px_1fr_auto] lg:gap-10 lg:pt-24">
+          {/* Col 1: section label + service list (no description) */}
+          <div className="flex flex-col gap-8">
             <span
-              className="text-primary border-b border-foreground/10 pb-2 text-lg font-semibold"
+              className="border-b border-foreground/10 pb-2 text-lg font-semibold text-primary"
               style={{ fontFamily: "'Orbitron', sans-serif" }}
             >
               {settings.sectionLabel}
             </span>
 
-            {/* Service list */}
             <div className="flex flex-col">
               {settings.services.map((service, index) => (
                 <ServiceListItem
                   key={service.number}
                   service={service}
+                  showDescription={false}
                   showDivider={index < settings.services.length - 1}
                 />
               ))}
             </div>
           </div>
 
-          {/* Right column: image + button */}
-          <div className="relative flex flex-col justify-between gap-10 pt-16 lg:pt-24">
-            {/* Image */}
+          {/* Col 2: active item description + image */}
+          <div className="flex flex-col justify-between gap-8">
+            {activeService?.description && (
+              <p className="text-base leading-relaxed text-pretty text-foreground">
+                {activeService.description}
+              </p>
+            )}
+
             {settings.image && (
               <div className="overflow-hidden">
                 <img
                   src={settings.image.src}
                   alt={settings.image.alt}
-                  className="h-full w-full object-cover"
+                  className="w-full object-cover"
                   style={{ maxHeight: "329px" }}
                 />
               </div>
             )}
-
-            {/* PromoButton aligned to bottom-right */}
-            <div className="flex justify-end">
-              <PromoButton href={settings.buttonHref}>
-                {settings.buttonText}
-              </PromoButton>
-            </div>
           </div>
 
+          {/* Col 3: PromoButton pinned to bottom */}
+          <div className="flex items-end justify-end lg:items-end">
+            <PromoButton href={settings.buttonHref}>
+              {settings.buttonText}
+            </PromoButton>
+          </div>
         </div>
       </div>
     </section>
