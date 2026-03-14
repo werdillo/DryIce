@@ -2,17 +2,16 @@ export interface ServiceItem {
   number: string;
   title: string;
   description?: string;
-  isActive?: boolean;
+  image?: {
+    src: string;
+    alt: string;
+  };
 }
 
 export interface ServicesSectionProps {
   heading?: string;
   sectionLabel?: string;
   services: ServiceItem[];
-  image?: {
-    src: string;
-    alt: string;
-  };
   buttonText?: string;
   buttonHref?: string;
 }

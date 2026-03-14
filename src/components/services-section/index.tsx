@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { servicesConfig } from "./config";
 import { ServiceListItem } from "./service-item";
 import { PromoButton } from "@/components/PromoButton";
@@ -5,8 +8,9 @@ import type { ServicesSectionProps } from "./types";
 
 export function ServicesSection(props: Partial<ServicesSectionProps>) {
   const settings = { ...servicesConfig, ...props };
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const activeService = settings.services.find((s) => s.isActive);
+  const activeService = settings.services[activeIndex];
 
   return (
     <section className="bg-background section-padding-y relative overflow-hidden">
@@ -26,7 +30,7 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
 
       <div className="container-padding-x relative mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-12 pt-16 lg:grid-cols-[400px_1fr_auto] lg:gap-10 lg:pt-24">
-          {/* Col 1: section label + service list (no description) */}
+          {/* Col 1: section label + service list */}
           <div className="flex flex-col gap-8">
             <span
               className="border-b border-foreground/10 pb-2 text-lg font-semibold text-primary"
@@ -40,8 +44,9 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
                 <ServiceListItem
                   key={service.number}
                   service={service}
-                  showDescription={false}
+                  isActive={index === activeIndex}
                   showDivider={index < settings.services.length - 1}
+                  onClick={() => setActiveIndex(index)}
                 />
               ))}
             </div>
@@ -55,11 +60,11 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
               </p>
             )}
 
-            {settings.image && (
+            {activeService?.image && (
               <div className="overflow-hidden">
                 <img
-                  src={settings.image.src}
-                  alt={settings.image.alt}
+                  src={activeService.image.src}
+                  alt={activeService.image.alt}
                   className="w-full object-cover"
                   style={{ maxHeight: "329px" }}
                 />
@@ -68,7 +73,7 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
           </div>
 
           {/* Col 3: PromoButton pinned to bottom */}
-          <div className="flex items-end justify-end lg:items-end">
+          <div className="flex items-end justify-end">
             <PromoButton href={settings.buttonHref}>
               {settings.buttonText}
             </PromoButton>

@@ -3,52 +3,52 @@ import type { ServiceItem } from "./types";
 
 interface ServiceItemProps {
   service: ServiceItem;
+  isActive?: boolean;
   showDivider?: boolean;
-  showDescription?: boolean;
+  onClick?: () => void;
 }
 
 export function ServiceListItem({
   service,
+  isActive = false,
   showDivider = true,
-  showDescription = true,
+  onClick,
 }: ServiceItemProps) {
   return (
-    <div className="flex flex-col gap-5">
-      <div className="flex items-end gap-5">
+    <div className="flex flex-col">
+      <button
+        type="button"
+        onClick={onClick}
+        className="flex cursor-pointer items-end gap-5 py-5 text-left outline-none"
+      >
         <span
           className={cn(
-            "shrink-0 text-lg font-semibold leading-none",
-            service.isActive ? "text-primary/20" : "text-foreground/20",
+            "shrink-0 text-lg font-semibold leading-none transition-colors duration-200",
+            isActive ? "text-primary/40" : "text-foreground/20",
           )}
           style={{ fontFamily: "'Orbitron', sans-serif" }}
         >
           {service.number}
         </span>
 
-        <div className="flex flex-col justify-center gap-3">
-          <span
-            className={cn(
-              "text-lg font-semibold leading-snug",
-              service.isActive ? "text-primary" : "text-foreground/80",
-            )}
-            style={{ fontFamily: "'Orbitron', sans-serif" }}
-          >
-            {service.title}
-          </span>
-
-          {showDescription && service.isActive && service.description && (
-            <p className="text-foreground text-base leading-relaxed text-pretty">
-              {service.description}
-            </p>
+        <span
+          className={cn(
+            "text-lg font-semibold leading-snug transition-colors duration-200",
+            isActive
+              ? "text-primary"
+              : "text-foreground/80 hover:text-foreground",
           )}
-        </div>
-      </div>
+          style={{ fontFamily: "'Orbitron', sans-serif" }}
+        >
+          {service.title}
+        </span>
+      </button>
 
       {showDivider && (
         <hr
           className={cn(
-            "border-t-2 mb-5",
-            service.isActive ? "border-foreground/60" : "border-foreground/20",
+            "border-t-2 transition-colors duration-200",
+            isActive ? "border-foreground/60" : "border-foreground/20",
           )}
         />
       )}
