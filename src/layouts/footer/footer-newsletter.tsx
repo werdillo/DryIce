@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { Field, FieldLabel } from "@/components/ui/field";
-import { InputGroup, InputGroupInput } from "@/components/ui/input-group";
+import { inputClass, formButtonClass } from "@/styles/form";
+import { cn } from "@/lib/utils";
 
 interface FooterNewsletterProps {
   emailInputId: string;
@@ -20,29 +20,27 @@ export function FooterNewsletter({
       className="flex w-full flex-col gap-2 md:w-auto md:flex-row"
       aria-label={ariaLabel}
     >
-      <Field className="md:w-[242px]">
+      <Field className="md:w-60.5">
         <FieldLabel htmlFor={emailInputId} className="sr-only">
           Email
         </FieldLabel>
-        <InputGroup>
-          <InputGroupInput
-            id={emailInputId}
-            type="email"
-            placeholder={emailPlaceholder}
-            required
-            aria-required="true"
-            aria-label="Enter your email for newsletter"
-            className="border-[#151515] text-[#151515] placeholder:text-[#151515] placeholder:opacity-60 shadow-sm"
-          />
-        </InputGroup>
+        <input
+          id={emailInputId}
+          type="email"
+          placeholder={emailPlaceholder}
+          required
+          aria-required="true"
+          aria-label="Enter your email for newsletter"
+          className={inputClass}
+        />
       </Field>
-      <Button
+      <button
         type="submit"
-        className="w-full md:w-auto bg-[#151515] text-white border-[#151515] hover:bg-[#151515]/90"
         aria-label="Subscribe to our newsletter"
+        className={cn(formButtonClass, "w-full md:w-auto h-7.5 py-1")}
       >
         {buttonText}
-      </Button>
+      </button>
     </form>
   );
 }

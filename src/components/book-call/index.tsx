@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { bookCallConfig } from "./config";
 import type { BookCallProps } from "./types";
+import { inputClass, formButtonClass } from "@/styles/form";
+import { cn } from "@/lib/utils";
 
 export function BookCall(props: BookCallProps) {
   const settings = { ...bookCallConfig, ...props };
@@ -46,30 +48,12 @@ export function BookCall(props: BookCallProps) {
             placeholder={settings.placeholder}
             required
             aria-label="Phone number"
-            className="
-              min-w-0 flex-1
-              rounded border border-primary-foreground bg-transparent
-              px-3 py-1
-              text-sm font-semibold text-primary-foreground
-              placeholder:text-primary-foreground/60
-              shadow-xs outline-none
-              transition-shadow duration-150
-              focus:shadow-[0_0_0_2px_rgba(21,21,21,0.3)]
-            "
+            className={cn(inputClass, "flex-1 min-w-0")}
           />
 
           <button
             type="submit"
-            className="
-              shrink-0 rounded
-              border border-primary-foreground
-              bg-primary-foreground
-              px-5 py-3
-              text-sm font-semibold text-foreground
-              transition-opacity duration-150
-              hover:opacity-85 active:opacity-70
-              cursor-pointer whitespace-nowrap
-            "
+            className={cn(formButtonClass, "w-auto shrink-0")}
           >
             {settings.buttonText}
           </button>

@@ -5,20 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Field, FieldGroup, FieldLabel, FieldSet } from "@/components/ui/field";
 import { cn } from "@/lib/utils";
+import { inputClass, formButtonClass } from "@/styles/form";
 
 interface ContactFormProps {
   privacyPolicyLink?: string;
 }
-
-const inputClass = cn(
-  "w-full bg-transparent",
-  "border border-primary-foreground",
-  "px-3 py-1 text-sm text-primary-foreground",
-  "placeholder:text-primary-foreground/60",
-  "shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]",
-  "outline-none transition-shadow duration-150",
-  "focus:shadow-[0_0_0_2px_rgba(21,21,21,0.2)]",
-);
 
 export function ContactForm({ privacyPolicyLink = "#" }: ContactFormProps) {
   const [agreed, setAgreed] = useState(false);
@@ -109,19 +100,7 @@ export function ContactForm({ privacyPolicyLink = "#" }: ContactFormProps) {
           </Field>
 
           <Field>
-            <button
-              type="submit"
-              className={cn(
-                "w-full",
-                "bg-primary-foreground text-foreground",
-                "border border-primary-foreground",
-                "px-5 py-3",
-                "text-sm font-semibold",
-                "transition-opacity duration-150",
-                "hover:opacity-85 active:opacity-70",
-                "cursor-pointer",
-              )}
-            >
+            <button type="submit" className={formButtonClass}>
               Send message
             </button>
           </Field>
