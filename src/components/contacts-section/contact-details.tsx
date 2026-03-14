@@ -8,8 +8,6 @@ interface ContactDetailsProps {
   emailTitle?: string;
   emailDescription?: string;
   emails: EmailContact[];
-  socialsTitle?: string;
-  socials: SocialLink[];
 }
 
 export function ContactDetails({
@@ -19,8 +17,6 @@ export function ContactDetails({
   emailTitle,
   emailDescription,
   emails,
-  socialsTitle,
-  socials,
 }: ContactDetailsProps) {
   return (
     <div className="mx-auto flex max-w-md flex-col gap-8">

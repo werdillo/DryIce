@@ -9,6 +9,7 @@ import { FeatureSection } from "@/components/feature-section";
 import { GallerySection } from "@/components/gallery-section";
 import { Faq } from "@/components/faq";
 import { ContactsSection } from "@/components/contacts-section";
+import { BookCall } from "@/components/book-call";
 
 const content = {
     title: "DryIce Baltic | Sausā ledus piegāde un pakalpojumi",
@@ -19,6 +20,7 @@ const content = {
 
 <Main content={content}>
     <HeroSection client:load />
+    <BookCall client:load />
     <BenefitsSection client:load />
     <SolutionSection client:load />
     <FeatureSection client:load />
