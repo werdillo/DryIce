@@ -18,7 +18,7 @@ export function PromoButton({
 }: PromoButtonProps) {
   const inner = (
     // Full-width dark bar, 86px tall
-    <span className="relative flex h-21.5 items-center bg-background">
+    <span className="relative inline-flex h-21.5 items-center bg-background">
       {/* Text + icon row, padded so text starts 92px from left (60px square + 32px gap) */}
       <span
         className="relative z-10 flex items-center gap-2 whitespace-nowrap pl-8"
@@ -39,7 +39,7 @@ export function PromoButton({
   );
 
   const commonClassName = cn(
-    "block w-full cursor-pointer select-none outline-none",
+    "block cursor-pointer select-none outline-none",
     "transition-opacity duration-200 hover:opacity-90 active:opacity-75",
     className,
   );

@@ -22,7 +22,7 @@ export function SolutionSection(props: Partial<SolutionSectionProps>) {
             />
           ))}
         </div>
-        <div className="flex justify-center items-center w-full">
+        <div className="flex justify-center">
           <PromoButton>All products in PDF file</PromoButton>
         </div>
       </div>
