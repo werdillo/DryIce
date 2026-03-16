@@ -21,6 +21,7 @@ export function FaqCategories({ categories }: FaqCategoriesProps) {
               <AccordionItem
                 key={`${category.title}-${itemIndex}`}
                 value={`${category.title.toLowerCase()}-${itemIndex}`}
+                className="border-white"
               >
                 <AccordionTrigger className="text-left [&[data-state=open]_h4]:text-primary [&[data-state=open]_h4]:underline">
                   <h4>{item.question}</h4>
