@@ -60,13 +60,15 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
             )}
 
             {activeService?.image && (
-              <div className="overflow-hidden">
-                <img
-                  src={activeService.image.src}
-                  alt={activeService.image.alt}
-                  className="w-full object-cover"
-                  style={{ maxHeight: "329px" }}
-                />
+              <div className="flex justify-end">
+                <div className="overflow-hidden">
+                  <img
+                    src={activeService.image.src}
+                    alt={activeService.image.alt}
+                    className="w-full object-cover"
+                    style={{ maxHeight: "329px", maxWidth: "500px" }}
+                  />
+                </div>
               </div>
             )}
           </div>
