@@ -20,15 +20,13 @@ export function GalleryCarousel({ images }: GalleryCarouselProps) {
   const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
-    if (!api) {
-      return;
-    }
+    if (!api) return;
 
     setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
+    setCurrent(api.selectedScrollSnap());
 
     api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
+      setCurrent(api.selectedScrollSnap());
     });
   }, [api]);
 
@@ -42,37 +40,34 @@ export function GalleryCarousel({ images }: GalleryCarouselProps) {
       className="mb-12 w-full"
     >
       <CarouselContent className="-mr-3">
-        {images.map((image, index) => {
-          const selectedSnapIndex = current - 1;
-          const indexOfSlideToMakeDim =
-            count > 0 ? (selectedSnapIndex + 1) % count : -1;
-
-          return (
-            <CarouselItem
-              key={index}
-              className={cn(
-                "pl-4",
-                "basis-10/12",
-                index === indexOfSlideToMakeDim && count > 1
-                  ? "opacity-50"
-                  : "",
-              )}
-            >
-              <div className="relative aspect-square overflow-hidden">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </CarouselItem>
-          );
-        })}
+        {images.map((image, index) => (
+          <CarouselItem
+            key={index}
+            className={cn(
+              "pl-4",
+              // mobile: почти полный экран с намёком на следующий
+              // desktop (lg): ровно половина — 2 слайда одновременно
+              "basis-10/12 lg:basis-1/2",
+            )}
+          >
+            <div className="relative aspect-square overflow-hidden">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </CarouselItem>
+        ))}
       </CarouselContent>
+
+      {/* Кнопки навигации */}
       <div className="absolute right-0 -bottom-16 hidden gap-2 md:flex">
         <CarouselPrevious className="static top-0 bottom-0 h-10 w-10 translate-y-0" />
         <CarouselNext className="static top-0 bottom-0 h-10 w-10 translate-y-0" />
       </div>
+
+      {/* Dots */}
       <div className="absolute right-0 -bottom-12 left-0 py-4 md:right-auto md:-bottom-16">
         <div className="flex items-center justify-center gap-2">
           {Array.from({ length: count }).map((_, index) => (
@@ -81,7 +76,7 @@ export function GalleryCarousel({ images }: GalleryCarouselProps) {
               onClick={() => api?.scrollTo(index)}
               className={cn(
                 "h-2 w-2 rounded-full transition-colors",
-                current === index + 1 ? "bg-primary" : "bg-muted",
+                current === index ? "bg-primary" : "bg-muted",
               )}
               aria-label={`Go to slide ${index + 1}`}
             />
