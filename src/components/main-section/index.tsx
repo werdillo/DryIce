@@ -67,7 +67,7 @@ export function MainSection(props: Props) {
               {/* Description + button + right image — pushed to bottom edge of left image */}
               <div className="mt-4 flex flex-col gap-6 lg:flex-row lg:items-stretch lg:gap-8">
                 {/* Description + button */}
-                <div className="flex flex-col justify-between gap-8 flex-1">
+                <div className="flex flex-col justify-between gap-8 max-w-90 flex-1">
                   <p className="text-base leading-relaxed text-white/70">
                     {s.description}
                   </p>

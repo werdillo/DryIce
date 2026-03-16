@@ -10,7 +10,7 @@ export const solutionConfig: SolutionSectionProps = {
       description:
         "Augstākās kvalitātes sausais ledus granulās un blokos. Piegāde visā Latvijā un Baltijā 24 stundu laikā.",
       image: {
-        src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+        src: "/images/solution/device-1.png",
         alt: "Sausā ledus piegāde",
       },
     },
@@ -19,7 +19,7 @@ export const solutionConfig: SolutionSectionProps = {
       description:
         "Inovatīva un ekoloģiska virsmu tīrīšana ar sauso ledu. Nesabojā virsmas, nav ķīmisku atkritumu.",
       image: {
-        src: "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?q=80&w=800&auto=format&fit=crop",
+        src: "/images/solution/device-2.png",
         alt: "Sausā ledus tīrīšana",
       },
     },
@@ -28,7 +28,7 @@ export const solutionConfig: SolutionSectionProps = {
       description:
         "Radām iespaidīgus dūmu un miglas efektus kāzām, koncertiem un privātām ballītēm.",
       image: {
-        src: "https://images.unsplash.com/photo-1514525253344-ad81d22d252c?q=80&w=800&auto=format&fit=crop",
+        src: "/images/solution/device-3.png",
         alt: "Pasākumu efekti",
       },
     },
