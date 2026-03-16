@@ -27,12 +27,25 @@ export function BookCall(props: BookCallProps) {
         <h1
           id="book-call-heading"
           className="
-            w-full text-center uppercase text-primary-foreground
+            w-full text-center uppercase text-foreground
             text-3xl md:text-5xl font-black leading-snug
           "
           style={{ fontFamily: "'Orbitron', sans-serif" }}
         >
-          {settings.heading}
+          {settings.heading && settings.headingHighlight
+            ? settings.heading
+                .split(settings.headingHighlight)
+                .map((part, i, arr) => (
+                  <span key={i}>
+                    {part}
+                    {i < arr.length - 1 && (
+                      <span className="text-primary-foreground">
+                        {settings.headingHighlight}
+                      </span>
+                    )}
+                  </span>
+                ))
+            : settings.heading}
         </h1>
 
         {/* Input + Button — row, w-[350px], gap-2 */}
