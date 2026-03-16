@@ -9,7 +9,4 @@ export interface MainSectionProps {
   image1Alt: string;
   image2Src: string;
   image2Alt: string;
-  navLang?: string;
-  navButtonText?: string;
-  navButtonHref?: string;
 }

@@ -12,7 +12,4 @@ export const mainSectionConfig: Partial<MainSectionProps> = {
   image1Alt: "Dry ice blasting technician cleaning a car",
   image2Src: "/images/hero/ice.jpg",
   image2Alt: "Dry ice pellets close up",
-  navLang: "En",
-  navButtonText: "Write To Us",
-  navButtonHref: "#contacts",
 };
