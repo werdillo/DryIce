@@ -6,6 +6,9 @@ dist/
 # dependencies
 node_modules/
 
+# lock file — let Cloudflare generate fresh one on Linux
+package-lock.json
+
 # logs
 npm-debug.log*
 yarn-debug.log*
