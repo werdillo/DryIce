@@ -1,10 +1,4 @@
-import {
-  House,
-  Users,
-  Car,
-  ClipboardList,
-  Images,
-} from "lucide-react";
+import { House, Users, Car, ClipboardList, Images } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { SIDEBAR_CONFIG } from "./config";
 import type { SidebarProps, SidebarLink } from "./types";
@@ -17,22 +11,32 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   images: Images,
 };
 
-function NavItem({ link, vertical = false }: { link: SidebarLink; vertical?: boolean }) {
+function NavItem({
+  link,
+  vertical = false,
+}: {
+  link: SidebarLink;
+  vertical?: boolean;
+}) {
   const Icon = iconMap[link.icon];
 
   return (
     <a
       href={link.href}
       className={cn(
-        "group flex items-center justify-center gap-2 text-white/70 transition-colors hover:text-white",
-        vertical ? "flex-col py-4 px-5" : "flex-col flex-1 py-2",
+        "group flex items-center justify-center text-white transition-colors hover:text-white/70",
+        vertical ? "py-5 px-4" : "flex-col flex-1 gap-1 py-2",
       )}
       aria-label={link.label}
     >
-      {Icon && <Icon className="h-6 w-6 shrink-0" />}
-      <span className="text-[10px] font-medium leading-none tracking-wide">
-        {link.label}
-      </span>
+      {Icon && (
+        <Icon className={cn("shrink-0", vertical ? "h-5 w-5" : "h-6 w-6")} />
+      )}
+      {!vertical && (
+        <span className="text-[10px] font-medium leading-none tracking-wide">
+          {link.label}
+        </span>
+      )}
     </a>
   );
 }

@@ -54,7 +54,7 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
           {/* Col 2: active item description + image */}
           <div className="flex flex-col justify-between gap-8">
             {activeService?.description && (
-              <p className="-ml-10 text-base border-foreground/60 py-[11.6px] border-b-2 leading-relaxed text-pretty text-foreground">
+              <p className="lg:-ml-10 text-base border-foreground/60 py-[11.6px] border-b-2 leading-relaxed text-pretty text-foreground">
                 {activeService.description}
               </p>
             )}
