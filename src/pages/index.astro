@@ -21,14 +21,28 @@ const content = {
 ---
 
 <Main content={content}>
-    <MainSection client:load />
-    <HeroSection client:load />
-    <BenefitsSection client:load />
-    <SolutionSection client:load />
-    <BookCall client:load />
-    <ServicesSection client:load />
-    <FeatureSection client:load />
-    <GallerySection client:load />
-    <ContactsSection client:load />
-    <Faq client:load />
+    <div id="home">
+        <MainSection client:load />
+    </div>
+    <div id="about">
+        <HeroSection client:load />
+        <BenefitsSection client:load />
+    </div>
+    <div id="solutions">
+        <SolutionSection client:load />
+        <BookCall client:load />
+    </div>
+    <div id="machines">
+        <ServicesSection client:load />
+    </div>
+    <div id="services">
+        <FeatureSection client:load />
+    </div>
+    <div id="gallery">
+        <GallerySection client:load />
+    </div>
+    <div id="contacts">
+        <ContactsSection client:load />
+        <Faq client:load />
+    </div>
 </Main>
