@@ -22,7 +22,7 @@ export function FaqCategories({ categories }: FaqCategoriesProps) {
                 key={`${category.title}-${itemIndex}`}
                 value={`${category.title.toLowerCase()}-${itemIndex}`}
               >
-                <AccordionTrigger className="text-left">
+                <AccordionTrigger className="text-left [&[data-state=open]_h4]:text-primary [&[data-state=open]_h4]:underline">
                   <h4>{item.question}</h4>
                 </AccordionTrigger>
                 <AccordionContent>{item.answer}</AccordionContent>
