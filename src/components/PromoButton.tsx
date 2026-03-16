@@ -25,7 +25,7 @@ export function PromoButton({
         style={{ fontFamily: "'Orbitron', sans-serif" }}
       >
         <span className="text-lg font-semibold text-white">{children}</span>
-        <FileText className="size-5.5 shrink-0 text-white" />
+        {/*<FileText className="size-5.5 shrink-0 text-white" />*/}
       </span>
 
       {/* Square: 60px wide, positioned so its right edge is 32px before text start.

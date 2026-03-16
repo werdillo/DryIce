@@ -29,16 +29,15 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
       </span>
 
       <div className="container-padding-x relative mx-auto max-w-7xl">
+        <span
+          className="border-b border-foreground/10 pb-2 text-lg font-semibold text-primary"
+          style={{ fontFamily: "'Orbitron', sans-serif" }}
+        >
+          {settings.sectionLabel}
+        </span>
         <div className="grid grid-cols-1 gap-12 pt-16 lg:grid-cols-[400px_1fr_auto] lg:gap-10 lg:pt-24">
           {/* Col 1: section label + service list */}
           <div className="flex flex-col gap-8">
-            <span
-              className="border-b border-foreground/10 pb-2 text-lg font-semibold text-primary"
-              style={{ fontFamily: "'Orbitron', sans-serif" }}
-            >
-              {settings.sectionLabel}
-            </span>
-
             <div className="flex flex-col">
               {settings.services.map((service, index) => (
                 <ServiceListItem
@@ -55,7 +54,7 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
           {/* Col 2: active item description + image */}
           <div className="flex flex-col justify-between gap-8">
             {activeService?.description && (
-              <p className="text-base leading-relaxed text-pretty text-foreground">
+              <p className="-ml-10 text-base border-foreground/60 py-[11.6px] border-b-2 leading-relaxed text-pretty text-foreground">
                 {activeService.description}
               </p>
             )}
