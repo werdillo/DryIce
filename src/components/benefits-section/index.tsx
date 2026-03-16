@@ -8,7 +8,7 @@ export function BenefitsSection(props: Partial<BenefitsSectionProps>) {
 
   return (
     <>
-      <div className="container-padding-x mx-auto flex max-w-7xl">
+      <div className="container-padding-x mx-auto flex p-20 max-w-7xl">
         <div className="relative">
           <img
             src="/images/logo-outline.svg"

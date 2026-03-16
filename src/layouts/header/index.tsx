@@ -1,16 +1,12 @@
 import { Button } from "@/components/ui/button";
+import { HEADER_CONFIG } from "./config";
+import type { HeaderProps } from "./types";
 
-interface MainNavbarProps {
-  lang?: string;
-  buttonText?: string;
-  buttonHref?: string;
-}
-
-export function MainNavbar({
-  lang = "En",
-  buttonText = "Write To Us",
-  buttonHref = "#contacts",
-}: MainNavbarProps) {
+export function Header({
+  lang = HEADER_CONFIG.lang,
+  buttonText = HEADER_CONFIG.buttonText,
+  buttonHref = HEADER_CONFIG.buttonHref,
+}: HeaderProps = {}) {
   return (
     <header className="container-padding-x absolute top-0 left-0 right-0 z-20 mx-auto flex w-full max-w-7xl items-start justify-between pt-6">
       {/* Logo */}
@@ -46,3 +42,6 @@ export function MainNavbar({
     </header>
   );
 }
+
+export type { HeaderProps } from "./types";
+export { HEADER_CONFIG } from "./config";

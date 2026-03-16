@@ -1,5 +1,5 @@
 import { mainSectionConfig } from "./config";
-import { MainNavbar } from "./main-navbar";
+import { Header } from "@/layouts/header";
 import { PromoButton } from "@/components/PromoButton";
 import type { MainSectionProps } from "./types";
 
@@ -11,7 +11,7 @@ export function MainSection(props: Props) {
   return (
     <section className="relative min-h-svh overflow-hidden bg-[#151515]">
       {/* Navbar */}
-      <MainNavbar
+      <Header
         lang={s.navLang}
         buttonText={s.navButtonText}
         buttonHref={s.navButtonHref}
