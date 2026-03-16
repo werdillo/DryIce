@@ -12,15 +12,13 @@ export function Footer({ config }: FooterProps = {}) {
 
   return (
     <footer
-      className="bg-[#29ABE2] text-sm"
+      className="relative overflow-hidden bg-[#29ABE2] text-sm"
       role="contentinfo"
       aria-label={footerConfig.ariaLabel}
     >
       <div className="container-padding-x mx-auto flex max-w-7xl flex-col gap-12 py-24 pb-60">
         <div className="flex flex-col gap-12">
-          {/* Top Section */}
           <div className="flex flex-col gap-12 md:items-center md:justify-between lg:flex-row">
-            {/* Logo and Navigation */}
             <div className="flex flex-col items-center gap-12 lg:flex-row">
               <FooterNavigation
                 links={footerConfig.mainNavigation.links}
@@ -28,7 +26,6 @@ export function Footer({ config }: FooterProps = {}) {
               />
             </div>
 
-            {/* Newsletter Form */}
             {footerConfig.newsletter.enabled && (
               <FooterNewsletter
                 emailInputId={footerConfig.newsletter.emailInputId}
@@ -58,6 +55,13 @@ export function Footer({ config }: FooterProps = {}) {
             />
           </div>
         </div>
+      </div>
+
+      <div
+        className="pointer-events-none absolute bottom-0 left-0 w-full translate-y-[1%]"
+        aria-hidden="true"
+      >
+        <img src="/images/BrandTextOutline.svg" alt="" className="w-full" />
       </div>
     </footer>
   );
