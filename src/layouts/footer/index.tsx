@@ -25,7 +25,7 @@ export function Footer({ config }: FooterProps = {}) {
                 alt=""
                 width={350}
                 height={350}
-                className="pointer-events-none absolute -top-40 -left-440 z-0"
+                className="pointer-events-none absolute -top-40 -left-40 z-0"
                 aria-hidden="true"
               />
               <div className="relative z-10">

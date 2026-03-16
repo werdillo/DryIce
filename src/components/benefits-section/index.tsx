@@ -18,7 +18,7 @@ export function BenefitsSection(props: Partial<BenefitsSectionProps>) {
             className="pointer-events-none absolute -left-28 -top-14 z-0"
             aria-hidden="true"
           />
-          <h1 className="relative z-10 heading-xl uppercase">
+          <h1 className="relative text-right md:text-left z-10 heading-xl uppercase">
             <span className="text-primary">
               We offer advanced dry ice solutions that provide a strategic
               advantage, tailored to the

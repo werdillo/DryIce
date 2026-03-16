@@ -13,7 +13,7 @@ export function ContactsSection(props: Partial<ContactSectionProps>) {
       className="bg-background flex min-h-screen flex-col gap-8 py-16 md:gap-0 md:py-0 lg:flex-row"
       aria-labelledby="contact-heading"
     >
-      <div className="container-padding-x theme bg-primary flex-1 items-center justify-center md:p-0 md:py-24">
+      <div className="container-padding-x theme bg-primary flex-1 items-center justify-center p-8 md:py-24">
         <div className="mx-auto flex max-w-md flex-col gap-10 md:gap-12">
           <div className="section-title-gap-lg mx-auto flex flex-col">
             <h3 id="contact-heading" className="text-primary-foreground">
