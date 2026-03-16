@@ -30,7 +30,7 @@ export function ContactsSection(props: Partial<ContactSectionProps>) {
 
       <Separator className="block md:hidden" />
 
-      <div className="md:bg-muted/40 flex-1 items-center justify-center px-6 md:px-0 md:py-24">
+      <div className="md:bg-muted/40 flex flex-1 items-center justify-center px-6 md:px-0 md:py-24">
         <ContactDetails
           officesTitle={settings.officesTitle}
           officesDescription={settings.officesDescription}
