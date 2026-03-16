@@ -22,7 +22,7 @@ export function MainSection(props: Props) {
         <div className="flex flex-col gap-2">
           {/* Title line 1 */}
           <h1
-            className="text-[clamp(64px,11vw,160px)] font-black leading-none tracking-tight text-primary uppercase"
+            className="text-[clamp(64px,11vw,160px)]! font-black leading-none tracking-tight text-primary uppercase"
             style={{ fontFamily: "var(--font-orbitron)" }}
           >
             {s.title1}
@@ -51,13 +51,13 @@ export function MainSection(props: Props) {
               {/* Title2 + Subtitle */}
               <div className="flex flex-col gap-1">
                 <h1
-                  className="text-[clamp(64px,11vw,160px)] font-black leading-none tracking-tight text-white uppercase"
+                  className="text-[clamp(64px,11vw,160px)]! -mt-15 font-black leading-none tracking-tight text-white uppercase"
                   style={{ fontFamily: "var(--font-orbitron)" }}
                 >
                   {s.title2}
                 </h1>
                 <h2
-                  className="text-[clamp(18px,2.8vw,40px)] font-black leading-none tracking-wider text-primary uppercase"
+                  className="text-[clamp(18px,2.8vw,40px)]! font-black leading-none tracking-wider text-primary uppercase"
                   style={{ fontFamily: "var(--font-orbitron)" }}
                 >
                   {s.subtitle}
@@ -65,9 +65,9 @@ export function MainSection(props: Props) {
               </div>
 
               {/* Description + button + right image — pushed to bottom edge of left image */}
-              <div className="mt-auto flex flex-col gap-6 lg:flex-row lg:items-stretch lg:gap-8">
+              <div className="mt-4 flex flex-col gap-6 lg:flex-row lg:items-stretch lg:gap-8">
                 {/* Description + button */}
-                <div className="flex flex-col justify-between gap-8 lg:maxw-56 lg:shrink-0">
+                <div className="flex flex-col justify-between gap-8 flex-1">
                   <p className="text-base leading-relaxed text-white/70">
                     {s.description}
                   </p>
@@ -76,7 +76,7 @@ export function MainSection(props: Props) {
                   </PromoButton>
                 </div>
 
-                {/* Right image — 400×300 (4:3) */}
+                {/* Right image — stretches to fill remaining width, 4:3 height */}
                 <div
                   className="shrink-0 overflow-hidden border border-white/10"
                   style={{ width: 400, height: 300 }}
