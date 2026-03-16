@@ -35,7 +35,7 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
         >
           {settings.sectionLabel}
         </span>
-        <div className="grid grid-cols-1 gap-12 pt-16 lg:grid-cols-[400px_1fr_auto] lg:gap-10 lg:pt-24">
+        <div className="grid grid-cols-1 gap-12 pt-10 lg:grid-cols-[400px_1fr_auto] lg:gap-10 lg:pt-16">
           {/* Col 1: section label + service list */}
           <div className="flex flex-col gap-8">
             <div className="flex flex-col">
@@ -54,7 +54,7 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
           {/* Col 2: active item description + image */}
           <div className="flex flex-col justify-between gap-8">
             {activeService?.description && (
-              <p className="lg:-ml-10 text-base border-foreground/60 py-[11.6px] border-b-2 leading-relaxed text-pretty text-foreground">
+              <p className="lg:-ml-10 pl-5 text-base border-foreground/60 py-[11.6px] border-b-2 leading-relaxed text-pretty text-foreground">
                 {activeService.description}
               </p>
             )}
@@ -77,6 +77,9 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
               {settings.buttonText}
             </PromoButton>
           </div>
+        </div>
+        <div className="flex justify-center pt-6">
+          <div className="w-full max-w-[400px] border-b border-foreground/20" />
         </div>
       </div>
     </section>

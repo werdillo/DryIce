@@ -19,7 +19,7 @@ export function ServiceListItem({
       <button
         type="button"
         onClick={onClick}
-        className="flex cursor-pointer items-end gap-5 py-5 text-left outline-none"
+        className="flex w-full cursor-pointer items-end justify-end gap-5 py-5 text-left outline-none"
       >
         <span
           className={cn(
@@ -33,7 +33,7 @@ export function ServiceListItem({
 
         <span
           className={cn(
-            "text-lg font-semibold leading-snug transition-colors duration-200",
+            "ml-auto text-lg font-semibold leading-snug text-right transition-colors duration-200",
             isActive
               ? "text-primary"
               : "text-foreground/80 hover:text-foreground",
