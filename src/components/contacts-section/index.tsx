@@ -10,7 +10,7 @@ export function ContactsSection(props: Partial<ContactSectionProps>) {
 
   return (
     <section
-      className="bg-background flex min-h-screen flex-col gap-8 py-16 md:gap-0 md:py-0 lg:flex-row"
+      className="bg-background flex flex-col gap-8 py-16 md:gap-0 md:py-0 lg:flex-row"
       aria-labelledby="contact-heading"
     >
       <div className="container-padding-x theme bg-primary flex-1 items-center justify-center p-8 md:py-24">

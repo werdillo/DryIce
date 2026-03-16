@@ -11,7 +11,7 @@ export function SolutionSection(props: Partial<SolutionSectionProps>) {
     <section className="bg-background section-padding-y relative overflow-hidden">
       {/* Pattern background: starts from below the card images, ends just above the title */}
       <div
-        className="pointer-events-none absolute inset-x-0 z-0"
+        className="pointer-events-none absolute inset-x-0 z-0 hidden lg:block"
         style={{
           /* top offset = section padding + title block height + gap ≈ push it just below title */
           top: "3rem",

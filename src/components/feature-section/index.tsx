@@ -14,10 +14,33 @@ export function FeatureSection(props: Partial<FeatureSectionProps>) {
             {settings.title}
           </h3>
         </div>
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-6">
-          {settings.features.map((feature, index) => (
-            <FeatureCard key={`${feature.title}-${index}`} feature={feature} />
-          ))}
+        <div className="relative">
+          {/* Decorative circle */}
+          <svg
+            width="400"
+            height="384"
+            viewBox="0 0 400 384"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="pointer-events-none absolute -top-30 -left-20 z-2 hidden lg:block"
+            aria-hidden="true"
+          >
+            <circle
+              opacity="0.2"
+              cx="200"
+              cy="184"
+              r="199.5"
+              stroke="#151515"
+            />
+          </svg>
+          <div className="relative z-10 grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-6">
+            {settings.features.map((feature, index) => (
+              <FeatureCard
+                key={`${feature.title}-${index}`}
+                feature={feature}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
