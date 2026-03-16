@@ -19,11 +19,21 @@ export function Footer({ config }: FooterProps = {}) {
       <div className="container-padding-x mx-auto flex max-w-7xl flex-col gap-12 py-24 pb-60">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-12 md:items-center md:justify-between lg:flex-row">
-            <div className="flex flex-col items-center gap-12 lg:flex-row">
-              <FooterNavigation
-                links={footerConfig.mainNavigation.links}
-                ariaLabel={footerConfig.mainNavigation.ariaLabel}
+            <div className="relative flex flex-col items-center gap-12 lg:flex-row">
+              <img
+                src="/images/logo-footer.svg"
+                alt=""
+                width={350}
+                height={350}
+                className="pointer-events-none absolute -top-40 -left-440 z-0"
+                aria-hidden="true"
               />
+              <div className="relative z-10">
+                <FooterNavigation
+                  links={footerConfig.mainNavigation.links}
+                  ariaLabel={footerConfig.mainNavigation.ariaLabel}
+                />
+              </div>
             </div>
 
             {footerConfig.newsletter.enabled && (
@@ -37,7 +47,7 @@ export function Footer({ config }: FooterProps = {}) {
           </div>
 
           {/* Section Divider */}
-          <Separator role="presentation" />
+          <Separator role="presentation" className="bg-primary-foreground" />
 
           {/* Bottom Section */}
           <div className="flex flex-col items-center justify-between gap-12 text-center lg:flex-row">
