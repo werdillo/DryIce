@@ -14,28 +14,26 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
 
   return (
     <section className="bg-background section-padding-y relative overflow-hidden">
-      {/* Background oversized heading */}
-      <span
-        aria-hidden
-        className="pointer-events-none absolute left-0 top-0 w-full select-none whitespace-nowrap leading-none text-foreground/10"
-        style={{
-          fontFamily: "'Orbitron', sans-serif",
-          fontWeight: 900,
-          fontSize: "clamp(4rem, 9vw, 8rem)",
-          textTransform: "uppercase",
-        }}
-      >
-        {settings.heading}
-      </span>
-
-      <div className="container-padding-x relative mx-auto max-w-7xl">
+      <div className="container-padding-x mx-auto max-w-7xl">
         <span
-          className="border-b border-foreground/10 pb-2 text-lg font-semibold text-primary"
+          aria-hidden
+          className="pointer-events-none absolute left-0 top-30 w-full select-none whitespace-nowrap leading-none text-foreground/10"
+          style={{
+            fontFamily: "'Orbitron', sans-serif",
+            fontWeight: 900,
+            fontSize: "clamp(4rem, 9vw, 8rem)",
+            textTransform: "uppercase",
+          }}
+        >
+          {settings.heading}
+        </span>
+        <span
+          className="border-b relative border-foreground/10 pb-2 text-lg font-semibold text-primary"
           style={{ fontFamily: "'Orbitron', sans-serif" }}
         >
           {settings.sectionLabel}
         </span>
-        <div className="grid grid-cols-1 gap-12 pt-10 lg:grid-cols-[400px_1fr_auto] lg:gap-10 lg:pt-16">
+        <div className="grid grid-cols-1 gap-12 pt-12 lg:grid-cols-[400px_1fr_auto] lg:gap-10 lg:pt-20">
           {/* Col 1: section label + service list */}
           <div className="flex flex-col gap-8">
             <div className="flex flex-col">
