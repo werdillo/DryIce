@@ -6,6 +6,7 @@ import { FileText } from "lucide-react";
 interface PromoButtonProps {
   children?: React.ReactNode;
   href?: string;
+  download?: boolean | string;
   onClick?: () => void;
   className?: string;
 }
@@ -13,6 +14,7 @@ interface PromoButtonProps {
 export function PromoButton({
   children = "All products in PDF file",
   href,
+  download,
   onClick,
   className,
 }: PromoButtonProps) {
@@ -46,7 +48,12 @@ export function PromoButton({
 
   if (href) {
     return (
-      <a href={href} onClick={onClick} className={commonClassName}>
+      <a
+        href={href}
+        download={download}
+        onClick={onClick}
+        className={commonClassName}
+      >
         {inner}
       </a>
     );

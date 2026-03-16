@@ -45,7 +45,9 @@ export function SolutionSection(props: Partial<SolutionSectionProps>) {
         </div>
 
         <div className="flex justify-center">
-          <PromoButton>All products in PDF file</PromoButton>
+          <PromoButton href="/catalogue2026.pdf" download>
+            All products in PDF file
+          </PromoButton>
         </div>
       </div>
     </section>
