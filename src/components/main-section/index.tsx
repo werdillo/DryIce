@@ -67,13 +67,27 @@ export function MainSection(props: Props) {
           {/* ── Desktop layout ── */}
           <div className="hidden lg:flex lg:flex-row lg:items-start lg:gap-0">
             {/* Left image — 400×500 (4:5) */}
-            <div className="shrink-0 lg:h-125 lg:w-100 overflow-hidden border border-white/10">
-              <img
-                src={s.image1Src}
-                alt={s.image1Alt}
-                className="h-full w-full object-cover"
-                loading="eager"
+            <div className="relative shrink-0 lg:h-125 lg:w-100">
+              {/* Decorative frame — same size, offset +16px right and -16px up */}
+              <div
+                className="pointer-events-none absolute hidden lg:block border-t border-l border-r border-white/40"
+                style={{
+                  transform: "translate(16px, -16px)",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "calc(100% + 16px)",
+                }}
+                aria-hidden="true"
               />
+              <div className="h-full w-full overflow-hidden border">
+                <img
+                  src={s.image1Src}
+                  alt={s.image1Alt}
+                  className="h-full w-full object-cover"
+                  loading="eager"
+                />
+              </div>
             </div>
 
             {/* Right block */}
