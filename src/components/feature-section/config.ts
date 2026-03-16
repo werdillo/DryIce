@@ -28,7 +28,7 @@ export const featureConfig: FeatureSectionProps = {
       description:
         "Mēs strādājam atbilstoši augstākajiem Eiropas standartiem un esam ieguvuši visus nepieciešamos sertifikātus drošai pārtikas un industriālai lietošanai.",
       image: {
-        src: "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?q=80&w=800&auto=format&fit=crop",
+        src: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
         alt: "Sertifikācija un kvalitāte",
       },
     },
