@@ -3,6 +3,7 @@ import { LpNavbar4 } from "@/components/pro-blocks/landing-page/lp-navbars/lp-na
 import "../styles/global.css";
 const { content } = Astro.props;
 import { Footer } from "./footer";
+import { Sidebar } from "./sidebar";
 ---
 
 <html lang="en">
@@ -24,5 +25,6 @@ import { Footer } from "./footer";
             <slot />
         </div>
         <Footer />
+        <Sidebar client:load />
     </body>
 </html>

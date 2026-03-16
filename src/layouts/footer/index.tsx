@@ -16,7 +16,7 @@ export function Footer({ config }: FooterProps = {}) {
       role="contentinfo"
       aria-label={footerConfig.ariaLabel}
     >
-      <div className="container-padding-x mx-auto flex max-w-7xl flex-col gap-12 py-24 pb-60">
+      <div className="container-padding-x mx-auto flex max-w-7xl flex-col gap-12 py-16 lg:py-24 lg:pb-60">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-12 md:items-center md:justify-between lg:flex-row">
             <div className="relative flex flex-col items-center gap-12 lg:flex-row">
