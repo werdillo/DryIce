@@ -1,0 +1,962 @@
+{
+  "meta": {
+    "lv": {
+      "title": "Page Title",
+      "description": "Page description",
+      "keywords": "keyword"
+    },
+    "en": {
+      "title": "Page Title",
+      "description": "Page description",
+      "keywords": "keyword"
+    },
+    "ru": {
+      "title": "Page Title",
+      "description": "Page description",
+      "keywords": "keyword"
+    }
+  },
+  "layout": {
+    "header": {
+      "en": {
+        "lang": "en",
+        "buttonText": "Contact us",
+        "buttonHref": "/contact"
+      },
+      "lv": {
+        "lang": "lv",
+        "buttonText": "Contact us",
+        "buttonHref": "/contact"
+      },
+      "ru": {
+        "lang": "ru",
+        "buttonText": "Contact us",
+        "buttonHref": "/contact"
+      }
+    },
+    "footer": {
+      "en": {
+        "logo": {
+          "href": "/",
+          "ariaLabel": "Go to homepage",
+          "className": "footer-logo"
+        },
+        "mainNavigation": {
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "/services",
+              "label": "Services"
+            },
+            {
+              "href": "/contact",
+              "label": "Contact"
+            }
+          ],
+          "ariaLabel": "Footer main navigation"
+        },
+        "newsletter": {
+          "enabled": true,
+          "emailInputId": "newsletter-email-en",
+          "emailPlaceholder": "Enter your email",
+          "buttonText": "Subscribe",
+          "ariaLabel": "Newsletter subscription"
+        },
+        "copyright": {
+          "siteName": "Ice CMS",
+          "siteUrl": "https://ice-cms.local"
+        },
+        "legalLinks": {
+          "links": [
+            {
+              "href": "/privacy",
+              "label": "Privacy Policy"
+            },
+            {
+              "href": "/terms",
+              "label": "Terms of Service"
+            }
+          ],
+          "ariaLabel": "Legal links"
+        },
+        "ariaLabel": "Footer"
+      },
+      "lv": {
+        "logo": {
+          "href": "/",
+          "ariaLabel": "Go to homepage",
+          "className": "footer-logo"
+        },
+        "mainNavigation": {
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "/services",
+              "label": "Services"
+            },
+            {
+              "href": "/contact",
+              "label": "Contact"
+            }
+          ],
+          "ariaLabel": "Footer main navigation"
+        },
+        "newsletter": {
+          "enabled": true,
+          "emailInputId": "newsletter-email-lv",
+          "emailPlaceholder": "Enter your email",
+          "buttonText": "Subscribe",
+          "ariaLabel": "Newsletter subscription"
+        },
+        "copyright": {
+          "siteName": "Ice CMS",
+          "siteUrl": "https://ice-cms.local"
+        },
+        "legalLinks": {
+          "links": [
+            {
+              "href": "/privacy",
+              "label": "Privacy Policy"
+            },
+            {
+              "href": "/terms",
+              "label": "Terms of Service"
+            }
+          ],
+          "ariaLabel": "Legal links"
+        },
+        "ariaLabel": "Footer"
+      },
+      "ru": {
+        "logo": {
+          "href": "/",
+          "ariaLabel": "Go to homepage",
+          "className": "footer-logo"
+        },
+        "mainNavigation": {
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "/services",
+              "label": "Services"
+            },
+            {
+              "href": "/contact",
+              "label": "Contact"
+            }
+          ],
+          "ariaLabel": "Footer main navigation"
+        },
+        "newsletter": {
+          "enabled": true,
+          "emailInputId": "newsletter-email-ru",
+          "emailPlaceholder": "Enter your email",
+          "buttonText": "Subscribe",
+          "ariaLabel": "Newsletter subscription"
+        },
+        "copyright": {
+          "siteName": "Ice CMS",
+          "siteUrl": "https://ice-cms.local"
+        },
+        "legalLinks": {
+          "links": [
+            {
+              "href": "/privacy",
+              "label": "Privacy Policy"
+            },
+            {
+              "href": "/terms",
+              "label": "Terms of Service"
+            }
+          ],
+          "ariaLabel": "Legal links"
+        },
+        "ariaLabel": "Footer"
+      }
+    },
+    "sidebar": {
+      "en": {
+        "links": [
+          {
+            "href": "/",
+            "label": "Dashboard",
+            "icon": "LayoutDashboard"
+          },
+          {
+            "href": "/pages",
+            "label": "Pages",
+            "icon": "FileText"
+          },
+          {
+            "href": "/settings",
+            "label": "Settings",
+            "icon": "Settings"
+          }
+        ],
+        "ariaLabel": "Sidebar navigation"
+      },
+      "lv": {
+        "links": [
+          {
+            "href": "/",
+            "label": "Dashboard",
+            "icon": "LayoutDashboard"
+          },
+          {
+            "href": "/pages",
+            "label": "Pages",
+            "icon": "FileText"
+          },
+          {
+            "href": "/settings",
+            "label": "Settings",
+            "icon": "Settings"
+          }
+        ],
+        "ariaLabel": "Sidebar navigation"
+      },
+      "ru": {
+        "links": [
+          {
+            "href": "/",
+            "label": "Dashboard",
+            "icon": "LayoutDashboard"
+          },
+          {
+            "href": "/pages",
+            "label": "Pages",
+            "icon": "FileText"
+          },
+          {
+            "href": "/settings",
+            "label": "Settings",
+            "icon": "Settings"
+          }
+        ],
+        "ariaLabel": "Sidebar navigation"
+      }
+    }
+  },
+  "blocks": [
+    {
+      "id": "main-section-0",
+      "type": "main-section",
+      "order": 0,
+      "enabled": true,
+      "data": {
+        "lv": {
+          "title1": "test content",
+          "title2": "",
+          "subtitle": "",
+          "description": "",
+          "buttonText": "",
+          "buttonHref": "",
+          "image1Src": "",
+          "image1Alt": "",
+          "image2Src": "",
+          "image2Alt": ""
+        },
+        "en": {
+          "title1": "",
+          "title2": "",
+          "subtitle": "",
+          "description": "",
+          "buttonText": "",
+          "buttonHref": "",
+          "image1Src": "",
+          "image1Alt": "",
+          "image2Src": "",
+          "image2Alt": ""
+        },
+        "ru": {
+          "title1": "",
+          "title2": "",
+          "subtitle": "",
+          "description": "",
+          "buttonText": "",
+          "buttonHref": "",
+          "image1Src": "",
+          "image1Alt": "",
+          "image2Src": "",
+          "image2Alt": ""
+        }
+      }
+    },
+    {
+      "id": "benefits-section-1",
+      "type": "benefits-section",
+      "order": 1,
+      "enabled": true,
+      "data": {
+        "lv": {
+          "tagline": "",
+          "title": "",
+          "description": "",
+          "benefits": [
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            }
+          ]
+        },
+        "en": {
+          "tagline": "",
+          "title": "",
+          "description": "",
+          "benefits": [
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            }
+          ]
+        },
+        "ru": {
+          "tagline": "",
+          "title": "",
+          "description": "",
+          "benefits": [
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "solution-section-2",
+      "type": "solution-section",
+      "order": 2,
+      "enabled": true,
+      "data": {
+        "lv": {
+          "title": "",
+          "description": "",
+          "solutions": [
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "en": {
+          "title": "",
+          "description": "",
+          "solutions": [
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "ru": {
+          "title": "",
+          "description": "",
+          "solutions": [
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "book-call-3",
+      "type": "book-call",
+      "order": 3,
+      "enabled": true,
+      "data": {
+        "lv": {
+          "heading": "",
+          "headingHighlight": "",
+          "placeholder": "",
+          "buttonText": ""
+        },
+        "en": {
+          "heading": "",
+          "headingHighlight": "",
+          "placeholder": "",
+          "buttonText": ""
+        },
+        "ru": {
+          "heading": "",
+          "headingHighlight": "",
+          "placeholder": "",
+          "buttonText": ""
+        }
+      }
+    },
+    {
+      "id": "services-section-4",
+      "type": "services-section",
+      "order": 4,
+      "enabled": true,
+      "data": {
+        "lv": {
+          "heading": "",
+          "sectionLabel": "",
+          "buttonText": "",
+          "buttonHref": "",
+          "services": [
+            {
+              "number": "01",
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "number": "02",
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "number": "03",
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "en": {
+          "heading": "",
+          "sectionLabel": "",
+          "buttonText": "",
+          "buttonHref": "",
+          "services": [
+            {
+              "number": "01",
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "number": "02",
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "number": "03",
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "ru": {
+          "heading": "",
+          "sectionLabel": "",
+          "buttonText": "",
+          "buttonHref": "",
+          "services": [
+            {
+              "number": "01",
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "number": "02",
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "number": "03",
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "feature-section-5",
+      "type": "feature-section",
+      "order": 5,
+      "enabled": true,
+      "data": {
+        "lv": {
+          "tagline": "",
+          "title": "",
+          "description": "",
+          "features": [
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "en": {
+          "tagline": "",
+          "title": "",
+          "description": "",
+          "features": [
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "ru": {
+          "tagline": "",
+          "title": "",
+          "description": "",
+          "features": [
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            },
+            {
+              "title": "",
+              "description": "",
+              "image": {
+                "src": "",
+                "alt": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "gallery-section-6",
+      "type": "gallery-section",
+      "order": 6,
+      "enabled": true,
+      "data": {
+        "lv": {
+          "title": "",
+          "description": "",
+          "images": [
+            {
+              "src": "",
+              "alt": ""
+            }
+          ]
+        },
+        "en": {
+          "title": "",
+          "description": "",
+          "images": [
+            {
+              "src": "",
+              "alt": ""
+            }
+          ]
+        },
+        "ru": {
+          "title": "",
+          "description": "",
+          "images": [
+            {
+              "src": "",
+              "alt": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "contact-section-7",
+      "type": "contact-section",
+      "order": 7,
+      "enabled": true,
+      "data": {
+        "lv": {
+          "title": "",
+          "description": "",
+          "officesTitle": "",
+          "officesDescription": "",
+          "offices": [
+            {
+              "city": "",
+              "address": ""
+            }
+          ],
+          "emailTitle": "",
+          "emailDescription": "",
+          "emails": [
+            {
+              "label": "",
+              "email": ""
+            }
+          ],
+          "socialsTitle": "",
+          "socials": [
+            {
+              "icon": "SiFacebook",
+              "href": "#",
+              "label": "Facebook"
+            },
+            {
+              "icon": "SiInstagram",
+              "href": "#",
+              "label": "Instagram"
+            },
+            {
+              "icon": "Linkedin",
+              "href": "#",
+              "label": "LinkedIn"
+            }
+          ],
+          "privacyPolicyLink": ""
+        },
+        "en": {
+          "title": "",
+          "description": "",
+          "officesTitle": "",
+          "officesDescription": "",
+          "offices": [
+            {
+              "city": "",
+              "address": ""
+            }
+          ],
+          "emailTitle": "",
+          "emailDescription": "",
+          "emails": [
+            {
+              "label": "",
+              "email": ""
+            }
+          ],
+          "socialsTitle": "",
+          "socials": [
+            {
+              "icon": "SiFacebook",
+              "href": "#",
+              "label": "Facebook"
+            },
+            {
+              "icon": "SiInstagram",
+              "href": "#",
+              "label": "Instagram"
+            },
+            {
+              "icon": "Linkedin",
+              "href": "#",
+              "label": "LinkedIn"
+            }
+          ],
+          "privacyPolicyLink": ""
+        },
+        "ru": {
+          "title": "",
+          "description": "",
+          "officesTitle": "",
+          "officesDescription": "",
+          "offices": [
+            {
+              "city": "",
+              "address": ""
+            }
+          ],
+          "emailTitle": "",
+          "emailDescription": "",
+          "emails": [
+            {
+              "label": "",
+              "email": ""
+            }
+          ],
+          "socialsTitle": "",
+          "socials": [
+            {
+              "icon": "SiFacebook",
+              "href": "#",
+              "label": "Facebook"
+            },
+            {
+              "icon": "SiInstagram",
+              "href": "#",
+              "label": "Instagram"
+            },
+            {
+              "icon": "Linkedin",
+              "href": "#",
+              "label": "LinkedIn"
+            }
+          ],
+          "privacyPolicyLink": ""
+        }
+      }
+    },
+    {
+      "id": "faq-section-8",
+      "type": "faq-section",
+      "order": 8,
+      "enabled": true,
+      "data": {
+        "lv": {
+          "tagline": "",
+          "heading": "",
+          "description": "",
+          "contactLink": {
+            "label": "",
+            "href": "",
+            "target": "_self"
+          },
+          "ariaLabelledBy": "faq-heading",
+          "categories": [
+            {
+              "title": "",
+              "ariaLabel": "",
+              "items": [
+                {
+                  "question": "",
+                  "answer": ""
+                }
+              ]
+            }
+          ]
+        },
+        "en": {
+          "tagline": "",
+          "heading": "",
+          "description": "",
+          "contactLink": {
+            "label": "",
+            "href": "",
+            "target": "_self"
+          },
+          "ariaLabelledBy": "faq-heading",
+          "categories": [
+            {
+              "title": "",
+              "ariaLabel": "",
+              "items": [
+                {
+                  "question": "",
+                  "answer": ""
+                }
+              ]
+            }
+          ]
+        },
+        "ru": {
+          "tagline": "",
+          "heading": "",
+          "description": "",
+          "contactLink": {
+            "label": "",
+            "href": "",
+            "target": "_self"
+          },
+          "ariaLabelledBy": "faq-heading",
+          "categories": [
+            {
+              "title": "",
+              "ariaLabel": "",
+              "items": [
+                {
+                  "question": "",
+                  "answer": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
