@@ -295,7 +295,7 @@
       "id": "benefits-section-1",
       "type": "benefits-section",
       "order": 1,
-      "enabled": true,
+      "enabled": false,
       "data": {
         "lv": {
           "tagline": "",
@@ -384,7 +384,7 @@
       "id": "solution-section-2",
       "type": "solution-section",
       "order": 2,
-      "enabled": true,
+      "enabled": false,
       "data": {
         "lv": {
           "title": "",
@@ -482,7 +482,7 @@
       "id": "book-call-3",
       "type": "book-call",
       "order": 3,
-      "enabled": true,
+      "enabled": false,
       "data": {
         "lv": {
           "heading": "",
@@ -508,7 +508,7 @@
       "id": "services-section-4",
       "type": "services-section",
       "order": 4,
-      "enabled": true,
+      "enabled": false,
       "data": {
         "lv": {
           "heading": "",
@@ -719,165 +719,165 @@
       }
     },
     {
-      "id": "contact-section-7",
-      "type": "contact-section",
+      "id": "gallery-section-6",
+      "type": "gallery-section",
       "order": 6,
       "enabled": true,
       "data": {
         "lv": {
           "title": "",
           "description": "",
-          "officesTitle": "",
-          "officesDescription": "",
-          "offices": [
+          "images": [
             {
-              "city": "",
-              "address": ""
+              "src": "",
+              "alt": ""
             }
-          ],
-          "emailTitle": "",
-          "emailDescription": "",
-          "emails": [
-            {
-              "label": "",
-              "email": ""
-            }
-          ],
-          "socialsTitle": "",
-          "socials": [
-            {
-              "icon": "SiFacebook",
-              "href": "#",
-              "label": "Facebook"
-            },
-            {
-              "icon": "SiInstagram",
-              "href": "#",
-              "label": "Instagram"
-            },
-            {
-              "icon": "Linkedin",
-              "href": "#",
-              "label": "LinkedIn"
-            }
-          ],
-          "privacyPolicyLink": ""
+          ]
         },
         "en": {
           "title": "",
           "description": "",
-          "officesTitle": "",
-          "officesDescription": "",
-          "offices": [
+          "images": [
             {
-              "city": "",
-              "address": ""
+              "src": "",
+              "alt": ""
             }
-          ],
-          "emailTitle": "",
-          "emailDescription": "",
-          "emails": [
-            {
-              "label": "",
-              "email": ""
-            }
-          ],
-          "socialsTitle": "",
-          "socials": [
-            {
-              "icon": "SiFacebook",
-              "href": "#",
-              "label": "Facebook"
-            },
-            {
-              "icon": "SiInstagram",
-              "href": "#",
-              "label": "Instagram"
-            },
-            {
-              "icon": "Linkedin",
-              "href": "#",
-              "label": "LinkedIn"
-            }
-          ],
-          "privacyPolicyLink": ""
+          ]
         },
         "ru": {
           "title": "",
           "description": "",
-          "officesTitle": "",
-          "officesDescription": "",
-          "offices": [
+          "images": [
             {
-              "city": "",
-              "address": ""
+              "src": "",
+              "alt": ""
             }
-          ],
-          "emailTitle": "",
-          "emailDescription": "",
-          "emails": [
-            {
-              "label": "",
-              "email": ""
-            }
-          ],
-          "socialsTitle": "",
-          "socials": [
-            {
-              "icon": "SiFacebook",
-              "href": "#",
-              "label": "Facebook"
-            },
-            {
-              "icon": "SiInstagram",
-              "href": "#",
-              "label": "Instagram"
-            },
-            {
-              "icon": "Linkedin",
-              "href": "#",
-              "label": "LinkedIn"
-            }
-          ],
-          "privacyPolicyLink": ""
+          ]
         }
       }
     },
     {
-      "id": "gallery-section-6",
-      "type": "gallery-section",
+      "id": "contact-section-7",
+      "type": "contact-section",
       "order": 7,
       "enabled": true,
       "data": {
         "lv": {
           "title": "",
           "description": "",
-          "images": [
+          "officesTitle": "",
+          "officesDescription": "",
+          "offices": [
             {
-              "src": "",
-              "alt": ""
+              "city": "",
+              "address": ""
             }
-          ]
+          ],
+          "emailTitle": "",
+          "emailDescription": "",
+          "emails": [
+            {
+              "label": "",
+              "email": ""
+            }
+          ],
+          "socialsTitle": "",
+          "socials": [
+            {
+              "icon": "SiFacebook",
+              "href": "#",
+              "label": "Facebook"
+            },
+            {
+              "icon": "SiInstagram",
+              "href": "#",
+              "label": "Instagram"
+            },
+            {
+              "icon": "Linkedin",
+              "href": "#",
+              "label": "LinkedIn"
+            }
+          ],
+          "privacyPolicyLink": ""
         },
         "en": {
           "title": "",
           "description": "",
-          "images": [
+          "officesTitle": "",
+          "officesDescription": "",
+          "offices": [
             {
-              "src": "",
-              "alt": ""
+              "city": "",
+              "address": ""
             }
-          ]
+          ],
+          "emailTitle": "",
+          "emailDescription": "",
+          "emails": [
+            {
+              "label": "",
+              "email": ""
+            }
+          ],
+          "socialsTitle": "",
+          "socials": [
+            {
+              "icon": "SiFacebook",
+              "href": "#",
+              "label": "Facebook"
+            },
+            {
+              "icon": "SiInstagram",
+              "href": "#",
+              "label": "Instagram"
+            },
+            {
+              "icon": "Linkedin",
+              "href": "#",
+              "label": "LinkedIn"
+            }
+          ],
+          "privacyPolicyLink": ""
         },
         "ru": {
           "title": "",
           "description": "",
-          "images": [
+          "officesTitle": "",
+          "officesDescription": "",
+          "offices": [
             {
-              "src": "",
-              "alt": ""
+              "city": "",
+              "address": ""
             }
-          ]
+          ],
+          "emailTitle": "",
+          "emailDescription": "",
+          "emails": [
+            {
+              "label": "",
+              "email": ""
+            }
+          ],
+          "socialsTitle": "",
+          "socials": [
+            {
+              "icon": "SiFacebook",
+              "href": "#",
+              "label": "Facebook"
+            },
+            {
+              "icon": "SiInstagram",
+              "href": "#",
+              "label": "Instagram"
+            },
+            {
+              "icon": "Linkedin",
+              "href": "#",
+              "label": "LinkedIn"
+            }
+          ],
+          "privacyPolicyLink": ""
         }
       }
     },
