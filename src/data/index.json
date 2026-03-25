@@ -254,40 +254,40 @@
       "enabled": true,
       "data": {
         "lv": {
-          "title1": "test content_publish2",
-          "title2": "",
-          "subtitle": "",
+          "title1": "DRY iCE",
+          "title2": "BLASTING",
+          "subtitle": "SOLUTIONS IN BALTIC",
           "description": "",
           "buttonText": "",
-          "buttonHref": "",
-          "image1Src": "",
-          "image1Alt": "",
-          "image2Src": "",
-          "image2Alt": ""
+          "buttonHref": "#contacts",
+          "image1Src": "/images/hero/hero-car.jpg",
+          "image1Alt": "Dry ice blasting technician cleaning a car",
+          "image2Src": "/images/hero/ice.jpg",
+          "image2Alt": "Dry ice pellets close up"
         },
         "en": {
-          "title1": "",
-          "title2": "",
-          "subtitle": "",
+          "title1": "DRY iCE",
+          "title2": "BLASTING",
+          "subtitle": "SOLUTIONS IN BALTIC",
           "description": "",
           "buttonText": "",
-          "buttonHref": "",
-          "image1Src": "",
-          "image1Alt": "",
-          "image2Src": "",
-          "image2Alt": ""
+          "buttonHref": "#contacts",
+          "image1Src": "/images/hero/hero-car.jpg",
+          "image1Alt": "Dry ice blasting technician cleaning a car",
+          "image2Src": "/images/hero/ice.jpg",
+          "image2Alt": "Dry ice pellets close up"
         },
         "ru": {
-          "title1": "",
-          "title2": "",
-          "subtitle": "",
-          "description": "",
-          "buttonText": "",
-          "buttonHref": "",
-          "image1Src": "",
-          "image1Alt": "",
-          "image2Src": "",
-          "image2Alt": ""
+          "title1": "DRY iCE",
+          "title2": "BLASTING",
+          "subtitle": "SOLUTIONS IN BALTIC",
+          "description": "In a world where efficiency, environmental awareness and the highest cleaning quality count, Cleaning with dry ice new standards.",
+          "buttonText": "Get In Touch",
+          "buttonHref": "#contacts",
+          "image1Src": "/images/hero/hero-car.jpg",
+          "image1Alt": "Dry ice blasting technician cleaning a car",
+          "image2Src": "/images/hero/ice.jpg",
+          "image2Alt": "Dry ice pellets close up"
         }
       }
     },
