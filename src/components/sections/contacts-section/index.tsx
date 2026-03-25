@@ -1,4 +1,4 @@
-import { Tagline } from "@/components/pro-blocks/landing-page/tagline";
+import { Tagline } from "@/components/tagline";
 import { Separator } from "@/components/ui/separator";
 import { ContactForm } from "./contact-form";
 import { ContactDetails } from "./contact-details";

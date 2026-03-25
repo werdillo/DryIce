@@ -1,4 +1,4 @@
-import { Tagline } from "@/components/pro-blocks/landing-page/tagline";
+import { Tagline } from "@/components/tagline";
 import { BenefitCard } from "./benefit-card";
 import { benefitsConfig } from "./config";
 import type { BenefitsSectionProps } from "./types";

@@ -1,4 +1,4 @@
-import { Tagline } from "@/components/pro-blocks/landing-page/tagline";
+import { Tagline } from "@/components/tagline";
 import { FeatureCard } from "./feature-card";
 import { featureConfig } from "./config";
 import type { FeatureSectionProps } from "./types";

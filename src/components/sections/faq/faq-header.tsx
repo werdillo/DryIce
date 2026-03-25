@@ -1,4 +1,4 @@
-import { Tagline } from "@/components/pro-blocks/landing-page/tagline";
+import { Tagline } from "@/components/tagline";
 
 interface FaqHeaderProps {
   tagline: string;
