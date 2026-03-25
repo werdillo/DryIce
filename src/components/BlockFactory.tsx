@@ -17,7 +17,6 @@ interface Block {
   data: {
     lv: Record<string, any>;
     en: Record<string, any>;
-    ru: Record<string, any>;
   };
 }
 
@@ -26,7 +25,7 @@ interface BlockFactoryProps {
   lang: string;
 }
 
-type Lang = "lv" | "en" | "ru";
+type Lang = "lv" | "en";
 
 const componentMap: Record<string, React.ComponentType<any>> = {
   "main-section": MainSection,

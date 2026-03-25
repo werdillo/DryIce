@@ -22,11 +22,6 @@
         "lang": "lv",
         "buttonText": "Contact us",
         "buttonHref": "/contact"
-      },
-      "ru": {
-        "lang": "ru",
-        "buttonText": "Contact us",
-        "buttonHref": "/contact"
       }
     },
     "footer": {
@@ -127,55 +122,6 @@
           "ariaLabel": "Legal links"
         },
         "ariaLabel": "Footer"
-      },
-      "ru": {
-        "logo": {
-          "href": "/",
-          "ariaLabel": "Go to homepage",
-          "className": "footer-logo"
-        },
-        "mainNavigation": {
-          "links": [
-            {
-              "href": "/",
-              "label": "Home"
-            },
-            {
-              "href": "/services",
-              "label": "Services"
-            },
-            {
-              "href": "/contact",
-              "label": "Contact"
-            }
-          ],
-          "ariaLabel": "Footer main navigation"
-        },
-        "newsletter": {
-          "enabled": true,
-          "emailInputId": "newsletter-email-ru",
-          "emailPlaceholder": "Enter your email",
-          "buttonText": "Subscribe",
-          "ariaLabel": "Newsletter subscription"
-        },
-        "copyright": {
-          "siteName": "Ice CMS",
-          "siteUrl": "https://ice-cms.local"
-        },
-        "legalLinks": {
-          "links": [
-            {
-              "href": "/privacy",
-              "label": "Privacy Policy"
-            },
-            {
-              "href": "/terms",
-              "label": "Terms of Service"
-            }
-          ],
-          "ariaLabel": "Legal links"
-        },
-        "ariaLabel": "Footer"
       }
     },
     "sidebar": {
@@ -200,26 +146,6 @@
         "ariaLabel": "Sidebar navigation"
       },
       "lv": {
-        "links": [
-          {
-            "href": "/",
-            "label": "Dashboard",
-            "icon": "LayoutDashboard"
-          },
-          {
-            "href": "/pages",
-            "label": "Pages",
-            "icon": "FileText"
-          },
-          {
-            "href": "/settings",
-            "label": "Settings",
-            "icon": "Settings"
-          }
-        ],
-        "ariaLabel": "Sidebar navigation"
-      },
-      "ru": {
         "links": [
           {
             "href": "/",
@@ -271,18 +197,6 @@
           "image1Alt": "Dry ice blasting technician cleaning a car",
           "image2Src": "/images/hero/ice.jpg",
           "image2Alt": "Dry ice pellets close up"
-        },
-        "ru": {
-          "title1": "DRY iCE",
-          "title2": "BLASTING",
-          "subtitle": "SOLUTIONS IN BALTIC",
-          "description": "In a world where efficiency, environmental awareness and the highest cleaning quality count, Cleaning with dry ice new standards.",
-          "buttonText": "Get In Touch",
-          "buttonHref": "#contacts",
-          "image1Src": "/images/hero/hero-car.jpg",
-          "image1Alt": "Dry ice blasting technician cleaning a car",
-          "image2Src": "/images/hero/ice.jpg",
-          "image2Alt": "Dry ice pellets close up"
         }
       }
     },
@@ -323,33 +237,6 @@
           "tagline": "",
           "title": "Advanced Dry Ice Solutions That Give You a Competitive Advantage",
           "description": "Dry ice blasting is not just a cleaning method — it is a more efficient, safer and more precise way to maintain equipment and technical surfaces. We help companies reduce maintenance time, improve operational performance and avoid damage caused by traditional cleaning methods.",
-          "benefits": [
-            {
-              "title": "",
-              "description": "",
-              "icon": ""
-            },
-            {
-              "title": "",
-              "description": "",
-              "icon": ""
-            },
-            {
-              "title": "",
-              "description": "",
-              "icon": ""
-            },
-            {
-              "title": "",
-              "description": "",
-              "icon": ""
-            }
-          ]
-        },
-        "ru": {
-          "tagline": "",
-          "title": "",
-          "description": "",
           "benefits": [
             {
               "title": "",
@@ -440,36 +327,6 @@
               }
             }
           ]
-        },
-        "ru": {
-          "title": "Mūsu risinājumi jūsu biznesam un ikdienai",
-          "description": "No industriālās tīrīšanas līdz pasākumu efektiem – DryIce Baltic piedāvā visaptverošus sausā ledus risinājumus visā Baltijā.",
-          "solutions": [
-            {
-              "title": "Sausā ledus piegāde",
-              "description": "Augstākās kvalitātes sausais ledus granulās un blokos. Piegāde visā Latvijā un Baltijā 24 stundu laikā.",
-              "image": {
-                "src": "/images/solution/device-1.png",
-                "alt": "Sausā ledus piegāde"
-              }
-            },
-            {
-              "title": "Sausā ledus tīrīšana",
-              "description": "Inovatīva un ekoloģiska virsmu tīrīšana ar sauso ledu. Nesabojā virsmas, nav ķīmisku atkritumu.",
-              "image": {
-                "src": "/images/solution/device-2.png",
-                "alt": "Sausā ledus tīrīšana"
-              }
-            },
-            {
-              "title": "Efekti pasākumiem",
-              "description": "Radām iespaidīgus dūmu un miglas efektus kāzām, koncertiem un privātām ballītēm.",
-              "image": {
-                "src": "/images/solution/device-3.png",
-                "alt": "Pasākumu efekti"
-              }
-            }
-          ]
         }
       }
     },
@@ -490,12 +347,6 @@
           "headingHighlight": "Individual Pricing",
           "placeholder": "Your phone",
           "buttonText": "Book a Consultation"
-        },
-        "ru": {
-          "heading": "Do you want to know individual prices for all products?",
-          "headingHighlight": "individual prices",
-          "placeholder": "Your phone",
-          "buttonText": "Book a call"
         }
       }
     },
@@ -610,59 +461,6 @@
               }
             }
           ]
-        },
-        "ru": {
-          "heading": "why we are right for you",
-          "sectionLabel": "Our services",
-          "buttonText": "Get in touch",
-          "buttonHref": "#contacts",
-          "services": [
-            {
-              "number": "01",
-              "title": "Bespoke Solutions",
-              "description": "We stand out with custom dry ice solutions, ensuring your operations are more efficient, eco-friendly, and distinct from the competition.",
-              "image": {
-                "src": "/images/services.jpg",
-                "alt": "Bespoke dry ice solutions"
-              }
-            },
-            {
-              "number": "02",
-              "title": "Staff Training Programs",
-              "description": "Our certified specialists conduct hands-on training sessions, equipping your team with the knowledge to handle dry ice safely and effectively.",
-              "image": {
-                "src": "/images/services.jpg",
-                "alt": "Staff training programs"
-              }
-            },
-            {
-              "number": "03",
-              "title": "Targeted Campaigns",
-              "description": "We design and execute focused promotional campaigns around your dry ice products and services, reaching the right audience at the right time.",
-              "image": {
-                "src": "/images/services.jpg",
-                "alt": "Targeted campaigns"
-              }
-            },
-            {
-              "number": "04",
-              "title": "Performance Tracking",
-              "description": "Real-time monitoring and detailed analytics give you full visibility into consumption, efficiency, and delivery performance across all operations.",
-              "image": {
-                "src": "/images/services.jpg",
-                "alt": "Performance tracking dashboard"
-              }
-            },
-            {
-              "number": "05",
-              "title": "24/7 System Monitoring",
-              "description": "Our round-the-clock support team ensures your cooling systems and dry ice supply remain uninterrupted, no matter the hour or circumstance.",
-              "image": {
-                "src": "/images/services.jpg",
-                "alt": "24/7 system monitoring"
-              }
-            }
-          ]
         }
       }
     },
@@ -733,37 +531,6 @@
               }
             }
           ]
-        },
-        "ru": {
-          "tagline": "",
-          "title": "DryIce Baltic – Jūsu uzticamais sausā ledus partneris",
-          "description": "Mēs esam vadošais sausā ledus piegādātājs un pakalpojumu sniedzējs Baltijā, piedāvājot inovatīvus un ekoloģiskus risinājumus rūpniecībai un izklaidei.",
-          "features": [
-            {
-              "title": "Mūsu misija",
-              "description": "Nodrošināt augstākās kvalitātes sauso ledu un profesionālus tīrīšanas pakalpojumus, veicinot efektīvu un videi draudzīgu uzņēmējdarbību.",
-              "image": {
-                "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
-                "alt": "Mūsu misija un komanda"
-              }
-            },
-            {
-              "title": "Pieredze un profesionalitāte",
-              "description": "Mūsu komanda sastāv no nozares ekspertiem ar gadu desmitu pieredzi, garantējot drošību un izcilu servisu.",
-              "image": {
-                "src": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
-                "alt": "Profesionālā komanda"
-              }
-            },
-            {
-              "title": "Kvalitātes sertifikāti",
-              "description": "Mēs strādājam atbilstoši augstākajiem Eiropas standartiem un esam ieguvuši visus nepieciešamos sertifikātus.",
-              "image": {
-                "src": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
-                "alt": "Sertifikācija un kvalitāte"
-              }
-            }
-          ]
         }
       }
     },
@@ -830,36 +597,6 @@
             {
               "src": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
               "alt": "Dry ice delivery boxes"
-            }
-          ]
-        },
-        "ru": {
-          "title": "Sausais ledus darbībā",
-          "description": "Apskatiet mūsu produktus, pakalpojumus un sausā ledus pielietojuma piemērus dažādās industrijās un pasākumos.",
-          "images": [
-            {
-              "src": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
-              "alt": "Sausā ledus granulas"
-            },
-            {
-              "src": "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?q=80&w=800&auto=format&fit=crop",
-              "alt": "Tīrīšana ar sauso ledu"
-            },
-            {
-              "src": "https://images.unsplash.com/photo-1514525253344-ad81d22d252c?q=80&w=800&auto=format&fit=crop",
-              "alt": "Dūmu efekti pasākumā"
-            },
-            {
-              "src": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop",
-              "alt": "Sausais ledus dzērienos"
-            },
-            {
-              "src": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=800&auto=format&fit=crop",
-              "alt": "Industriālais sausais ledus"
-            },
-            {
-              "src": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
-              "alt": "Sausā ledus piegādes kastes"
             }
           ]
         }
@@ -948,45 +685,6 @@
             }
           ],
           "privacyPolicyLink": "/privacy-policy"
-        },
-        "ru": {
-          "title": "",
-          "description": "",
-          "officesTitle": "",
-          "officesDescription": "",
-          "offices": [
-            {
-              "city": "",
-              "address": ""
-            }
-          ],
-          "emailTitle": "",
-          "emailDescription": "",
-          "emails": [
-            {
-              "label": "",
-              "email": ""
-            }
-          ],
-          "socialsTitle": "",
-          "socials": [
-            {
-              "icon": "SiFacebook",
-              "href": "#",
-              "label": "Facebook"
-            },
-            {
-              "icon": "SiInstagram",
-              "href": "#",
-              "label": "Instagram"
-            },
-            {
-              "icon": "Linkedin",
-              "href": "#",
-              "label": "LinkedIn"
-            }
-          ],
-          "privacyPolicyLink": ""
         }
       }
     },
@@ -1129,29 +827,6 @@
                 {
                   "question": "What contamination can be removed?",
                   "answer": "Oil, grease, carbon buildup, adhesives, paint and industrial residues."
-                }
-              ]
-            }
-          ]
-        },
-        "ru": {
-          "tagline": "",
-          "heading": "",
-          "description": "",
-          "contactLink": {
-            "label": "",
-            "href": "",
-            "target": "_self"
-          },
-          "ariaLabelledBy": "faq-heading",
-          "categories": [
-            {
-              "title": "",
-              "ariaLabel": "",
-              "items": [
-                {
-                  "question": "",
-                  "answer": ""
                 }
               ]
             }
