@@ -1,13 +1,13 @@
-import { MainSection } from "@/components/main-section";
-import { HeroSection } from "@/components/hero-section";
-import { BenefitsSection } from "@/components/benefits-section";
-import { SolutionSection } from "@/components/solution-section";
-import { BookCall } from "@/components/book-call";
-import { ServicesSection } from "@/components/services-section";
-import { FeatureSection } from "@/components/feature-section";
-import { GallerySection } from "@/components/gallery-section";
-import { ContactsSection } from "@/components/contacts-section";
-import { Faq } from "@/components/faq";
+import { MainSection } from "@/components/sections/main-section";
+import { HeroSection } from "@/components/sections/hero-section";
+import { BenefitsSection } from "@/components/sections/benefits-section";
+import { SolutionSection } from "@/components/sections/solution-section";
+import { BookCall } from "@/components/sections/book-call";
+import { ServicesSection } from "@/components/sections/services-section";
+import { FeatureSection } from "@/components/sections/feature-section";
+import { GallerySection } from "@/components/sections/gallery-section";
+import { ContactsSection } from "@/components/sections/contacts-section";
+import { Faq } from "@/components/sections/faq";
 
 interface Block {
   id: string;

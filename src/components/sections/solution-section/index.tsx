@@ -1,7 +1,7 @@
 import { SolutionCard } from "./solution-card";
 import { solutionConfig } from "./config";
 import type { SolutionSectionProps } from "./types";
-import { PromoButton } from "../PromoButton";
+import { PromoButton } from "../../PromoButton";
 import patternUrl from "./pattern.svg?url";
 
 export function SolutionSection(props: Partial<SolutionSectionProps>) {
