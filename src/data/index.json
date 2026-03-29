@@ -188,6 +188,10 @@
           "image1": {
             "src": "http://localhost:8000/api/storage/uploads/1774820200085-Screenshot_2025-09-01_at_21.28.39.png",
             "alt": ""
+          },
+          "image2": {
+            "src": "http://localhost:8000/api/storage/uploads/1774820832890-Screenshot_2025-09-01_at_21.28.39.png",
+            "alt": ""
           }
         },
         "en": {
