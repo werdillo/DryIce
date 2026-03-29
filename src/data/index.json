@@ -184,7 +184,11 @@
           "image1Src": "/images/hero/hero-car.jpg",
           "image1Alt": "Sausā ledus tīrīšanas tehniķis tīra automašīnu",
           "image2Src": "/images/hero/ice.jpg",
-          "image2Alt": "Sausā ledus granulas"
+          "image2Alt": "Sausā ledus granulas",
+          "image1": {
+            "src": "http://localhost:8000/api/storage/uploads/1774820200085-Screenshot_2025-09-01_at_21.28.39.png",
+            "alt": ""
+          }
         },
         "en": {
           "title1": "DRY iCE",
