@@ -174,26 +174,6 @@
       "order": 0,
       "enabled": true,
       "data": {
-        "lv": {
-          "title1": "DRY iCE",
-          "title2": "BLASTING",
-          "subtitle": "SOLUTIONS IN BALTIC",
-          "description": "Uzlabota, neabrazīva tīrīšanas tehnoloģija industriālām un auto nozares vajadzībām. Mēs palīdzam uzņēmumiem tīrīt efektīvāk, samazināt dīkstāvi un aizsargāt vērtīgas iekārtas.",
-          "buttonText": "Pieteikt konsultāciju",
-          "buttonHref": "#contacts",
-          "image1Src": "/images/hero/hero-car.jpg",
-          "image1Alt": "Sausā ledus tīrīšanas tehniķis tīra automašīnu",
-          "image2Src": "/images/hero/ice.jpg",
-          "image2Alt": "Sausā ledus granulas",
-          "image1": {
-            "src": "http://localhost:8000/api/storage/uploads/1774820200085-Screenshot_2025-09-01_at_21.28.39.png",
-            "alt": ""
-          },
-          "image2": {
-            "src": "http://localhost:8000/api/storage/uploads/1774820832890-Screenshot_2025-09-01_at_21.28.39.png",
-            "alt": ""
-          }
-        },
         "en": {
           "title1": "DRY iCE",
           "title2": "BLASTING",
@@ -201,10 +181,30 @@
           "description": "Advanced non-abrasive cleaning technology for industrial and automotive applications. We help businesses clean more efficiently, reduce downtime and protect valuable equipment.",
           "buttonText": "Request Consultation",
           "buttonHref": "#contacts",
-          "image1Src": "/images/hero/hero-car.jpg",
-          "image1Alt": "Dry ice blasting technician cleaning a car",
-          "image2Src": "/images/hero/ice.jpg",
-          "image2Alt": "Dry ice pellets close up"
+          "image1": {
+            "src": "",
+            "alt": ""
+          },
+          "image2": {
+            "src": "",
+            "alt": ""
+          }
+        },
+        "lv": {
+          "title1": "DRY iCE",
+          "title2": "BLASTING",
+          "subtitle": "SOLUTIONS IN BALTIC",
+          "description": "Uzlabota, neabrazīva tīrīšanas tehnoloģija industriālām un auto nozares vajadzībām. Mēs palīdzam uzņēmumiem tīrīt efektīvāk, samazināt dīkstāvi un aizsargāt vērtīgas iekārtas.",
+          "buttonText": "Pieteikt konsultāciju",
+          "buttonHref": "#contacts",
+          "image1": {
+            "src": "http://localhost:8000/api/storage/uploads/1774820200085-Screenshot_2025-09-01_at_21.28.39.png",
+            "alt": ""
+          },
+          "image2": {
+            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774821673055-Screenshot_2026-03-07_at_20.50.24.png",
+            "alt": ""
+          }
         }
       }
     },
@@ -214,10 +214,10 @@
       "order": 1,
       "enabled": true,
       "data": {
-        "lv": {
+        "en": {
           "tagline": "",
-          "title": "Mūsdienīgi sausā ledus risinājumi, kas dod Jums konkurences priekšrocības",
-          "description": "Sausā ledus strūkošana nav tikai tīrīšanas metode — tā ir efektīvāks, drošāks un precīzāks veids, kā uzturēt iekārtas un tehniskās virsmas. Mēs palīdzam uzņēmumiem samazināt apkopes laiku, uzlabot darba efektivitāti un izvairīties no bojājumiem, ko rada tradicionālās tīrīšanas metodes.",
+          "title": "Advanced Dry Ice Solutions That Give You a Competitive Advantage",
+          "description": "Dry ice blasting is not just a cleaning method — it is a more efficient, safer and more precise way to maintain equipment and technical surfaces. We help companies reduce maintenance time, improve operational performance and avoid damage caused by traditional cleaning methods.",
           "benefits": [
             {
               "title": "",
@@ -241,10 +241,10 @@
             }
           ]
         },
-        "en": {
+        "lv": {
           "tagline": "",
-          "title": "Advanced Dry Ice Solutions That Give You a Competitive Advantage",
-          "description": "Dry ice blasting is not just a cleaning method — it is a more efficient, safer and more precise way to maintain equipment and technical surfaces. We help companies reduce maintenance time, improve operational performance and avoid damage caused by traditional cleaning methods.",
+          "title": "Mūsdienīgi sausā ledus risinājumi, kas dod Jums konkurences priekšrocības",
+          "description": "Sausā ledus strūkošana nav tikai tīrīšanas metode — tā ir efektīvāks, drošāks un precīzāks veids, kā uzturēt iekārtas un tehniskās virsmas. Mēs palīdzam uzņēmumiem samazināt apkopes laiku, uzlabot darba efektivitāti un izvairīties no bojājumiem, ko rada tradicionālās tīrīšanas metodes.",
           "benefits": [
             {
               "title": "",
@@ -276,36 +276,6 @@
       "order": 2,
       "enabled": true,
       "data": {
-        "lv": {
-          "title": "Profesionālas iekārtas un pielāgoti risinājumi",
-          "description": "Piedāvājam uzticamas sausā ledus strūkošanas iekārtas, kas pielāgotas darbnīcām un industriālām vajadzībām.",
-          "solutions": [
-            {
-              "title": "Precīza spiediena kontrole jutīgām virsmām",
-              "description": "Uzlabota spiediena regulēšana ļauj efektīvi tīrīt delikātas virsmas, nebojājot materiālu.",
-              "image": {
-                "src": "/images/solution/device-1.png",
-                "alt": "Sausā ledus iekārta ar spiediena kontroli"
-              }
-            },
-            {
-              "title": "Augstas veiktspējas sistēmas industriālai tīrīšanai",
-              "description": "Jaudīgas iekārtas smagam industriālam piesārņojumam — eļļām, taukiem un oglekļa nogulsnēm.",
-              "image": {
-                "src": "/images/solution/device-2.png",
-                "alt": "Industriālā tīrīšanas iekārta"
-              }
-            },
-            {
-              "title": "Mobilas iekārtas elastīgam darbam uz vietas",
-              "description": "Kompaktas un pārvietojamas sistēmas darbam jebkurā vietā — darbnīcās, ražotnēs un uz ceļa.",
-              "image": {
-                "src": "/images/solution/device-3.png",
-                "alt": "Mobilā sausā ledus tīrīšanas iekārta"
-              }
-            }
-          ]
-        },
         "en": {
           "title": "Professional Equipment & Custom Solutions",
           "description": "We supply reliable dry ice blasting systems tailored for workshops and industrial applications.",
@@ -335,6 +305,36 @@
               }
             }
           ]
+        },
+        "lv": {
+          "title": "Profesionālas iekārtas un pielāgoti risinājumi",
+          "description": "Piedāvājam uzticamas sausā ledus strūkošanas iekārtas, kas pielāgotas darbnīcām un industriālām vajadzībām.",
+          "solutions": [
+            {
+              "title": "Precīza spiediena kontrole jutīgām virsmām",
+              "description": "Uzlabota spiediena regulēšana ļauj efektīvi tīrīt delikātas virsmas, nebojājot materiālu.",
+              "image": {
+                "src": "/images/solution/device-1.png",
+                "alt": "Sausā ledus iekārta ar spiediena kontroli"
+              }
+            },
+            {
+              "title": "Augstas veiktspējas sistēmas industriālai tīrīšanai",
+              "description": "Jaudīgas iekārtas smagam industriālam piesārņojumam — eļļām, taukiem un oglekļa nogulsnēm.",
+              "image": {
+                "src": "/images/solution/device-2.png",
+                "alt": "Industriālā tīrīšanas iekārta"
+              }
+            },
+            {
+              "title": "Mobilas iekārtas elastīgam darbam uz vietas",
+              "description": "Kompaktas un pārvietojamas sistēmas darbam jebkurā vietā — darbnīcās, ražotnēs un uz ceļa.",
+              "image": {
+                "src": "/images/solution/device-3.png",
+                "alt": "Mobilā sausā ledus tīrīšanas iekārta"
+              }
+            }
+          ]
         }
       }
     },
@@ -344,17 +344,17 @@
       "order": 3,
       "enabled": true,
       "data": {
-        "lv": {
-          "heading": "Pieprasiet individuālu piedāvājumu savam projektam",
-          "headingHighlight": "individuālu piedāvājumu",
-          "placeholder": "Jūsu tālrunis",
-          "buttonText": "Pieteikt konsultāciju"
-        },
         "en": {
           "heading": "Request Individual Pricing For Your Project",
           "headingHighlight": "Individual Pricing",
           "placeholder": "Your phone",
           "buttonText": "Book a Consultation"
+        },
+        "lv": {
+          "heading": "Pieprasiet individuālu piedāvājumu savam projektam",
+          "headingHighlight": "individuālu piedāvājumu",
+          "placeholder": "Jūsu tālrunis",
+          "buttonText": "Pieteikt konsultāciju"
         }
       }
     },
@@ -364,59 +364,6 @@
       "order": 4,
       "enabled": true,
       "data": {
-        "lv": {
-          "heading": "mūsu pakalpojumi",
-          "sectionLabel": "Pakalpojumi",
-          "buttonText": "Sazināties",
-          "buttonHref": "#contacts",
-          "services": [
-            {
-              "number": "01",
-              "title": "Industriālie tīrīšanas risinājumi",
-              "description": "Efektīva eļļu, tauku, oglekļa nogulšņu un ražošanas piesārņojuma noņemšana no iekārtām un aprīkojuma.",
-              "image": {
-                "src": "/images/services.jpg",
-                "alt": "Industriālie tīrīšanas risinājumi"
-              }
-            },
-            {
-              "number": "02",
-              "title": "Auto tīrīšana un restaurācija",
-              "description": "Droša dzinēju, šasiju un komponentu tīrīšana, nebojājot oriģinālās virsmas.",
-              "image": {
-                "src": "/images/services.jpg",
-                "alt": "Auto tīrīšana un restaurācija"
-              }
-            },
-            {
-              "number": "03",
-              "title": "Iekārtu piegāde un uzstādīšana",
-              "description": "Profesionālas sausā ledus strūkošanas iekārtas ar pilnu uzstādīšanu un konfigurāciju.",
-              "image": {
-                "src": "/images/services.jpg",
-                "alt": "Iekārtu piegāde un uzstādīšana"
-              }
-            },
-            {
-              "number": "04",
-              "title": "Apmācības un sertifikācija",
-              "description": "Operatoru apmācība drošai un efektīvai sausā ledus strūkošanas tehnoloģijas izmantošanai.",
-              "image": {
-                "src": "/images/services.jpg",
-                "alt": "Apmācības un sertifikācija"
-              }
-            },
-            {
-              "number": "05",
-              "title": "Tehniskais atbalsts",
-              "description": "Ilgtermiņa sadarbība, konsultācijas un sistēmu optimizācija.",
-              "image": {
-                "src": "/images/services.jpg",
-                "alt": "Tehniskais atbalsts"
-              }
-            }
-          ]
-        },
         "en": {
           "heading": "our services",
           "sectionLabel": "Services",
@@ -469,6 +416,59 @@
               }
             }
           ]
+        },
+        "lv": {
+          "heading": "mūsu pakalpojumi",
+          "sectionLabel": "Pakalpojumi",
+          "buttonText": "Sazināties",
+          "buttonHref": "#contacts",
+          "services": [
+            {
+              "number": "01",
+              "title": "Industriālie tīrīšanas risinājumi",
+              "description": "Efektīva eļļu, tauku, oglekļa nogulšņu un ražošanas piesārņojuma noņemšana no iekārtām un aprīkojuma.",
+              "image": {
+                "src": "/images/services.jpg",
+                "alt": "Industriālie tīrīšanas risinājumi"
+              }
+            },
+            {
+              "number": "02",
+              "title": "Auto tīrīšana un restaurācija",
+              "description": "Droša dzinēju, šasiju un komponentu tīrīšana, nebojājot oriģinālās virsmas.",
+              "image": {
+                "src": "/images/services.jpg",
+                "alt": "Auto tīrīšana un restaurācija"
+              }
+            },
+            {
+              "number": "03",
+              "title": "Iekārtu piegāde un uzstādīšana",
+              "description": "Profesionālas sausā ledus strūkošanas iekārtas ar pilnu uzstādīšanu un konfigurāciju.",
+              "image": {
+                "src": "/images/services.jpg",
+                "alt": "Iekārtu piegāde un uzstādīšana"
+              }
+            },
+            {
+              "number": "04",
+              "title": "Apmācības un sertifikācija",
+              "description": "Operatoru apmācība drošai un efektīvai sausā ledus strūkošanas tehnoloģijas izmantošanai.",
+              "image": {
+                "src": "/images/services.jpg",
+                "alt": "Apmācības un sertifikācija"
+              }
+            },
+            {
+              "number": "05",
+              "title": "Tehniskais atbalsts",
+              "description": "Ilgtermiņa sadarbība, konsultācijas un sistēmu optimizācija.",
+              "image": {
+                "src": "/images/services.jpg",
+                "alt": "Tehniskais atbalsts"
+              }
+            }
+          ]
         }
       }
     },
@@ -478,37 +478,6 @@
       "order": 5,
       "enabled": true,
       "data": {
-        "lv": {
-          "tagline": "Nozares",
-          "title": "Nozares, ar kurām strādājam",
-          "description": "Sausā ledus strūkošana efektīvi noņem piesārņojumu, nebojājot pamatmateriālu — tīrs rezultāts, drošs process, profesionāla kvalitāte.",
-          "features": [
-            {
-              "title": "Rūpnieciskā ražošana",
-              "description": "Ražošanas līnijas, formas, smagā tehnika un industriālās iekārtas.",
-              "image": {
-                "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
-                "alt": "Rūpnieciskā ražošana"
-              }
-            },
-            {
-              "title": "Auto un komerctransports",
-              "description": "Dzinēji, šasijas, restaurācijas projekti un autoparki.",
-              "image": {
-                "src": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
-                "alt": "Auto un komerctransports"
-              }
-            },
-            {
-              "title": "Pārtikas rūpniecība",
-              "description": "Higiēniska tīrīšana bez ķīmijas un ūdens.",
-              "image": {
-                "src": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
-                "alt": "Pārtikas rūpniecība"
-              }
-            }
-          ]
-        },
         "en": {
           "tagline": "Industries",
           "title": "Industries We Serve",
@@ -539,6 +508,37 @@
               }
             }
           ]
+        },
+        "lv": {
+          "tagline": "Nozares",
+          "title": "Nozares, ar kurām strādājam",
+          "description": "Sausā ledus strūkošana efektīvi noņem piesārņojumu, nebojājot pamatmateriālu — tīrs rezultāts, drošs process, profesionāla kvalitāte.",
+          "features": [
+            {
+              "title": "Rūpnieciskā ražošana",
+              "description": "Ražošanas līnijas, formas, smagā tehnika un industriālās iekārtas.",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
+                "alt": "Rūpnieciskā ražošana"
+              }
+            },
+            {
+              "title": "Auto un komerctransports",
+              "description": "Dzinēji, šasijas, restaurācijas projekti un autoparki.",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
+                "alt": "Auto un komerctransports"
+              }
+            },
+            {
+              "title": "Pārtikas rūpniecība",
+              "description": "Higiēniska tīrīšana bez ķīmijas un ūdens.",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
+                "alt": "Pārtikas rūpniecība"
+              }
+            }
+          ]
         }
       }
     },
@@ -548,36 +548,6 @@
       "order": 6,
       "enabled": true,
       "data": {
-        "lv": {
-          "title": "Reāli rezultāti ar izmērāmu efektu",
-          "description": "Sausā ledus strūkošana efektīvi noņem piesārņojumu, nebojājot pamatmateriālu. Tīrs rezultāts. Drošs process. Profesionāla kvalitāte.",
-          "images": [
-            {
-              "src": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
-              "alt": "Sausā ledus granulas"
-            },
-            {
-              "src": "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?q=80&w=800&auto=format&fit=crop",
-              "alt": "Tīrīšana ar sauso ledu"
-            },
-            {
-              "src": "https://images.unsplash.com/photo-1514525253344-ad81d22d252c?q=80&w=800&auto=format&fit=crop",
-              "alt": "Dūmu efekti pasākumā"
-            },
-            {
-              "src": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop",
-              "alt": "Sausais ledus dzērienos"
-            },
-            {
-              "src": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=800&auto=format&fit=crop",
-              "alt": "Industriālais sausais ledus"
-            },
-            {
-              "src": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
-              "alt": "Sausā ledus piegādes kastes"
-            }
-          ]
-        },
         "en": {
           "title": "Real Results. Measurable Impact.",
           "description": "Dry ice blasting removes contamination without damaging the base material — delivering clean, safe and professional results.",
@@ -607,6 +577,36 @@
               "alt": "Dry ice delivery boxes"
             }
           ]
+        },
+        "lv": {
+          "title": "Reāli rezultāti ar izmērāmu efektu",
+          "description": "Sausā ledus strūkošana efektīvi noņem piesārņojumu, nebojājot pamatmateriālu. Tīrs rezultāts. Drošs process. Profesionāla kvalitāte.",
+          "images": [
+            {
+              "src": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+              "alt": "Sausā ledus granulas"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?q=80&w=800&auto=format&fit=crop",
+              "alt": "Tīrīšana ar sauso ledu"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1514525253344-ad81d22d252c?q=80&w=800&auto=format&fit=crop",
+              "alt": "Dūmu efekti pasākumā"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop",
+              "alt": "Sausais ledus dzērienos"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=800&auto=format&fit=crop",
+              "alt": "Industriālais sausais ledus"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
+              "alt": "Sausā ledus piegādes kastes"
+            }
+          ]
         }
       }
     },
@@ -616,45 +616,6 @@
       "order": 7,
       "enabled": true,
       "data": {
-        "lv": {
-          "title": "Apspriedīsim Jūsu projektu",
-          "description": "Mēs ātri reaģējam un piedāvājam risinājumus, kas pielāgoti Jūsu vajadzībām.",
-          "officesTitle": "Mūsu noliktavas",
-          "officesDescription": "Nodrošinām ērtu sausā ledus saņemšanu Rīgā un operatīvu piegādi visā Baltijā.",
-          "offices": [
-            {
-              "city": "Rīga, Latvija",
-              "address": "+371 26525282\ninfo@dryicebaltic.lv"
-            }
-          ],
-          "emailTitle": "Rakstiet mums",
-          "emailDescription": "Sūtiet savus jautājumus vai cenu pieprasījumus uz mūsu e-pasta adresēm.",
-          "emails": [
-            {
-              "label": "E-pasts",
-              "email": "info@dryicebaltic.lv"
-            }
-          ],
-          "socialsTitle": "Sekojiet mums",
-          "socials": [
-            {
-              "icon": "SiFacebook",
-              "href": "#",
-              "label": "Facebook"
-            },
-            {
-              "icon": "SiInstagram",
-              "href": "#",
-              "label": "Instagram"
-            },
-            {
-              "icon": "Linkedin",
-              "href": "#",
-              "label": "LinkedIn"
-            }
-          ],
-          "privacyPolicyLink": "/privatuma-politika"
-        },
         "en": {
           "title": "Let's Discuss Your Project",
           "description": "We respond quickly and provide tailored solutions based on your needs.",
@@ -693,6 +654,45 @@
             }
           ],
           "privacyPolicyLink": "/privacy-policy"
+        },
+        "lv": {
+          "title": "Apspriedīsim Jūsu projektu",
+          "description": "Mēs ātri reaģējam un piedāvājam risinājumus, kas pielāgoti Jūsu vajadzībām.",
+          "officesTitle": "Mūsu noliktavas",
+          "officesDescription": "Nodrošinām ērtu sausā ledus saņemšanu Rīgā un operatīvu piegādi visā Baltijā.",
+          "offices": [
+            {
+              "city": "Rīga, Latvija",
+              "address": "+371 26525282\ninfo@dryicebaltic.lv"
+            }
+          ],
+          "emailTitle": "Rakstiet mums",
+          "emailDescription": "Sūtiet savus jautājumus vai cenu pieprasījumus uz mūsu e-pasta adresēm.",
+          "emails": [
+            {
+              "label": "E-pasts",
+              "email": "info@dryicebaltic.lv"
+            }
+          ],
+          "socialsTitle": "Sekojiet mums",
+          "socials": [
+            {
+              "icon": "SiFacebook",
+              "href": "#",
+              "label": "Facebook"
+            },
+            {
+              "icon": "SiInstagram",
+              "href": "#",
+              "label": "Instagram"
+            },
+            {
+              "icon": "Linkedin",
+              "href": "#",
+              "label": "LinkedIn"
+            }
+          ],
+          "privacyPolicyLink": "/privatuma-politika"
         }
       }
     },
@@ -702,75 +702,6 @@
       "order": 8,
       "enabled": true,
       "data": {
-        "lv": {
-          "tagline": "BUJ",
-          "heading": "Biežāk uzdotie jautājumi",
-          "description": "Atrodiet atbildes uz populārākajiem jautājumiem par sausā ledus strūkošanu.",
-          "contactLink": {
-            "label": "Sazināties ar mums",
-            "href": "#contacts",
-            "target": "_self"
-          },
-          "ariaLabelledBy": "faq-heading",
-          "categories": [
-            {
-              "title": "Par sausā ledus strūkošanu",
-              "ariaLabel": "Par sausā ledus strūkošanu",
-              "items": [
-                {
-                  "question": "Ko var tīrīt ar sausā ledus strūkošanu?",
-                  "answer": "Piemērots metālam, plastmasai, gumijai un elektriskām komponentēm."
-                },
-                {
-                  "question": "Vai tas ir droši virsmām?",
-                  "answer": "Jā, metode ir neabrazīva un nebojā pamatmateriālu."
-                },
-                {
-                  "question": "Vai tiek izmantots ūdens vai ķīmija?",
-                  "answer": "Nē, process ir pilnībā sauss un bez ķīmijas."
-                },
-                {
-                  "question": "Vai tas ir videi draudzīgs?",
-                  "answer": "Jā, tiek izmantots pārstrādāts CO₂ un nav sekundāro atkritumu."
-                },
-                {
-                  "question": "Vai var tīrīt elektriskās iekārtas?",
-                  "answer": "Jā, ja process tiek veikts pareizi."
-                }
-              ]
-            },
-            {
-              "title": "Process un rezultāti",
-              "ariaLabel": "Process un rezultāti",
-              "items": [
-                {
-                  "question": "Vai paliek atlikumi?",
-                  "answer": "Nē, sausais ledus iztvaiko un neatstāj strūklošanas materiāla atlikumus."
-                },
-                {
-                  "question": "Ar ko tas atšķiras no smilšu strūklas vai mazgāšanas?",
-                  "answer": "Nav abrazīvs un neizmanto ūdeni."
-                },
-                {
-                  "question": "Vai nepieciešama demontāža?",
-                  "answer": "Bieži nav nepieciešama, kas samazina dīkstāvi."
-                },
-                {
-                  "question": "Kādi ir galvenie ieguvumi?",
-                  "answer": "Mazāka dīkstāve, ātrāks process, nav atkritumu, droši iekārtām."
-                },
-                {
-                  "question": "Vai der regulārai apkopei?",
-                  "answer": "Jā, gan padziļinātai tīrīšanai, gan regulārai apkopei."
-                },
-                {
-                  "question": "Kādus netīrumus var noņemt?",
-                  "answer": "Eļļu, taukus, oglekļa nogulsnes, līmes un citus rūpnieciskos piesārņojumus."
-                }
-              ]
-            }
-          ]
-        },
         "en": {
           "tagline": "FAQ",
           "heading": "Frequently Asked Questions",
@@ -835,6 +766,75 @@
                 {
                   "question": "What contamination can be removed?",
                   "answer": "Oil, grease, carbon buildup, adhesives, paint and industrial residues."
+                }
+              ]
+            }
+          ]
+        },
+        "lv": {
+          "tagline": "BUJ",
+          "heading": "Biežāk uzdotie jautājumi",
+          "description": "Atrodiet atbildes uz populārākajiem jautājumiem par sausā ledus strūkošanu.",
+          "contactLink": {
+            "label": "Sazināties ar mums",
+            "href": "#contacts",
+            "target": "_self"
+          },
+          "ariaLabelledBy": "faq-heading",
+          "categories": [
+            {
+              "title": "Par sausā ledus strūkošanu",
+              "ariaLabel": "Par sausā ledus strūkošanu",
+              "items": [
+                {
+                  "question": "Ko var tīrīt ar sausā ledus strūkošanu?",
+                  "answer": "Piemērots metālam, plastmasai, gumijai un elektriskām komponentēm."
+                },
+                {
+                  "question": "Vai tas ir droši virsmām?",
+                  "answer": "Jā, metode ir neabrazīva un nebojā pamatmateriālu."
+                },
+                {
+                  "question": "Vai tiek izmantots ūdens vai ķīmija?",
+                  "answer": "Nē, process ir pilnībā sauss un bez ķīmijas."
+                },
+                {
+                  "question": "Vai tas ir videi draudzīgs?",
+                  "answer": "Jā, tiek izmantots pārstrādāts CO₂ un nav sekundāro atkritumu."
+                },
+                {
+                  "question": "Vai var tīrīt elektriskās iekārtas?",
+                  "answer": "Jā, ja process tiek veikts pareizi."
+                }
+              ]
+            },
+            {
+              "title": "Process un rezultāti",
+              "ariaLabel": "Process un rezultāti",
+              "items": [
+                {
+                  "question": "Vai paliek atlikumi?",
+                  "answer": "Nē, sausais ledus iztvaiko un neatstāj strūklošanas materiāla atlikumus."
+                },
+                {
+                  "question": "Ar ko tas atšķiras no smilšu strūklas vai mazgāšanas?",
+                  "answer": "Nav abrazīvs un neizmanto ūdeni."
+                },
+                {
+                  "question": "Vai nepieciešama demontāža?",
+                  "answer": "Bieži nav nepieciešama, kas samazina dīkstāvi."
+                },
+                {
+                  "question": "Kādi ir galvenie ieguvumi?",
+                  "answer": "Mazāka dīkstāve, ātrāks process, nav atkritumu, droši iekārtām."
+                },
+                {
+                  "question": "Vai der regulārai apkopei?",
+                  "answer": "Jā, gan padziļinātai tīrīšanai, gan regulārai apkopei."
+                },
+                {
+                  "question": "Kādus netīrumus var noņemt?",
+                  "answer": "Eļļu, taukus, oglekļa nogulsnes, līmes un citus rūpnieciskos piesārņojumus."
                 }
               ]
             }
