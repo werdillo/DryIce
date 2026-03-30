@@ -1,3 +1,4 @@
+import { toAnchorId } from "@/lib/utils";
 import { MainSection } from "@/components/sections/main-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { BenefitsSection } from "@/components/sections/benefits-section";
@@ -61,7 +62,7 @@ export function BlockFactory({ block, lang }: BlockFactoryProps) {
   const props = block.data[validLang] ?? block.data["en"] ?? {};
 
   return (
-    <div id={block.type}>
+    <div id={toAnchorId(block.type)}>
       <Component {...props} />
     </div>
   );
