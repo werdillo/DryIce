@@ -182,11 +182,11 @@
           "buttonText": "Request Consultation",
           "buttonHref": "#contacts",
           "image1": {
-            "src": "",
+            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859513656-first.jpg",
             "alt": ""
           },
           "image2": {
-            "src": "",
+            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859516951-second.jpg",
             "alt": ""
           }
         },
@@ -198,11 +198,11 @@
           "buttonText": "Pieteikt konsultāciju",
           "buttonHref": "#contacts",
           "image1": {
-            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774822939683-Screenshot_2026-03-07_at_20.50.24.png",
+            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859500500-first.jpg",
             "alt": ""
           },
           "image2": {
-            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774821673055-Screenshot_2026-03-07_at_20.50.24.png",
+            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859506433-second.jpg",
             "alt": ""
           }
         }
