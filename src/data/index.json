@@ -16,12 +16,12 @@
       "en": {
         "lang": "en",
         "buttonText": "Contact us",
-        "buttonHref": "#contacts"
+        "buttonHref": "#contact"
       },
       "lv": {
         "lang": "lv",
         "buttonText": "Contact us",
-        "buttonHref": "#contacts"
+        "buttonHref": "#contact"
       }
     },
     "footer": {
@@ -178,7 +178,7 @@
             "icon": "images"
           },
           {
-            "href": "#contacts",
+            "href": "#contact",
             "label": "Kontakti",
             "icon": "users"
           }
@@ -200,7 +200,7 @@
           "subtitle": "SOLUTIONS IN BALTIC",
           "description": "Advanced non-abrasive cleaning technology for industrial and automotive applications. We help businesses clean more efficiently, reduce downtime and protect valuable equipment.",
           "buttonText": "Request Consultation",
-          "buttonHref": "#contacts",
+          "buttonHref": "#contact",
           "image1": {
             "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859513656-first.jpg",
             "alt": ""
@@ -216,7 +216,7 @@
           "subtitle": "SOLUTIONS IN BALTIC",
           "description": "Uzlabota, neabrazīva tīrīšanas tehnoloģija industriālām un auto nozares vajadzībām. Mēs palīdzam uzņēmumiem tīrīt efektīvāk, samazināt dīkstāvi un aizsargāt vērtīgas iekārtas.",
           "buttonText": "Pieteikt konsultāciju",
-          "buttonHref": "#contacts",
+          "buttonHref": "#contact",
           "image1": {
             "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859500500-first.jpg",
             "alt": ""
@@ -388,7 +388,7 @@
           "heading": "our services",
           "sectionLabel": "Services",
           "buttonText": "Get in touch",
-          "buttonHref": "#contacts",
+          "buttonHref": "#contact",
           "services": [
             {
               "number": "01",
@@ -441,7 +441,7 @@
           "heading": "mūsu pakalpojumi",
           "sectionLabel": "Pakalpojumi",
           "buttonText": "Sazināties",
-          "buttonHref": "#contacts",
+          "buttonHref": "#contact",
           "services": [
             {
               "number": "01",
@@ -797,7 +797,7 @@
           "description": "Atrodiet atbildes uz populārākajiem jautājumiem par sausā ledus strūkošanu.",
           "contactLink": {
             "label": "Sazināties ar mums",
-            "href": "#contacts",
+            "href": "#contact",
             "target": "_self"
           },
           "ariaLabelledBy": "faq-heading",
