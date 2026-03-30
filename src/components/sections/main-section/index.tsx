@@ -11,7 +11,7 @@ export function MainSection(props: Props) {
   return (
     <section className="relative min-h-svh overflow-hidden bg-[#151515]">
       {/* Main content */}
-      <div className="container-padding-x relative mx-auto max-w-7xl pt-28 pb-16 lg:pt-32 lg:pb-24">
+      <div className="container-padding-x relative mx-auto max-w-7xl pt-28 pb-0 lg:pt-32 lg:pb-0">
         <div className="flex flex-col gap-2">
           {/* Title line 1 */}
           <h1
@@ -131,6 +131,17 @@ export function MainSection(props: Props) {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* YouTube video */}
+      <div className="relative mt-20 mx-auto max-w-7xl overflow-hidden pointer-events-none flex items-center justify-center h-[400px] lg:h-auto lg:aspect-video">
+        <iframe
+          src="https://www.youtube.com/embed/KfoaiyC6Los?autoplay=1&mute=1&controls=0&loop=1&playlist=KfoaiyC6Los&rel=0&modestbranding=1&iv_load_policy=3&showinfo=0"
+          title="DryIce video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          className="min-w-[177.77vh] min-h-full lg:min-w-0 lg:w-full lg:h-full lg:static"
+          style={{ border: 0 }}
+        />
       </div>
     </section>
   );
