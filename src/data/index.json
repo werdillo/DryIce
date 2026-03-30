@@ -38,11 +38,11 @@
               "label": "Home"
             },
             {
-              "href": "/services",
+              "href": "#services",
               "label": "Services"
             },
             {
-              "href": "/contact",
+              "href": "#contact",
               "label": "Contact"
             }
           ],
