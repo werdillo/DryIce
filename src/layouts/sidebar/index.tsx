@@ -1,13 +1,4 @@
-import {
-  House,
-  Users,
-  Car,
-  ClipboardList,
-  Images,
-  LayoutDashboard,
-  FileText,
-  Settings,
-} from "lucide-react";
+import { House, Users, Car, ClipboardList, Images } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { SIDEBAR_CONFIG } from "./config";
 import type { SidebarProps, SidebarLink } from "./types";
@@ -18,9 +9,6 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   car: Car,
   "clipboard-list": ClipboardList,
   images: Images,
-  LayoutDashboard: LayoutDashboard,
-  FileText: FileText,
-  Settings: Settings,
 };
 
 function NavItem({

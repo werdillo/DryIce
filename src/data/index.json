@@ -16,12 +16,12 @@
       "en": {
         "lang": "en",
         "buttonText": "Contact us",
-        "buttonHref": "/contact"
+        "buttonHref": "#contacts"
       },
       "lv": {
         "lang": "lv",
         "buttonText": "Contact us",
-        "buttonHref": "/contact"
+        "buttonHref": "#contacts"
       }
     },
     "footer": {
@@ -128,19 +128,29 @@
       "en": {
         "links": [
           {
-            "href": "/",
-            "label": "Dashboard",
-            "icon": "LayoutDashboard"
+            "href": "#main",
+            "label": "Home",
+            "icon": "house"
           },
           {
-            "href": "/pages",
-            "label": "Pages",
-            "icon": "FileText"
+            "href": "#services",
+            "label": "Machines",
+            "icon": "car"
           },
           {
-            "href": "/settings",
-            "label": "Settings",
-            "icon": "Settings"
+            "href": "#feature",
+            "label": "Services",
+            "icon": "clipboard-list"
+          },
+          {
+            "href": "#gallery",
+            "label": "Gallery",
+            "icon": "images"
+          },
+          {
+            "href": "#contacts",
+            "label": "Contact",
+            "icon": "users"
           }
         ],
         "ariaLabel": "Sidebar navigation"
@@ -148,22 +158,32 @@
       "lv": {
         "links": [
           {
-            "href": "/",
-            "label": "Dashboard",
-            "icon": "LayoutDashboard"
+            "href": "#main",
+            "label": "Sākums",
+            "icon": "house"
           },
           {
-            "href": "/pages",
-            "label": "Pages",
-            "icon": "FileText"
+            "href": "#services",
+            "label": "Iekārtas",
+            "icon": "car"
           },
           {
-            "href": "/settings",
-            "label": "Settings",
-            "icon": "Settings"
+            "href": "#feature",
+            "label": "Pakalpojumi",
+            "icon": "clipboard-list"
+          },
+          {
+            "href": "#gallery",
+            "label": "Galerija",
+            "icon": "images"
+          },
+          {
+            "href": "#contacts",
+            "label": "Kontakti",
+            "icon": "users"
           }
         ],
-        "ariaLabel": "Sidebar navigation"
+        "ariaLabel": "Navigācija"
       }
     }
   },
@@ -612,7 +632,7 @@
     },
     {
       "id": "contact-section-7",
-      "type": "contact-section",
+      "type": "contacts-section",
       "order": 7,
       "enabled": true,
       "data": {
