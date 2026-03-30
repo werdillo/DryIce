@@ -375,7 +375,7 @@
               "title": "Industrial Cleaning Solutions",
               "description": "Efficient removal of oil, grease, carbon buildup and production residue from machinery and equipment.",
               "image": {
-                "src": "/images/services.jpg",
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860679070-services.jpg",
                 "alt": "Industrial cleaning solutions"
               }
             },
@@ -384,7 +384,7 @@
               "title": "Automotive Cleaning & Restoration",
               "description": "Safe cleaning for engines, chassis and components without damaging original surfaces.",
               "image": {
-                "src": "/images/services.jpg",
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860681975-services.jpg",
                 "alt": "Automotive cleaning and restoration"
               }
             },
@@ -393,7 +393,7 @@
               "title": "Equipment Supply & Setup",
               "description": "Professional dry ice blasting machines with full installation and configuration.",
               "image": {
-                "src": "/images/services.jpg",
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860684899-services.jpg",
                 "alt": "Equipment supply and setup"
               }
             },
@@ -402,7 +402,7 @@
               "title": "Training & Certification",
               "description": "Operator training for safe and efficient use of dry ice blasting technology.",
               "image": {
-                "src": "/images/services.jpg",
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860687903-services.jpg",
                 "alt": "Training and certification"
               }
             },
@@ -411,7 +411,7 @@
               "title": "Technical Support",
               "description": "Ongoing support, consultation and system optimization.",
               "image": {
-                "src": "/images/services.jpg",
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860690864-services.jpg",
                 "alt": "Technical support"
               }
             }
@@ -428,7 +428,7 @@
               "title": "Industriālie tīrīšanas risinājumi",
               "description": "Efektīva eļļu, tauku, oglekļa nogulšņu un ražošanas piesārņojuma noņemšana no iekārtām un aprīkojuma.",
               "image": {
-                "src": "/images/services.jpg",
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860658044-services.jpg",
                 "alt": "Industriālie tīrīšanas risinājumi"
               }
             },
@@ -437,7 +437,7 @@
               "title": "Auto tīrīšana un restaurācija",
               "description": "Droša dzinēju, šasiju un komponentu tīrīšana, nebojājot oriģinālās virsmas.",
               "image": {
-                "src": "/images/services.jpg",
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860661125-services.jpg",
                 "alt": "Auto tīrīšana un restaurācija"
               }
             },
@@ -446,7 +446,7 @@
               "title": "Iekārtu piegāde un uzstādīšana",
               "description": "Profesionālas sausā ledus strūkošanas iekārtas ar pilnu uzstādīšanu un konfigurāciju.",
               "image": {
-                "src": "/images/services.jpg",
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860665479-services.jpg",
                 "alt": "Iekārtu piegāde un uzstādīšana"
               }
             },
@@ -455,7 +455,7 @@
               "title": "Apmācības un sertifikācija",
               "description": "Operatoru apmācība drošai un efektīvai sausā ledus strūkošanas tehnoloģijas izmantošanai.",
               "image": {
-                "src": "/images/services.jpg",
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860669078-services.jpg",
                 "alt": "Apmācības un sertifikācija"
               }
             },
@@ -464,7 +464,7 @@
               "title": "Tehniskais atbalsts",
               "description": "Ilgtermiņa sadarbība, konsultācijas un sistēmu optimizācija.",
               "image": {
-                "src": "/images/services.jpg",
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860671932-services.jpg",
                 "alt": "Tehniskais atbalsts"
               }
             }
