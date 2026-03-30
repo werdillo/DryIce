@@ -720,7 +720,7 @@
       "id": "faq-section-8",
       "type": "faq-section",
       "order": 8,
-      "enabled": false,
+      "enabled": true,
       "data": {
         "en": {
           "tagline": "FAQ",
