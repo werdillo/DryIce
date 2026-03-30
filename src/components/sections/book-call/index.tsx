@@ -23,9 +23,9 @@ export function BookCall(props: BookCallProps) {
       aria-labelledby="book-call-heading"
     >
       <div className="flex flex-col mx-auto max-w-7xl items-center gap-6">
-        {/* Heading — Orbitron 900 48px uppercase centered */}
         <h1
           id="book-call-heading"
+          data-animate="fade-up"
           className="
             w-full text-center uppercase text-foreground
             text-3xl md:text-5xl font-black leading-snug
@@ -48,10 +48,11 @@ export function BookCall(props: BookCallProps) {
             : settings.heading}
         </h1>
 
-        {/* Input + Button — row, w-[350px], gap-2 */}
         <form
           onSubmit={handleSubmit}
           aria-label="Book a call form"
+          data-animate="fade-up"
+          style={{ animationDelay: "0.15s" }}
           className="flex w-full max-w-87.5 flex-row items-stretch gap-2"
         >
           <input

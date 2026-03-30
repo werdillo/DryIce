@@ -13,15 +13,19 @@ export function Faq({ config }: FaqProps = {}) {
     >
       <div className="container-padding-x mx-auto max-w-7xl">
         <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
-          <FaqHeader
-            tagline={faqConfig.tagline}
-            heading={faqConfig.heading}
-            description={faqConfig.description}
-            contactLink={faqConfig.contactLink}
-            ariaLabelledBy={faqConfig.ariaLabelledBy}
-          />
+          <div data-animate="fade-left">
+            <FaqHeader
+              tagline={faqConfig.tagline}
+              heading={faqConfig.heading}
+              description={faqConfig.description}
+              contactLink={faqConfig.contactLink}
+              ariaLabelledBy={faqConfig.ariaLabelledBy}
+            />
+          </div>
 
-          <FaqCategories categories={faqConfig.categories} />
+          <div data-animate="fade-up" style={{ animationDelay: "0.15s" }}>
+            <FaqCategories categories={faqConfig.categories} />
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,3 @@
-import { Tagline } from "@/components/tagline";
 import { Separator } from "@/components/ui/separator";
 import { ContactForm } from "./contact-form";
 import { ContactDetails } from "./contact-details";
@@ -14,7 +13,10 @@ export function ContactsSection(props: Partial<ContactSectionProps>) {
       aria-labelledby="contact-heading"
     >
       <div className="container-padding-x theme bg-primary flex-1 items-center justify-center p-8 md:py-24">
-        <div className="mx-auto flex max-w-md flex-col gap-10 md:gap-12">
+        <div
+          className="mx-auto flex max-w-md flex-col gap-10 md:gap-12"
+          data-animate="fade-up"
+        >
           <div className="section-title-gap-lg mx-auto flex flex-col">
             <h3 id="contact-heading" className="text-primary-foreground">
               {settings.title}
@@ -31,14 +33,16 @@ export function ContactsSection(props: Partial<ContactSectionProps>) {
       <Separator className="block md:hidden" />
 
       <div className="md:bg-muted/40 flex flex-1 items-center justify-center px-6 md:px-0 md:py-24">
-        <ContactDetails
-          officesTitle={settings.officesTitle}
-          officesDescription={settings.officesDescription}
-          offices={settings.offices}
-          emailTitle={settings.emailTitle}
-          emailDescription={settings.emailDescription}
-          emails={settings.emails}
-        />
+        <div data-animate="fade-right" style={{ animationDelay: "0.15s" }}>
+          <ContactDetails
+            officesTitle={settings.officesTitle}
+            officesDescription={settings.officesDescription}
+            offices={settings.offices}
+            emailTitle={settings.emailTitle}
+            emailDescription={settings.emailDescription}
+            emails={settings.emails}
+          />
+        </div>
       </div>
     </section>
   );

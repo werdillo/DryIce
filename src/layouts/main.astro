@@ -42,5 +42,36 @@ const sidebarData = pageData.layout.sidebar[currentLang];
         </div>
         <Footer config={footerData} />
         <Sidebar client:load config={sidebarData} />
+        <script is:inline>
+            (function () {
+                function initScrollAnimations() {
+                    var observer = new IntersectionObserver(
+                        function (entries) {
+                            entries.forEach(function (entry) {
+                                if (entry.isIntersecting) {
+                                    entry.target.classList.add("in-view");
+                                    observer.unobserve(entry.target);
+                                }
+                            });
+                        },
+                        { threshold: 0.12, rootMargin: "0px 0px -50px 0px" },
+                    );
+                    document
+                        .querySelectorAll("[data-animate]")
+                        .forEach(function (el) {
+                            observer.observe(el);
+                        });
+                }
+
+                if (document.readyState === "loading") {
+                    document.addEventListener(
+                        "DOMContentLoaded",
+                        initScrollAnimations,
+                    );
+                } else {
+                    initScrollAnimations();
+                }
+            })();
+        </script>
     </body>
 </html>

@@ -30,12 +30,17 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
         <span
           className="border-b relative border-foreground/10 pb-2 text-lg font-semibold text-primary"
           style={{ fontFamily: "'Orbitron', sans-serif" }}
+          data-animate="fade-left"
         >
           {settings.sectionLabel}
         </span>
         <div className="grid grid-cols-1 gap-12 pt-12 lg:grid-cols-[400px_1fr_auto] lg:gap-10 lg:pt-20">
           {/* Col 1: section label + service list */}
-          <div className="flex flex-col gap-8">
+          <div
+            className="flex flex-col gap-8"
+            data-animate="fade-left"
+            style={{ animationDelay: "0.1s" }}
+          >
             <div className="flex flex-col">
               {settings.services.map((service, index) => (
                 <ServiceListItem
@@ -50,7 +55,11 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
           </div>
 
           {/* Col 2: active item description + image */}
-          <div className="flex flex-col justify-between gap-8">
+          <div
+            className="flex flex-col justify-between gap-8"
+            data-animate="fade-up"
+            style={{ animationDelay: "0.15s" }}
+          >
             {activeService?.description && (
               <p className="lg:-ml-10 pl-5 text-base border-foreground/60 py-[11.6px] border-b-2 leading-relaxed text-pretty text-foreground">
                 {activeService.description}
@@ -72,7 +81,11 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
           </div>
 
           {/* Col 3: PromoButton pinned to bottom */}
-          <div className="flex items-end justify-end">
+          <div
+            className="flex items-end justify-end"
+            data-animate="fade-up"
+            style={{ animationDelay: "0.2s" }}
+          >
             <PromoButton href={settings.buttonHref}>
               {settings.buttonText}
             </PromoButton>

@@ -1,4 +1,3 @@
-import { Tagline } from "@/components/tagline";
 import { FeatureCard } from "./feature-card";
 import { featureConfig } from "./config";
 import type { FeatureSectionProps } from "./types";
@@ -9,13 +8,12 @@ export function FeatureSection(props: Partial<FeatureSectionProps>) {
   return (
     <section className="bg-primary py-10">
       <div className="container-padding-x mx-auto flex max-w-7xl flex-col gap-4 md:gap-6">
-        <div>
+        <div data-animate="fade-up">
           <h3 className="inline-block border-b border-primary-foreground px-6 py-4 text-primary-foreground">
             {settings.title}
           </h3>
         </div>
         <div className="relative">
-          {/* Decorative circle */}
           <svg
             width="400"
             height="384"
@@ -35,10 +33,13 @@ export function FeatureSection(props: Partial<FeatureSectionProps>) {
           </svg>
           <div className="relative z-10 grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-6">
             {settings.features.map((feature, index) => (
-              <FeatureCard
+              <div
                 key={`${feature.title}-${index}`}
-                feature={feature}
-              />
+                data-animate="fade-up"
+                style={{ animationDelay: `${index * 0.12}s` }}
+              >
+                <FeatureCard feature={feature} />
+              </div>
             ))}
           </div>
         </div>

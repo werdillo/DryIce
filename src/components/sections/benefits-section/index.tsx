@@ -1,4 +1,3 @@
-import { Tagline } from "@/components/tagline";
 import { BenefitCard } from "./benefit-card";
 import { benefitsConfig } from "./config";
 import type { BenefitsSectionProps } from "./types";
@@ -9,7 +8,7 @@ export function BenefitsSection(props: Partial<BenefitsSectionProps>) {
   return (
     <>
       <div className="container-padding-x mx-auto flex py-20 max-w-7xl">
-        <div className="relative">
+        <div className="relative" data-animate="fade-up">
           <img
             src="/images/logo-outline.svg"
             alt=""
@@ -31,10 +30,13 @@ export function BenefitsSection(props: Partial<BenefitsSectionProps>) {
         <div className="container-padding-x bg-primary mx-auto flex max-w-7xl flex-col gap-10 md:gap-12">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
             {settings.benefits.map((benefit, index) => (
-              <BenefitCard
+              <div
                 key={`${benefit.title}-${index}`}
-                benefit={benefit}
-              />
+                data-animate="fade-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <BenefitCard benefit={benefit} />
+              </div>
             ))}
           </div>
         </div>
