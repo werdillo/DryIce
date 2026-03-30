@@ -40,8 +40,8 @@ export function MainSection(props: Props) {
           {/* Right image — full width, 4:3 on mobile */}
           <div className="hero-fade-scale anim-delay-3 aspect-[4/3] w-full overflow-hidden border border-white/10 lg:hidden">
             <img
-              src={s.image2Src}
-              alt={s.image2Alt}
+              src={s.image2?.src}
+              alt={s.image2?.alt}
               className="h-full w-full object-cover"
               loading="eager"
             />
@@ -74,8 +74,8 @@ export function MainSection(props: Props) {
               />
               <div className="hero-fade-scale anim-delay-2 h-full w-full overflow-hidden border border-white/10">
                 <img
-                  src={s.image1Src}
-                  alt={s.image1Alt}
+                  src={s.image1?.src}
+                  alt={s.image1?.alt}
                   className="h-full w-full object-cover"
                   loading="eager"
                 />
@@ -121,8 +121,8 @@ export function MainSection(props: Props) {
                   style={{ width: 400, height: 300 }}
                 >
                   <img
-                    src={s.image2Src}
-                    alt={s.image2Alt}
+                    src={s.image2?.src}
+                    alt={s.image2?.alt}
                     className="h-full w-full object-cover"
                     loading="eager"
                   />
