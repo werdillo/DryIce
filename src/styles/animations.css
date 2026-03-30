@@ -99,3 +99,94 @@
 .anim-delay-6 {
     animation-delay: 0.8s;
 }
+
+/* ── Scroll-reveal animations ── */
+
+@keyframes scroll-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scroll-fade-left {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scroll-fade-right {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scroll-fade-scale {
+    from {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Initial hidden state */
+[data-animate] {
+    opacity: 0;
+    will-change: opacity, transform;
+}
+[data-animate="fade-up"] {
+    transform: translateY(40px);
+}
+[data-animate="fade-left"] {
+    transform: translateX(-40px);
+}
+[data-animate="fade-right"] {
+    transform: translateX(40px);
+}
+[data-animate="fade-scale"] {
+    transform: scale(0.94);
+}
+
+/* In-view state — class added by IntersectionObserver */
+[data-animate="fade-up"].in-view {
+    animation: scroll-fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--anim-delay, 0s);
+}
+[data-animate="fade-left"].in-view {
+    animation: scroll-fade-left 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--anim-delay, 0s);
+}
+[data-animate="fade-right"].in-view {
+    animation: scroll-fade-right 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--anim-delay, 0s);
+}
+[data-animate="fade-scale"].in-view {
+    animation: scroll-fade-scale 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--anim-delay, 0s);
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    [data-animate] {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+}

@@ -1,0 +1,866 @@
+{
+  "meta": {
+    "lv": {
+      "title": "DryIce Baltic | Sausā ledus piegāde un pakalpojumi",
+      "description": "Sausā ledus strūkošanas risinājumi Baltijā. Profesionāli risinājumi industriālai tīrīšanai un auto nozarei.",
+      "keywords": "sausais ledus, tīrīšana, Baltija, industriāla tīrīšana"
+    },
+    "en": {
+      "title": "DryIce Baltic | Sausā ledus piegāde un pakalpojumi",
+      "description": "Sausā ledus strūkošanas risinājumi Baltijā. Profesionāli risinājumi industriālai tīrīšanai un auto nozarei.",
+      "keywords": "sausais ledus, tīrīšana, Baltija, industriāla tīrīšana"
+    }
+  },
+  "layout": {
+    "header": {
+      "en": {
+        "lang": "en",
+        "buttonText": "Contact us",
+        "buttonHref": "#contact"
+      },
+      "lv": {
+        "lang": "lv",
+        "buttonText": "Contact us",
+        "buttonHref": "#contact"
+      }
+    },
+    "footer": {
+      "en": {
+        "logo": {
+          "href": "/",
+          "ariaLabel": "Go to homepage",
+          "className": "footer-logo"
+        },
+        "mainNavigation": {
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "#services",
+              "label": "Services"
+            },
+            {
+              "href": "#contact",
+              "label": "Contact"
+            }
+          ],
+          "ariaLabel": "Footer main navigation"
+        },
+        "newsletter": {
+          "enabled": true,
+          "emailInputId": "newsletter-email-en",
+          "emailPlaceholder": "Enter your email",
+          "buttonText": "Subscribe",
+          "ariaLabel": "Newsletter subscription"
+        },
+        "copyright": {
+          "siteName": "Ice CMS",
+          "siteUrl": "https://ice-cms.local"
+        },
+        "legalLinks": {
+          "links": [
+            {
+              "href": "/privacy",
+              "label": "Privacy Policy"
+            },
+            {
+              "href": "/terms",
+              "label": "Terms of Service"
+            }
+          ],
+          "ariaLabel": "Legal links"
+        },
+        "ariaLabel": "Footer"
+      },
+      "lv": {
+        "logo": {
+          "href": "/",
+          "ariaLabel": "Go to homepage",
+          "className": "footer-logo"
+        },
+        "mainNavigation": {
+          "links": [
+            {
+              "href": "/",
+              "label": "Home"
+            },
+            {
+              "href": "#services",
+              "label": "Services"
+            },
+            {
+              "href": "#contact",
+              "label": "Contact"
+            }
+          ],
+          "ariaLabel": "Footer main navigation"
+        },
+        "newsletter": {
+          "enabled": true,
+          "emailInputId": "newsletter-email-lv",
+          "emailPlaceholder": "Enter your email",
+          "buttonText": "Subscribe",
+          "ariaLabel": "Newsletter subscription"
+        },
+        "copyright": {
+          "siteName": "Ice CMS",
+          "siteUrl": "https://ice-cms.local"
+        },
+        "legalLinks": {
+          "links": [
+            {
+              "href": "/privacy",
+              "label": "Privacy Policy"
+            },
+            {
+              "href": "/terms",
+              "label": "Terms of Service"
+            }
+          ],
+          "ariaLabel": "Legal links"
+        },
+        "ariaLabel": "Footer"
+      }
+    },
+    "sidebar": {
+      "en": {
+        "links": [
+          {
+            "href": "#main",
+            "label": "Home",
+            "icon": "house"
+          },
+          {
+            "href": "#services",
+            "label": "Machines",
+            "icon": "car"
+          },
+          {
+            "href": "#feature",
+            "label": "Services",
+            "icon": "clipboard-list"
+          },
+          {
+            "href": "#gallery",
+            "label": "Gallery",
+            "icon": "images"
+          },
+          {
+            "href": "#contact",
+            "label": "Contact",
+            "icon": "users"
+          }
+        ],
+        "ariaLabel": "Sidebar navigation"
+      },
+      "lv": {
+        "links": [
+          {
+            "href": "#main",
+            "label": "Sākums",
+            "icon": "house"
+          },
+          {
+            "href": "#services",
+            "label": "Iekārtas",
+            "icon": "car"
+          },
+          {
+            "href": "#feature",
+            "label": "Pakalpojumi",
+            "icon": "clipboard-list"
+          },
+          {
+            "href": "#gallery",
+            "label": "Galerija",
+            "icon": "images"
+          },
+          {
+            "href": "#contact",
+            "label": "Kontakti",
+            "icon": "users"
+          }
+        ],
+        "ariaLabel": "Navigācija"
+      }
+    }
+  },
+  "blocks": [
+    {
+      "id": "main-section-0",
+      "type": "main-section",
+      "order": 0,
+      "enabled": true,
+      "data": {
+        "en": {
+          "title1": "DRY iCE",
+          "title2": "BLASTING",
+          "subtitle": "SOLUTIONS IN BALTIC",
+          "description": "Advanced non-abrasive cleaning technology for industrial and automotive applications. We help businesses clean more efficiently, reduce downtime and protect valuable equipment.",
+          "buttonText": "Request Consultation",
+          "buttonHref": "#contact",
+          "image1": {
+            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859513656-first.jpg",
+            "alt": ""
+          },
+          "image2": {
+            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859516951-second.jpg",
+            "alt": ""
+          }
+        },
+        "lv": {
+          "title1": "DRY iCE",
+          "title2": "BLASTING",
+          "subtitle": "SOLUTIONS IN BALTIC",
+          "description": "Uzlabota, neabrazīva tīrīšanas tehnoloģija industriālām un auto nozares vajadzībām. Mēs palīdzam uzņēmumiem tīrīt efektīvāk, samazināt dīkstāvi un aizsargāt vērtīgas iekārtas.",
+          "buttonText": "Pieteikt konsultāciju",
+          "buttonHref": "#contact",
+          "image1": {
+            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859500500-first.jpg",
+            "alt": ""
+          },
+          "image2": {
+            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859506433-second.jpg",
+            "alt": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "benefits-section-1",
+      "type": "benefits-section",
+      "order": 1,
+      "enabled": false,
+      "data": {
+        "en": {
+          "tagline": "",
+          "title": "Advanced Dry Ice Solutions That Give You a Competitive Advantage",
+          "description": "Dry ice blasting is not just a cleaning method — it is a more efficient, safer and more precise way to maintain equipment and technical surfaces. We help companies reduce maintenance time, improve operational performance and avoid damage caused by traditional cleaning methods.",
+          "benefits": [
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            }
+          ]
+        },
+        "lv": {
+          "tagline": "",
+          "title": "Mūsdienīgi sausā ledus risinājumi, kas dod Jums konkurences priekšrocības",
+          "description": "Sausā ledus strūkošana nav tikai tīrīšanas metode — tā ir efektīvāks, drošāks un precīzāks veids, kā uzturēt iekārtas un tehniskās virsmas. Mēs palīdzam uzņēmumiem samazināt apkopes laiku, uzlabot darba efektivitāti un izvairīties no bojājumiem, ko rada tradicionālās tīrīšanas metodes.",
+          "benefits": [
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            },
+            {
+              "title": "",
+              "description": "",
+              "icon": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "solution-section-2",
+      "type": "solution-section",
+      "order": 2,
+      "enabled": true,
+      "data": {
+        "en": {
+          "title": "Professional Equipment & Custom Solutions",
+          "description": "We supply reliable dry ice blasting systems tailored for workshops and industrial applications.",
+          "solutions": [
+            {
+              "title": "Precise Pressure Control for Sensitive Surfaces",
+              "description": "Advanced pressure regulation allows effective cleaning of delicate surfaces without damaging the material.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774856313010-Aspect_Ratio-1.png",
+                "alt": "Dry ice blasting machine with pressure control"
+              }
+            },
+            {
+              "title": "High-Performance Systems for Industrial Cleaning",
+              "description": "Powerful machines for heavy industrial contamination — oils, grease and carbon buildup.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774856316517-Aspect_Ratio-2.png",
+                "alt": "Industrial cleaning machine"
+              }
+            },
+            {
+              "title": "Mobile Solutions for Flexible On-Site Operations",
+              "description": "Compact and portable systems for work anywhere — workshops, production facilities and on the road.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774856319944-Aspect_Ratio.png",
+                "alt": "Mobile dry ice blasting machine"
+              }
+            }
+          ]
+        },
+        "lv": {
+          "title": "Profesionālas iekārtas un pielāgoti risinājumi",
+          "description": "Piedāvājam uzticamas sausā ledus strūkošanas iekārtas, kas pielāgotas darbnīcām un industriālām vajadzībām.",
+          "solutions": [
+            {
+              "title": "Precise Pressure Control for Sensitive Surfaces",
+              "description": "Advanced pressure regulation allows effective cleaning of delicate surfaces without damaging the material.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774856333220-Aspect_Ratio-1.png",
+                "alt": "Dry ice blasting machine with pressure control"
+              }
+            },
+            {
+              "title": "High-Performance Systems for Industrial Cleaning",
+              "description": "Powerful machines for heavy industrial contamination — oils, grease and carbon buildup.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774856336212-Aspect_Ratio-2.png",
+                "alt": "Industrial cleaning machine"
+              }
+            },
+            {
+              "title": "Mobile Solutions for Flexible On-Site Operations",
+              "description": "Compact and portable systems for work anywhere — workshops, production facilities and on the road.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774856340024-Aspect_Ratio.png",
+                "alt": "Mobile dry ice blasting machine"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "book-call-3",
+      "type": "book-call",
+      "order": 3,
+      "enabled": true,
+      "data": {
+        "en": {
+          "heading": "Request Individual Pricing For Your Project",
+          "headingHighlight": "Individual Pricing",
+          "placeholder": "Your phone",
+          "buttonText": "Book a Consultation"
+        },
+        "lv": {
+          "heading": "Pieprasiet individuālu piedāvājumu savam projektam",
+          "headingHighlight": "individuālu piedāvājumu",
+          "placeholder": "Jūsu tālrunis",
+          "buttonText": "Pieteikt konsultāciju"
+        }
+      }
+    },
+    {
+      "id": "services-section-4",
+      "type": "services-section",
+      "order": 4,
+      "enabled": true,
+      "data": {
+        "en": {
+          "heading": "our services",
+          "sectionLabel": "Services",
+          "buttonText": "Get in touch",
+          "buttonHref": "#contact",
+          "services": [
+            {
+              "number": "01",
+              "title": "Industrial Cleaning Solutions",
+              "description": "Efficient removal of oil, grease, carbon buildup and production residue from machinery and equipment.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860679070-services.jpg",
+                "alt": "Industrial cleaning solutions"
+              }
+            },
+            {
+              "number": "02",
+              "title": "Automotive Cleaning & Restoration",
+              "description": "Safe cleaning for engines, chassis and components without damaging original surfaces.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860681975-services.jpg",
+                "alt": "Automotive cleaning and restoration"
+              }
+            },
+            {
+              "number": "03",
+              "title": "Equipment Supply & Setup",
+              "description": "Professional dry ice blasting machines with full installation and configuration.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860684899-services.jpg",
+                "alt": "Equipment supply and setup"
+              }
+            },
+            {
+              "number": "04",
+              "title": "Training & Certification",
+              "description": "Operator training for safe and efficient use of dry ice blasting technology.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860687903-services.jpg",
+                "alt": "Training and certification"
+              }
+            },
+            {
+              "number": "05",
+              "title": "Technical Support",
+              "description": "Ongoing support, consultation and system optimization.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860690864-services.jpg",
+                "alt": "Technical support"
+              }
+            }
+          ]
+        },
+        "lv": {
+          "heading": "mūsu pakalpojumi",
+          "sectionLabel": "Pakalpojumi",
+          "buttonText": "Sazināties",
+          "buttonHref": "#contact",
+          "services": [
+            {
+              "number": "01",
+              "title": "Industriālie tīrīšanas risinājumi",
+              "description": "Efektīva eļļu, tauku, oglekļa nogulšņu un ražošanas piesārņojuma noņemšana no iekārtām un aprīkojuma.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860658044-services.jpg",
+                "alt": "Industriālie tīrīšanas risinājumi"
+              }
+            },
+            {
+              "number": "02",
+              "title": "Auto tīrīšana un restaurācija",
+              "description": "Droša dzinēju, šasiju un komponentu tīrīšana, nebojājot oriģinālās virsmas.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860661125-services.jpg",
+                "alt": "Auto tīrīšana un restaurācija"
+              }
+            },
+            {
+              "number": "03",
+              "title": "Iekārtu piegāde un uzstādīšana",
+              "description": "Profesionālas sausā ledus strūkošanas iekārtas ar pilnu uzstādīšanu un konfigurāciju.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860665479-services.jpg",
+                "alt": "Iekārtu piegāde un uzstādīšana"
+              }
+            },
+            {
+              "number": "04",
+              "title": "Apmācības un sertifikācija",
+              "description": "Operatoru apmācība drošai un efektīvai sausā ledus strūkošanas tehnoloģijas izmantošanai.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860669078-services.jpg",
+                "alt": "Apmācības un sertifikācija"
+              }
+            },
+            {
+              "number": "05",
+              "title": "Tehniskais atbalsts",
+              "description": "Ilgtermiņa sadarbība, konsultācijas un sistēmu optimizācija.",
+              "image": {
+                "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774860671932-services.jpg",
+                "alt": "Tehniskais atbalsts"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "feature-section-5",
+      "type": "feature-section",
+      "order": 5,
+      "enabled": true,
+      "data": {
+        "en": {
+          "tagline": "Industries",
+          "title": "Industries We Serve",
+          "description": "Real Results. Measurable Impact. Dry ice blasting removes contamination without damaging the base material — delivering clean, safe and professional results.",
+          "features": [
+            {
+              "title": "Industrial Manufacturing",
+              "description": "Production lines, molds, heavy machinery and industrial equipment.",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
+                "alt": "Industrial manufacturing"
+              }
+            },
+            {
+              "title": "Automotive & Commercial Vehicles",
+              "description": "Engines, chassis, restoration projects and fleet maintenance.",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
+                "alt": "Automotive and commercial vehicles"
+              }
+            },
+            {
+              "title": "Food & Beverage Industry",
+              "description": "Hygienic cleaning without chemicals or water.",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
+                "alt": "Food and beverage industry"
+              }
+            }
+          ]
+        },
+        "lv": {
+          "tagline": "Nozares",
+          "title": "Nozares, ar kurām strādājam",
+          "description": "Sausā ledus strūkošana efektīvi noņem piesārņojumu, nebojājot pamatmateriālu — tīrs rezultāts, drošs process, profesionāla kvalitāte.",
+          "features": [
+            {
+              "title": "Rūpnieciskā ražošana",
+              "description": "Ražošanas līnijas, formas, smagā tehnika un industriālās iekārtas.",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
+                "alt": "Rūpnieciskā ražošana"
+              }
+            },
+            {
+              "title": "Auto un komerctransports",
+              "description": "Dzinēji, šasijas, restaurācijas projekti un autoparki.",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
+                "alt": "Auto un komerctransports"
+              }
+            },
+            {
+              "title": "Pārtikas rūpniecība",
+              "description": "Higiēniska tīrīšana bez ķīmijas un ūdens.",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
+                "alt": "Pārtikas rūpniecība"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "gallery-section-6",
+      "type": "gallery-section",
+      "order": 6,
+      "enabled": true,
+      "data": {
+        "en": {
+          "title": "Real Results. Measurable Impact.",
+          "description": "Dry ice blasting removes contamination without damaging the base material — delivering clean, safe and professional results.",
+          "images": [
+            {
+              "src": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+              "alt": "Dry ice pellets"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?q=80&w=800&auto=format&fit=crop",
+              "alt": "Dry ice cleaning"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1514525253344-ad81d22d252c?q=80&w=800&auto=format&fit=crop",
+              "alt": "Smoke effects at event"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop",
+              "alt": "Dry ice in drinks"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=800&auto=format&fit=crop",
+              "alt": "Industrial dry ice"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
+              "alt": "Dry ice delivery boxes"
+            }
+          ]
+        },
+        "lv": {
+          "title": "Reāli rezultāti ar izmērāmu efektu",
+          "description": "Sausā ledus strūkošana efektīvi noņem piesārņojumu, nebojājot pamatmateriālu. Tīrs rezultāts. Drošs process. Profesionāla kvalitāte.",
+          "images": [
+            {
+              "src": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+              "alt": "Sausā ledus granulas"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?q=80&w=800&auto=format&fit=crop",
+              "alt": "Tīrīšana ar sauso ledu"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1514525253344-ad81d22d252c?q=80&w=800&auto=format&fit=crop",
+              "alt": "Dūmu efekti pasākumā"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=800&auto=format&fit=crop",
+              "alt": "Sausais ledus dzērienos"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=800&auto=format&fit=crop",
+              "alt": "Industriālais sausais ledus"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
+              "alt": "Sausā ledus piegādes kastes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "contact-section-7",
+      "type": "contact-section",
+      "order": 7,
+      "enabled": true,
+      "data": {
+        "en": {
+          "title": "Let's Discuss Your Project",
+          "description": "We respond quickly and provide tailored solutions based on your needs.",
+          "officesTitle": "Our office",
+          "officesDescription": "We provide convenient dry ice pickup in Riga and fast delivery throughout the Baltics.",
+          "offices": [
+            {
+              "city": "Riga, Latvia",
+              "address": "+371 26525282\ninfo@dryicebaltic.lv"
+            }
+          ],
+          "emailTitle": "Write to us",
+          "emailDescription": "Send your questions or price requests to our email addresses.",
+          "emails": [
+            {
+              "label": "Email",
+              "email": "info@dryicebaltic.lv"
+            }
+          ],
+          "socialsTitle": "Follow us",
+          "socials": [
+            {
+              "icon": "SiFacebook",
+              "href": "#",
+              "label": "Facebook"
+            },
+            {
+              "icon": "SiInstagram",
+              "href": "#",
+              "label": "Instagram"
+            },
+            {
+              "icon": "Linkedin",
+              "href": "#",
+              "label": "LinkedIn"
+            }
+          ],
+          "privacyPolicyLink": "/privacy-policy"
+        },
+        "lv": {
+          "title": "Apspriedīsim Jūsu projektu",
+          "description": "Mēs ātri reaģējam un piedāvājam risinājumus, kas pielāgoti Jūsu vajadzībām.",
+          "officesTitle": "Mūsu noliktavas",
+          "officesDescription": "Nodrošinām ērtu sausā ledus saņemšanu Rīgā un operatīvu piegādi visā Baltijā.",
+          "offices": [
+            {
+              "city": "Rīga, Latvija",
+              "address": "+371 26525282\ninfo@dryicebaltic.lv"
+            }
+          ],
+          "emailTitle": "Rakstiet mums",
+          "emailDescription": "Sūtiet savus jautājumus vai cenu pieprasījumus uz mūsu e-pasta adresēm.",
+          "emails": [
+            {
+              "label": "E-pasts",
+              "email": "info@dryicebaltic.lv"
+            }
+          ],
+          "socialsTitle": "Sekojiet mums",
+          "socials": [
+            {
+              "icon": "SiFacebook",
+              "href": "#",
+              "label": "Facebook"
+            },
+            {
+              "icon": "SiInstagram",
+              "href": "#",
+              "label": "Instagram"
+            },
+            {
+              "icon": "Linkedin",
+              "href": "#",
+              "label": "LinkedIn"
+            }
+          ],
+          "privacyPolicyLink": "/privatuma-politika"
+        }
+      }
+    },
+    {
+      "id": "faq-section-8",
+      "type": "faq-section",
+      "order": 8,
+      "enabled": true,
+      "data": {
+        "en": {
+          "tagline": "FAQ",
+          "heading": "Frequently Asked Questions",
+          "description": "Find answers to the most common questions about dry ice blasting.",
+          "contactLink": {
+            "label": "Contact us",
+            "href": "#contacts",
+            "target": "_self"
+          },
+          "ariaLabelledBy": "faq-heading",
+          "categories": [
+            {
+              "title": "About Dry Ice Blasting",
+              "ariaLabel": "About Dry Ice Blasting",
+              "items": [
+                {
+                  "question": "What can be cleaned with dry ice blasting?",
+                  "answer": "Dry ice blasting is suitable for a wide range of surfaces including metal, plastic, rubber and electrical components."
+                },
+                {
+                  "question": "Is it safe for surfaces?",
+                  "answer": "Yes, it is completely non-abrasive and does not damage the base material."
+                },
+                {
+                  "question": "Does it use water or chemicals?",
+                  "answer": "No, it is fully dry and chemical-free."
+                },
+                {
+                  "question": "Is it environmentally friendly?",
+                  "answer": "Yes, it uses recycled CO₂ and produces no secondary waste."
+                },
+                {
+                  "question": "Can it be used on electrical equipment?",
+                  "answer": "Yes, it is safe when done correctly."
+                }
+              ]
+            },
+            {
+              "title": "Process & Results",
+              "ariaLabel": "Process and Results",
+              "items": [
+                {
+                  "question": "Will there be any residue?",
+                  "answer": "No, dry ice sublimates and leaves no blasting media residue."
+                },
+                {
+                  "question": "How does it compare to sandblasting or pressure washing?",
+                  "answer": "It is non-abrasive and does not use water, making it safer for sensitive surfaces."
+                },
+                {
+                  "question": "Is disassembly required?",
+                  "answer": "Often not, reducing downtime significantly."
+                },
+                {
+                  "question": "What are the main benefits?",
+                  "answer": "Reduced downtime, faster cleaning, no secondary waste, safe for sensitive equipment."
+                },
+                {
+                  "question": "Is it suitable for regular maintenance?",
+                  "answer": "Yes, both deep cleaning and regular maintenance."
+                },
+                {
+                  "question": "What contamination can be removed?",
+                  "answer": "Oil, grease, carbon buildup, adhesives, paint and industrial residues."
+                }
+              ]
+            }
+          ]
+        },
+        "lv": {
+          "tagline": "BUJ",
+          "heading": "Biežāk uzdotie jautājumi",
+          "description": "Atrodiet atbildes uz populārākajiem jautājumiem par sausā ledus strūkošanu.",
+          "contactLink": {
+            "label": "Sazināties ar mums",
+            "href": "#contact",
+            "target": "_self"
+          },
+          "ariaLabelledBy": "faq-heading",
+          "categories": [
+            {
+              "title": "Par sausā ledus strūkošanu",
+              "ariaLabel": "Par sausā ledus strūkošanu",
+              "items": [
+                {
+                  "question": "Ko var tīrīt ar sausā ledus strūkošanu?",
+                  "answer": "Piemērots metālam, plastmasai, gumijai un elektriskām komponentēm."
+                },
+                {
+                  "question": "Vai tas ir droši virsmām?",
+                  "answer": "Jā, metode ir neabrazīva un nebojā pamatmateriālu."
+                },
+                {
+                  "question": "Vai tiek izmantots ūdens vai ķīmija?",
+                  "answer": "Nē, process ir pilnībā sauss un bez ķīmijas."
+                },
+                {
+                  "question": "Vai tas ir videi draudzīgs?",
+                  "answer": "Jā, tiek izmantots pārstrādāts CO₂ un nav sekundāro atkritumu."
+                },
+                {
+                  "question": "Vai var tīrīt elektriskās iekārtas?",
+                  "answer": "Jā, ja process tiek veikts pareizi."
+                }
+              ]
+            },
+            {
+              "title": "Process un rezultāti",
+              "ariaLabel": "Process un rezultāti",
+              "items": [
+                {
+                  "question": "Vai paliek atlikumi?",
+                  "answer": "Nē, sausais ledus iztvaiko un neatstāj strūklošanas materiāla atlikumus."
+                },
+                {
+                  "question": "Ar ko tas atšķiras no smilšu strūklas vai mazgāšanas?",
+                  "answer": "Nav abrazīvs un neizmanto ūdeni."
+                },
+                {
+                  "question": "Vai nepieciešama demontāža?",
+                  "answer": "Bieži nav nepieciešama, kas samazina dīkstāvi."
+                },
+                {
+                  "question": "Kādi ir galvenie ieguvumi?",
+                  "answer": "Mazāka dīkstāve, ātrāks process, nav atkritumu, droši iekārtām."
+                },
+                {
+                  "question": "Vai der regulārai apkopei?",
+                  "answer": "Jā, gan padziļinātai tīrīšanai, gan regulārai apkopei."
+                },
+                {
+                  "question": "Kādus netīrumus var noņemt?",
+                  "answer": "Eļļu, taukus, oglekļa nogulsnes, līmes un citus rūpnieciskos piesārņojumus."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

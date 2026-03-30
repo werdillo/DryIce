@@ -1,0 +1,69 @@
+import { toAnchorId } from "@/lib/utils";
+import { MainSection } from "@/components/sections/main-section";
+import { HeroSection } from "@/components/sections/hero-section";
+import { BenefitsSection } from "@/components/sections/benefits-section";
+import { SolutionSection } from "@/components/sections/solution-section";
+import { BookCall } from "@/components/sections/book-call";
+import { ServicesSection } from "@/components/sections/services-section";
+import { FeatureSection } from "@/components/sections/feature-section";
+import { GallerySection } from "@/components/sections/gallery-section";
+import { ContactsSection } from "@/components/sections/contacts-section";
+import { Faq } from "@/components/sections/faq";
+
+interface Block {
+  id: string;
+  type: string;
+  order: number;
+  enabled: boolean;
+  data: {
+    lv: Record<string, any>;
+    en: Record<string, any>;
+  };
+}
+
+interface BlockFactoryProps {
+  block: Block;
+  lang: string;
+}
+
+type Lang = "lv" | "en";
+
+const componentMap: Record<string, React.ComponentType<any>> = {
+  "main-section": MainSection,
+  "hero-section": HeroSection,
+  "benefits-section": BenefitsSection,
+  "solution-section": SolutionSection,
+  "book-call": BookCall,
+  "services-section": ServicesSection,
+  "feature-section": FeatureSection,
+  "gallery-section": GallerySection,
+  "contacts-section": ContactsSection,
+  "contact-section": ContactsSection,
+  faq: Faq,
+  "faq-section": Faq,
+};
+
+export function BlockFactory({ block, lang }: BlockFactoryProps) {
+  if (block.enabled === false) {
+    return null;
+  }
+
+  const Component = componentMap[block.type];
+
+  if (!Component) {
+    console.warn(`[BlockFactory] Unknown block type: "${block.type}"`);
+    return null;
+  }
+
+  const validLang = (["lv", "en", "ru"] as const).includes(lang as Lang)
+    ? (lang as Lang)
+    : "en";
+
+  const props = block.data[validLang] ?? block.data["en"] ?? {};
+
+  return (
+    <div id={toAnchorId(block.type)}>
+      <Component {...props} />
+    </div>
+  );
+}

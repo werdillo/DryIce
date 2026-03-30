@@ -4,7 +4,11 @@ import Main from "@/layouts/main.astro";
 import { BlockFactory } from "@/components/BlockFactory";
 import pageData from "@/data/index.json";
 
-const lang = "en";
+export function getStaticPaths() {
+    return [{ params: { lang: "en" } }, { params: { lang: "lv" } }];
+}
+
+const { lang } = Astro.params as { lang: "en" | "lv" };
 const content = pageData.meta[lang];
 const blocks = [...pageData.blocks].sort((a, b) => a.order - b.order);
 ---
