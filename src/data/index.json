@@ -148,7 +148,7 @@
             "icon": "images"
           },
           {
-            "href": "#contacts",
+            "href": "#contact",
             "label": "Contact",
             "icon": "users"
           }
@@ -632,7 +632,7 @@
     },
     {
       "id": "contact-section-7",
-      "type": "contacts-section",
+      "type": "contact-section",
       "order": 7,
       "enabled": true,
       "data": {
