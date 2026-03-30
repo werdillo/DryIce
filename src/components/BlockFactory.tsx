@@ -37,26 +37,9 @@ const componentMap: Record<string, React.ComponentType<any>> = {
   "feature-section": FeatureSection,
   "gallery-section": GallerySection,
   "contacts-section": ContactsSection,
-  // alias for actual JSON type name
   "contact-section": ContactsSection,
   faq: Faq,
-  // alias for actual JSON type name
   "faq-section": Faq,
-};
-
-const anchorMap: Record<string, string | null> = {
-  "main-section": "home",
-  "hero-section": "about",
-  "benefits-section": null,
-  "solution-section": "solutions",
-  "book-call": null,
-  "services-section": "machines",
-  "feature-section": "services",
-  "gallery-section": "gallery",
-  "contacts-section": "contacts",
-  "contact-section": "contacts",
-  faq: null,
-  "faq-section": null,
 };
 
 export function BlockFactory({ block, lang }: BlockFactoryProps) {
@@ -77,13 +60,9 @@ export function BlockFactory({ block, lang }: BlockFactoryProps) {
 
   const props = block.data[validLang] ?? block.data["en"] ?? {};
 
-  const anchorId = anchorMap[block.type] ?? null;
-
-  const rendered = <Component {...props} />;
-
-  if (anchorId) {
-    return <div id={anchorId}>{rendered}</div>;
-  }
-
-  return rendered;
+  return (
+    <div id={block.type}>
+      <Component {...props} />
+    </div>
+  );
 }
