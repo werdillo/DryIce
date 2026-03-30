@@ -13,7 +13,7 @@ const content = pageData.meta[lang];
 const blocks = [...pageData.blocks].sort((a, b) => a.order - b.order);
 ---
 
-<Main content={content}>
+<Main content={content} lang={lang}>
     {
         blocks.map((block) => (
             <BlockFactory client:load block={block} lang={lang} />
