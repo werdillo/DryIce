@@ -294,7 +294,7 @@
       "id": "solution-section-2",
       "type": "solution-section",
       "order": 2,
-      "enabled": false,
+      "enabled": true,
       "data": {
         "en": {
           "title": "Professional Equipment & Custom Solutions",
@@ -362,7 +362,7 @@
       "id": "book-call-3",
       "type": "book-call",
       "order": 3,
-      "enabled": false,
+      "enabled": true,
       "data": {
         "en": {
           "heading": "Request Individual Pricing For Your Project",
@@ -382,7 +382,7 @@
       "id": "services-section-4",
       "type": "services-section",
       "order": 4,
-      "enabled": false,
+      "enabled": true,
       "data": {
         "en": {
           "heading": "our services",
@@ -496,7 +496,7 @@
       "id": "feature-section-5",
       "type": "feature-section",
       "order": 5,
-      "enabled": false,
+      "enabled": true,
       "data": {
         "en": {
           "tagline": "Industries",
@@ -566,7 +566,7 @@
       "id": "gallery-section-6",
       "type": "gallery-section",
       "order": 6,
-      "enabled": false,
+      "enabled": true,
       "data": {
         "en": {
           "title": "Real Results. Measurable Impact.",
