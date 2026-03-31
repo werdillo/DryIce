@@ -196,7 +196,7 @@
       "data": {
         "en": {
           "title1": "DRY iCE",
-          "title2": "BAlTIC",
+          "title2": "BALTIC",
           "subtitle": "SOLUTIONS IN BALTIC",
           "description": "Advanced non-abrasive cleaning technology for industrial and automotive applications. We help businesses clean more efficiently, reduce downtime and protect valuable equipment.",
           "buttonText": "Request Consultation",
@@ -218,11 +218,11 @@
           "buttonText": "Pieteikt konsultāciju",
           "buttonHref": "#contact",
           "image1": {
-            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859500500-first.jpg",
+            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859513656-first.jpg",
             "alt": ""
           },
           "image2": {
-            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859506433-second.jpg",
+            "src": "https://pub-faacf66cb3a14c74a63b8dee80132038.r2.dev/uploads/1774859516951-second.jpg",
             "alt": ""
           }
         }
