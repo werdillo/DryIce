@@ -654,19 +654,19 @@
           "socialsTitle": "Follow us",
           "socials": [
             {
-              "icon": "SiFacebook",
-              "href": "#",
+              "icon": "facebook",
+              "href": "https://www.facebook.com/p/Dry-Ice-Baltic-61560928291998/",
               "label": "Facebook"
             },
             {
-              "icon": "SiInstagram",
-              "href": "#",
+              "icon": "instagram",
+              "href": "https://www.instagram.com/dryicebaltic/",
               "label": "Instagram"
             },
             {
-              "icon": "Linkedin",
-              "href": "#",
-              "label": "LinkedIn"
+              "icon": "tiktok",
+              "href": "https://www.tiktok.com/@dryicebaltic",
+              "label": "Tiktok"
             }
           ],
           "privacyPolicyLink": "/privacy-policy"

@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import type { Office, EmailContact, SocialLink } from "./types";
 import * as LucideIcons from "lucide-react";
+import { useState } from "react";
 
 interface ContactDetailsProps {
   officesTitle?: string;
@@ -77,30 +78,56 @@ export function ContactDetails({
       {socials && socials.length > 0 && (
         <>
           <Separator />
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-3">
             <h2 className="text-foreground heading-sm">{socialsTitle}</h2>
             <div className="flex flex-row gap-5">
               {socials.map((social, index) => {
-                const Icon =
-                  (LucideIcons as any)[social.icon as string] ||
-                  LucideIcons.Share2;
-                return (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground transition-all duration-300 hover:scale-110"
-                    aria-label={social.label}
-                  >
-                    <Icon className="size-5" />
-                  </a>
-                );
+                return <SocialIcon key={index} social={social} />;
               })}
             </div>
           </div>
         </>
       )}
     </div>
+  );
+}
+
+function SocialIcon({ social }: { social: SocialLink }) {
+  const [useFallback, setUseFallback] = useState(false);
+
+  const iconName = (social.icon as string)?.toLowerCase().replace("si", "");
+  const iconPath = `/images/socials/${iconName}.svg`;
+
+  if (useFallback) {
+    const LucideIcon =
+      (LucideIcons as any)[social.icon as string] || LucideIcons.Share2;
+    return (
+      <a
+        href={social.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-foreground transition-all duration-300 hover:scale-110"
+        aria-label={social.label}
+      >
+        <LucideIcon className="size-8" />
+      </a>
+    );
+  }
+
+  return (
+    <a
+      href={social.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-foreground transition-all duration-300 hover:scale-110"
+      aria-label={social.label}
+    >
+      <img
+        src={iconPath}
+        alt={social.label}
+        className="size-8"
+        onError={() => setUseFallback(true)}
+      />
+    </a>
   );
 }
