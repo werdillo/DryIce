@@ -41,6 +41,7 @@ export function ContactsSection(props: Partial<ContactSectionProps>) {
             emailTitle={settings.emailTitle}
             emailDescription={settings.emailDescription}
             emails={settings.emails}
+            socials={settings.socials}
           />
         </div>
       </div>

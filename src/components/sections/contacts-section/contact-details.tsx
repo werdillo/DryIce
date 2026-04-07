@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import type { Office, EmailContact, SocialLink } from "./types";
+import * as LucideIcons from "lucide-react";
 
 interface ContactDetailsProps {
   officesTitle?: string;
@@ -8,6 +9,8 @@ interface ContactDetailsProps {
   emailTitle?: string;
   emailDescription?: string;
   emails: EmailContact[];
+  socialsTitle?: string;
+  socials?: SocialLink[];
 }
 
 export function ContactDetails({
@@ -17,6 +20,8 @@ export function ContactDetails({
   emailTitle,
   emailDescription,
   emails,
+  socialsTitle,
+  socials,
 }: ContactDetailsProps) {
   return (
     <div className="mx-auto flex max-w-md flex-col gap-8">
@@ -68,6 +73,34 @@ export function ContactDetails({
           ))}
         </div>
       </div>
+
+      {socials && socials.length > 0 && (
+        <>
+          <Separator />
+          <div className="flex flex-col gap-6">
+            <h2 className="text-foreground heading-sm">{socialsTitle}</h2>
+            <div className="flex flex-row gap-5">
+              {socials.map((social, index) => {
+                const Icon =
+                  (LucideIcons as any)[social.icon as string] ||
+                  LucideIcons.Share2;
+                return (
+                  <a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground transition-all duration-300 hover:scale-110"
+                    aria-label={social.label}
+                  >
+                    <Icon className="size-5" />
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
