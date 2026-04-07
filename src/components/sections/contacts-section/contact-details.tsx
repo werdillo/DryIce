@@ -62,7 +62,7 @@ export function ContactDetails({
                 href={`mailto:${email.email}`}
                 className="text-primary underline hover:text-primary transition-colors"
               >
-                <h5>{email.email}</h5>
+                <h4>{email.email}</h4>
               </a>
             </div>
           ))}
