@@ -39,7 +39,7 @@ export function MobileLayout({ s }: MobileLayoutProps) {
         <p className="text-center lg:text-left text-base leading-relaxed text-white/70">
           {s.description}
         </p>
-        <PromoButton className="h-12" href={s.buttonHref ?? "#contacts"}>
+        <PromoButton className="h-14" href={s.buttonHref ?? "#contacts"}>
           {s.buttonText}
         </PromoButton>
       </div>
