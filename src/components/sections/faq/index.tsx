@@ -12,7 +12,7 @@ export function Faq({ config }: FaqProps = {}) {
       aria-labelledby={faqConfig.ariaLabelledBy}
     >
       <div className="container-padding-x mx-auto max-w-7xl">
-        <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
+        <div className="flex flex-col gap-10 lg:grid lg:grid-cols-2 lg:gap-16">
           <div data-animate="fade-left">
             <FaqHeader
               tagline={faqConfig.tagline}
