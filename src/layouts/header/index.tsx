@@ -91,7 +91,7 @@ export function Header({
         </div>
 
         {/* CTA */}
-        <a href={buttonHref} className="relative z-10">
+        <a href={buttonHref} className="relative hidden lg:flex z-10">
           <Button className="rounded-none bg-primary text-primary-foreground hover:bg-primary/90 px-5 py-2 text-sm font-semibold tracking-wide">
             {buttonText}
           </Button>
