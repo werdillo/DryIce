@@ -26,27 +26,11 @@ export function MainSection(props: Props) {
     offset: ["start end", "end start"],
   });
 
-  const scale = useTransform(
+  const opacity = useTransform(
     scrollYProgress,
-    [0, 0.4, 0.6, 1],
-    [0.8, 1, 1, 0.8],
+    [0, 0.2, 0.5, 0.8, 1],
+    [0, 0.3, 1, 0.3, 0],
   );
-  const width = useTransform(
-    scrollYProgress,
-    [0, 0.4, 0.6, 1],
-    ["80%", "100%", "100%", "80%"],
-  );
-  const height = useTransform(
-    scrollYProgress,
-    [0, 0.4, 0.6, 1],
-    ["60vh", "100vh", "100vh", "60vh"],
-  );
-  const borderRadius = useTransform(
-    scrollYProgress,
-    [0, 0.4, 0.6, 1],
-    ["40px", "0px", "0px", "40px"],
-  );
-  const opacity = useTransform(scrollYProgress, [0, 0.1, 0.9, 1], [0, 1, 1, 0]);
 
   return (
     <section className="relative min-h-svh bg-[#151515]">
@@ -70,10 +54,6 @@ export function MainSection(props: Props) {
       <VideoSection
         containerRef={containerRef}
         isMobile={isMobile}
-        scale={scale}
-        width={width}
-        height={height}
-        borderRadius={borderRadius}
         opacity={opacity}
       />
     </section>

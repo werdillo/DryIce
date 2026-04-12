@@ -35,28 +35,9 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
           {settings.sectionLabel}
         </span>
         <div className="grid grid-cols-1 gap-12 pt-12 lg:grid-cols-[400px_1fr_auto] lg:gap-10 lg:pt-20">
-          {/* Col 1: section label + service list */}
+          {/* Col 2: active item description + image (mobile: first, desktop: second) */}
           <div
-            className="flex flex-col gap-8"
-            data-animate="fade-left"
-            style={{ animationDelay: "0.1s" }}
-          >
-            <div className="flex flex-col">
-              {settings.services.map((service, index) => (
-                <ServiceListItem
-                  key={service.number}
-                  service={service}
-                  isActive={index === activeIndex}
-                  showDivider={index < settings.services.length - 1}
-                  onClick={() => setActiveIndex(index)}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Col 2: active item description + image */}
-          <div
-            className="flex flex-col justify-between gap-8"
+            className="flex flex-col justify-between gap-8 lg:order-2"
             data-animate="fade-up"
             style={{ animationDelay: "0.15s" }}
           >
@@ -80,15 +61,34 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
             )}
           </div>
 
-          {/* Col 3: PromoButton pinned to bottom */}
+          {/* Col 3: PromoButton pinned to bottom (mobile: second, desktop: third) */}
           <div
-            className="flex items-end justify-end"
+            className="flex items-end justify-center lg:justify-end lg:order-3"
             data-animate="fade-up"
             style={{ animationDelay: "0.2s" }}
           >
             <PromoButton href={settings.buttonHref}>
               {settings.buttonText}
             </PromoButton>
+          </div>
+
+          {/* Col 1: section label + service list (mobile: third, desktop: first) */}
+          <div
+            className="flex flex-col gap-8 lg:order-1"
+            data-animate="fade-left"
+            style={{ animationDelay: "0.1s" }}
+          >
+            <div className="flex flex-col">
+              {settings.services.map((service, index) => (
+                <ServiceListItem
+                  key={service.number}
+                  service={service}
+                  isActive={index === activeIndex}
+                  showDivider={index < settings.services.length - 1}
+                  onClick={() => setActiveIndex(index)}
+                />
+              ))}
+            </div>
           </div>
         </div>
         <div className="flex justify-center pt-6">

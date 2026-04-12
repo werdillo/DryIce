@@ -4,20 +4,12 @@ import { type RefObject } from "react";
 interface VideoSectionProps {
   containerRef: RefObject<HTMLDivElement | null>;
   isMobile: boolean;
-  scale: MotionValue<number>;
-  width: MotionValue<string>;
-  height: MotionValue<string>;
-  borderRadius: MotionValue<string>;
   opacity: MotionValue<number>;
 }
 
 export function VideoSection({
   containerRef,
   isMobile,
-  scale,
-  width,
-  height,
-  borderRadius,
   opacity,
 }: VideoSectionProps) {
   return (
@@ -29,13 +21,9 @@ export function VideoSection({
       <div className="sticky top-0 flex h-svh items-center justify-center overflow-hidden">
         <motion.div
           style={{
-            scale,
-            width,
-            height: isMobile ? "auto" : height,
-            borderRadius,
             opacity,
           }}
-          className="relative overflow-hidden pointer-events-none flex items-center justify-center bg-black shadow-2xl border border-white/10 aspect-video lg:aspect-none"
+          className="relative overflow-hidden pointer-events-none flex items-center justify-center bg-black shadow-2xl border border-white/10 aspect-video lg:aspect-none w-full h-full"
         >
           <iframe
             src="https://www.youtube.com/embed/KfoaiyC6Los?autoplay=1&mute=1&controls=0&loop=1&playlist=KfoaiyC6Los&rel=0&modestbranding=1&iv_load_policy=3&showinfo=0"
