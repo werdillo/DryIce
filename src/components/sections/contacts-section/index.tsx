@@ -9,7 +9,7 @@ export function ContactsSection(props: Partial<ContactSectionProps>) {
 
   return (
     <section
-      className="bg-background flex flex-col gap-8 lg:py-16 md:gap-0 md:py-0 lg:flex-row"
+      className="bg-background flex flex-col lg:py-16 md:gap-0 md:py-0 lg:flex-row"
       aria-labelledby="contact-heading"
     >
       <div className="container-padding-x theme bg-primary flex-1 items-center justify-center p-8 md:py-24">
@@ -30,9 +30,7 @@ export function ContactsSection(props: Partial<ContactSectionProps>) {
         </div>
       </div>
 
-      <Separator className="block md:hidden" />
-
-      <div className="md:bg-muted/40 flex flex-1 items-center justify-center px-6 md:px-0 md:py-24">
+      <div className="bg-muted/40 max-sm:py-8 flex flex-1 items-center justify-center px-6 md:px-0 md:py-24">
         <div data-animate="fade-right" style={{ animationDelay: "0.15s" }}>
           <ContactDetails
             officesTitle={settings.officesTitle}

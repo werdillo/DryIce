@@ -9,7 +9,7 @@ export function FeatureSection(props: Partial<FeatureSectionProps>) {
     <section className="bg-primary py-10">
       <div className="container-padding-x mx-auto flex max-w-7xl flex-col gap-4 md:gap-6">
         <div data-animate="fade-up">
-          <h3 className="inline-block border-b border-primary-foreground px-6 py-4 text-primary-foreground">
+          <h3 className="inline-block border-b border-primary-foreground lg:px-6 py-4 text-primary-foreground">
             {settings.title}
           </h3>
         </div>
