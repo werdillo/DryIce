@@ -35,9 +35,9 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
           {settings.sectionLabel}
         </span>
         <div className="grid grid-cols-1 gap-12 pt-12 lg:grid-cols-[400px_1fr_auto] lg:gap-10 lg:pt-20">
-          {/* Col 2: active item description + image (mobile: first, desktop: second) */}
+          {/* Col 2: active item description + image — desktop only */}
           <div
-            className="flex flex-col justify-between gap-8 lg:order-2"
+            className="hidden lg:flex flex-col justify-between gap-8 lg:order-2"
             data-animate="fade-up"
             style={{ animationDelay: "0.15s" }}
           >
@@ -61,9 +61,9 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
             )}
           </div>
 
-          {/* Col 3: PromoButton pinned to bottom (mobile: second, desktop: third) */}
+          {/* Col 3: PromoButton — desktop only */}
           <div
-            className="flex items-end justify-center lg:justify-end lg:order-3"
+            className="hidden lg:flex items-end justify-end lg:order-3"
             data-animate="fade-up"
             style={{ animationDelay: "0.2s" }}
           >
@@ -72,7 +72,7 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
             </PromoButton>
           </div>
 
-          {/* Col 1: section label + service list (mobile: third, desktop: first) */}
+          {/* Col 1: service list with inline accordion on mobile */}
           <div
             className="flex flex-col gap-8 lg:order-1"
             data-animate="fade-left"
@@ -86,6 +86,32 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
                   isActive={index === activeIndex}
                   showDivider={index < settings.services.length - 1}
                   onClick={() => setActiveIndex(index)}
+                  accordionContent={
+                    <div className="lg:hidden flex flex-col gap-4 pb-4">
+                      {service.description && (
+                        <p className="pl-5 text-base border-foreground/60 py-[11.6px] border-b-2 leading-relaxed text-pretty text-foreground">
+                          {service.description}
+                        </p>
+                      )}
+                      {service.image && (
+                        <div className="flex justify-end">
+                          <div className="overflow-hidden">
+                            <img
+                              src={service.image.src}
+                              alt={service.image.alt}
+                              className="w-full object-cover"
+                              style={{ maxHeight: "329px", maxWidth: "500px" }}
+                            />
+                          </div>
+                        </div>
+                      )}
+                      <div className="flex justify-center pt-2">
+                        <PromoButton href={settings.buttonHref}>
+                          {settings.buttonText}
+                        </PromoButton>
+                      </div>
+                    </div>
+                  }
                 />
               ))}
             </div>

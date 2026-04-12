@@ -2,7 +2,7 @@ import { SolutionCard } from "./solution-card";
 import { solutionConfig } from "./config";
 import type { SolutionSectionProps } from "./types";
 import { PromoButton } from "../../PromoButton";
-import patternUrl from "./pattern.svg?url";
+import Pattern from "./Pattern";
 
 export function SolutionSection(props: Partial<SolutionSectionProps>) {
   const settings = { ...solutionConfig, ...props };
@@ -14,11 +14,7 @@ export function SolutionSection(props: Partial<SolutionSectionProps>) {
         style={{ top: "3rem", bottom: "40%" }}
         aria-hidden="true"
       >
-        <img
-          src={patternUrl}
-          alt=""
-          className="h-full w-full object-cover object-center"
-        />
+        <Pattern className="h-full w-full" />
       </div>
 
       <div className="container-padding-x relative z-10 mx-auto flex max-w-7xl flex-col gap-10 md:gap-12">

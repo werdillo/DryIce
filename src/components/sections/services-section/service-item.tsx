@@ -6,6 +6,7 @@ interface ServiceItemProps {
   isActive?: boolean;
   showDivider?: boolean;
   onClick?: () => void;
+  accordionContent?: React.ReactNode;
 }
 
 export function ServiceListItem({
@@ -13,6 +14,7 @@ export function ServiceListItem({
   isActive = false,
   showDivider = true,
   onClick,
+  accordionContent,
 }: ServiceItemProps) {
   return (
     <div className="flex flex-col">
@@ -43,6 +45,20 @@ export function ServiceListItem({
           {service.title}
         </span>
       </button>
+
+      {/* Accordion panel — mobile only */}
+      {accordionContent && (
+        <div
+          className={cn(
+            "lg:hidden grid transition-all duration-300 ease-in-out",
+            isActive
+              ? "grid-rows-[1fr] opacity-100"
+              : "grid-rows-[0fr] opacity-0",
+          )}
+        >
+          <div className="overflow-hidden">{accordionContent}</div>
+        </div>
+      )}
 
       {showDivider && (
         <hr
