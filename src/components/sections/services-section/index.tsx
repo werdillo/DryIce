@@ -10,6 +10,11 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
   const settings = { ...servicesConfig, ...props };
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Orbitron is a wide font — ~0.7 char width ratio works well empirically
+  // 60 = 100vw * 0.6 safety margin; clamp between 4vw (min) and 9vw (max)
+  const charCount = settings.heading.length;
+  const headingFontSize = `${Math.min(9, Math.max(4, 60 / (charCount * 0.7)))}vw`;
+
   const activeService = settings.services[activeIndex];
 
   return (
@@ -17,11 +22,11 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
       <div className="container-padding-x mx-auto max-w-7xl">
         <span
           aria-hidden
-          className="pointer-events-none absolute left-0 top-30 w-full select-none whitespace-nowrap leading-none text-foreground/10"
+          className="pointer-events-none absolute left-0 top-24 w-full select-none whitespace-nowrap leading-none text-foreground/10 block"
           style={{
             fontFamily: "'Orbitron', sans-serif",
             fontWeight: 900,
-            fontSize: "clamp(4rem, 9vw, 8rem)",
+            fontSize: headingFontSize,
             textTransform: "uppercase",
           }}
         >

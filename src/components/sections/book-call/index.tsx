@@ -19,7 +19,7 @@ export function BookCall(props: BookCallProps) {
 
   return (
     <section
-      className="bg-primary w-full py-8"
+      className="bg-primary w-full py-8 px-4"
       aria-labelledby="book-call-heading"
     >
       <div className="flex flex-col mx-auto max-w-7xl items-center gap-6">
