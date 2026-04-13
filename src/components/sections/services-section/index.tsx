@@ -47,7 +47,7 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
             style={{ animationDelay: "0.15s" }}
           >
             {activeService?.description && (
-              <p className="lg:-ml-10 pl-5 text-base border-foreground/60 py-[11.6px] border-b-2 leading-relaxed text-pretty text-foreground">
+              <p className="lg:-ml-10 pl-5 text-base min-h-[67px] border-foreground/60 py-[11.6px] border-b-2 leading-relaxed text-pretty text-foreground">
                 {activeService.description}
               </p>
             )}

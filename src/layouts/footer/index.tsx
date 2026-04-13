@@ -12,7 +12,7 @@ export function Footer({ config }: FooterProps = {}) {
 
   return (
     <footer
-      className="relative overflow-hidden bg-[#29ABE2] text-sm"
+      className="relative overflow-hidden bg-[#29ABE2] max-sm:mb-14 text-sm"
       role="contentinfo"
       aria-label={footerConfig.ariaLabel}
     >
