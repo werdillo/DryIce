@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import { useScroll, useTransform } from "framer-motion";
 import { mainSectionConfig } from "./config";
 import type { MainSectionProps } from "./types";
@@ -14,12 +14,47 @@ export function MainSection(props: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
 
+  // Refs to the source images
+  const desktopImageRef = useRef<HTMLDivElement>(null);
+  const mobileImageRef = useRef<HTMLDivElement>(null);
+
+  const [imageRect, setImageRect] = useState<DOMRect | null>(null);
+
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 1024);
     checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
+
+  // Measure the source image position once layout is stable
+  const measureRect = useCallback(() => {
+    const ref = isMobile ? mobileImageRef.current : desktopImageRef.current;
+    if (ref) {
+      // getBoundingClientRect gives position relative to viewport at current scroll.
+      // We want the position at scroll=0 (top of page), so add scrollY.
+      const rect = ref.getBoundingClientRect();
+      const adjusted = new DOMRect(
+        rect.left,
+        rect.top + window.scrollY,
+        rect.width,
+        rect.height,
+      );
+      setImageRect(adjusted);
+    }
+  }, [isMobile]);
+
+  useEffect(() => {
+    // Measure after fonts/images likely loaded
+    const id = requestAnimationFrame(() => {
+      measureRect();
+    });
+    window.addEventListener("resize", measureRect);
+    return () => {
+      cancelAnimationFrame(id);
+      window.removeEventListener("resize", measureRect);
+    };
+  }, [measureRect]);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -28,8 +63,8 @@ export function MainSection(props: Props) {
 
   const opacity = useTransform(
     scrollYProgress,
-    [0, 0.2, 0.5, 0.8, 1],
-    [0, 0.3, 1, 0.3, 0],
+    [0, 0.15, 0.5, 0.85, 1],
+    [0, 1, 1, 1, 0],
   );
 
   return (
@@ -45,16 +80,18 @@ export function MainSection(props: Props) {
             {s.title1}
           </h1>
 
-          <MobileLayout s={s as MainSectionProps} />
-          <DesktopLayout s={s} />
+          <MobileLayout s={s as MainSectionProps} imageRef={mobileImageRef} />
+          <DesktopLayout s={s} imageRef={desktopImageRef} />
         </div>
       </div>
 
-      {/* YouTube video */}
+      {/* YouTube video — morphs out of the image on scroll */}
       <VideoSection
         containerRef={containerRef}
         isMobile={isMobile}
         opacity={opacity}
+        scrollYProgress={scrollYProgress}
+        imageRect={imageRect}
       />
     </section>
   );

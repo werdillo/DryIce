@@ -1,15 +1,18 @@
+import { type RefObject } from "react";
 import { PromoButton } from "@/components/PromoButton";
 import type { MainSectionProps } from "../types";
 
 interface DesktopLayoutProps {
   s: Partial<MainSectionProps>;
+  /** Ref attached to the left image wrapper — used for morph origin */
+  imageRef?: RefObject<HTMLDivElement | null>;
 }
 
-export function DesktopLayout({ s }: DesktopLayoutProps) {
+export function DesktopLayout({ s, imageRef }: DesktopLayoutProps) {
   return (
     <div className="hidden lg:flex lg:flex-row lg:items-start lg:gap-0">
       {/* Left image — 400×500 (4:5) */}
-      <div className="relative shrink-0 lg:h-125 lg:w-100">
+      <div ref={imageRef} className="relative shrink-0 lg:h-125 lg:w-100">
         {/* Decorative frame */}
         <div
           className="hero-frame anim-delay-5 pointer-events-none absolute hidden lg:block border-t border-l border-r border-white/40"

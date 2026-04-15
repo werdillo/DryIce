@@ -1,11 +1,14 @@
+import { type RefObject } from "react";
 import { PromoButton } from "@/components/PromoButton";
 import type { MainSectionProps } from "../types";
 
 interface MobileLayoutProps {
   s: MainSectionProps;
+  /** Ref attached to the image wrapper — used for morph origin on mobile */
+  imageRef?: RefObject<HTMLDivElement | null>;
 }
 
-export function MobileLayout({ s }: MobileLayoutProps) {
+export function MobileLayout({ s, imageRef }: MobileLayoutProps) {
   return (
     <>
       {/* Title2 + Subtitle — mobile only, above image */}
@@ -25,7 +28,10 @@ export function MobileLayout({ s }: MobileLayoutProps) {
       </div>
 
       {/* Right image — full width, 4:3 on mobile */}
-      <div className="hero-fade-scale anim-delay-3 aspect-[4/3] w-full overflow-hidden border border-white/10 lg:hidden">
+      <div
+        ref={imageRef}
+        className="hero-fade-scale anim-delay-3 aspect-[4/3] w-full overflow-hidden border border-white/10 lg:hidden"
+      >
         <img
           src={s.image2?.src}
           alt={s.image2?.alt}
