@@ -232,7 +232,7 @@
       "id": "benefits-section-1",
       "type": "benefits-section",
       "order": 1,
-      "enabled": false,
+      "enabled": true,
       "data": {
         "en": {
           "tagline": "",
