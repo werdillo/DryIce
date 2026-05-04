@@ -11,10 +11,12 @@ interface Props extends Partial<MainSectionProps> {}
 
 export function MainSection(props: Props) {
   const s = { ...mainSectionConfig, ...props };
+
+  // containerRef wraps the ENTIRE section (content + video scroll space)
+  // so useScroll tracks the full scroll journey
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Refs to the source images
   const desktopImageRef = useRef<HTMLDivElement>(null);
   const mobileImageRef = useRef<HTMLDivElement>(null);
 
@@ -27,12 +29,9 @@ export function MainSection(props: Props) {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Measure the source image position once layout is stable
   const measureRect = useCallback(() => {
     const ref = isMobile ? mobileImageRef.current : desktopImageRef.current;
     if (ref) {
-      // getBoundingClientRect gives position relative to viewport at current scroll.
-      // We want the position at scroll=0 (top of page), so add scrollY.
       const rect = ref.getBoundingClientRect();
       const adjusted = new DOMRect(
         rect.left,
@@ -45,7 +44,6 @@ export function MainSection(props: Props) {
   }, [isMobile]);
 
   useEffect(() => {
-    // Measure after fonts/images likely loaded
     const id = requestAnimationFrame(() => {
       measureRect();
     });
@@ -58,41 +56,63 @@ export function MainSection(props: Props) {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start end", "end start"],
+    offset: ["start start", "end end"],
   });
 
   const opacity = useTransform(
     scrollYProgress,
-    [0, 0.15, 0.5, 0.85, 1],
+    [0, 0.1, 0.6, 0.9, 1],
     [0, 1, 1, 1, 0],
   );
 
   return (
-    <section className="relative min-h-svh bg-[#151515]">
-      {/* Main content */}
-      <div className="container-padding-x relative mx-auto max-w-7xl pt-28 pb-0 lg:pt-32 lg:pb-0">
-        <div className="flex flex-col gap-1 lg:gap-2">
-          {/* Title line 1 */}
-          <h1
-            className="text-center lg:text-left hero-slide-left text-[clamp(72px,11vw,160px)]! font-black leading-none tracking-tight text-primary uppercase"
-            style={{ fontFamily: "var(--font-orbitron)" }}
-          >
-            {s.title1}
-          </h1>
+    // containerRef wraps everything so VideoSection's scroll context
+    // matches the actual scroll distance of this whole block
+    <div ref={containerRef}>
+      <section className="relative min-h-svh bg-[#151515]">
+        {/* Main content — sticky so it stays visible while video expands over it */}
+        <div className="sticky top-0 min-h-svh bg-[#151515]">
+          <div className="container-padding-x relative mx-auto max-w-7xl pt-28 pb-0 lg:pt-32 lg:pb-0">
+            <div className="flex flex-col gap-1 lg:gap-2">
+              {/* Title line 1 */}
+              <h1
+                className="text-center lg:text-left hero-slide-left text-[clamp(72px,11vw,160px)]! font-black leading-none tracking-tight text-primary uppercase"
+                style={{ fontFamily: "var(--font-orbitron)" }}
+              >
+                {s.title1}
+              </h1>
 
-          <MobileLayout s={s as MainSectionProps} imageRef={mobileImageRef} />
-          <DesktopLayout s={s} imageRef={desktopImageRef} />
+              <MobileLayout
+                s={s as MainSectionProps}
+                imageRef={mobileImageRef}
+              />
+              <DesktopLayout s={s} imageRef={desktopImageRef} />
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* YouTube video — morphs out of the image on scroll */}
-      <VideoSection
-        containerRef={containerRef}
-        isMobile={isMobile}
-        opacity={opacity}
-        scrollYProgress={scrollYProgress}
-        imageRect={imageRect}
-      />
-    </section>
+        {/* Desktop only: scroll space + sticky video that morphs over the section */}
+        {!isMobile && (
+          <VideoSection
+            containerRef={useRef(null)} // inner ref for the scroll spacer div
+            isMobile={false}
+            opacity={opacity}
+            scrollYProgress={scrollYProgress}
+            imageRect={imageRect}
+          />
+        )}
+      </section>
+
+      {/* Mobile only: static video below the section */}
+      {isMobile && (
+        <VideoSection
+          containerRef={useRef(null)}
+          isMobile={true}
+          opacity={opacity}
+          scrollYProgress={scrollYProgress}
+          imageRect={imageRect}
+        />
+      )}
+    </div>
   );
 }
