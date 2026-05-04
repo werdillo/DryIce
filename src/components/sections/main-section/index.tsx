@@ -1,5 +1,10 @@
 import { useRef, useState, useEffect, useCallback } from "react";
-import { useScroll, useTransform } from "framer-motion";
+import {
+  useScroll,
+  useTransform,
+  useMotionValue,
+  useMotionValueEvent,
+} from "framer-motion";
 import { mainSectionConfig } from "./config";
 import type { MainSectionProps } from "./types";
 
@@ -15,7 +20,12 @@ export function MainSection(props: Props) {
   // containerRef wraps the ENTIRE section (content + video scroll space)
   // so useScroll tracks the full scroll journey
   const containerRef = useRef<HTMLDivElement>(null);
+
+  // Dedicated ref for VideoSection's inner scroll-spacer div
+  const videoContainerRef = useRef<HTMLDivElement>(null);
+
   const [isMobile, setIsMobile] = useState(false);
+  const [sectionVisible, setSectionVisible] = useState(true);
 
   const desktopImageRef = useRef<HTMLDivElement>(null);
   const mobileImageRef = useRef<HTMLDivElement>(null);
@@ -54,16 +64,37 @@ export function MainSection(props: Props) {
     };
   }, [measureRect]);
 
+  // Track whether the container is still in the viewport.
+  // When user scrolls past, IntersectionObserver fires immediately and we
+  // hard-reset video opacity to 0 — bypassing the stuck scrollYProgress=1 issue.
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setSectionVisible(entry.isIntersecting),
+      { threshold: 0 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
   });
 
-  const opacity = useTransform(
+  const rawOpacity = useTransform(
     scrollYProgress,
-    [0, 0.1, 0.6, 0.9, 1],
-    [0, 1, 1, 1, 0],
+    [0, 0.15, 0.35, 0.75, 0.9, 1],
+    [0, 0, 1, 1, 0, 0],
   );
+
+  // videoOpacity is a plain MotionValue we drive manually so we can
+  // hard-zero it the moment the section leaves the viewport.
+  const videoOpacity = useMotionValue(0);
+  useMotionValueEvent(rawOpacity, "change", (v) => {
+    videoOpacity.set(sectionVisible ? v : 0);
+  });
 
   return (
     // containerRef wraps everything so VideoSection's scroll context
@@ -94,9 +125,9 @@ export function MainSection(props: Props) {
         {/* Desktop only: scroll space + sticky video that morphs over the section */}
         {!isMobile && (
           <VideoSection
-            containerRef={useRef(null)} // inner ref for the scroll spacer div
+            containerRef={videoContainerRef}
             isMobile={false}
-            opacity={opacity}
+            opacity={videoOpacity}
             scrollYProgress={scrollYProgress}
             imageRect={imageRect}
           />
@@ -106,9 +137,9 @@ export function MainSection(props: Props) {
       {/* Mobile only: static video below the section */}
       {isMobile && (
         <VideoSection
-          containerRef={useRef(null)}
+          containerRef={videoContainerRef}
           isMobile={true}
-          opacity={opacity}
+          opacity={videoOpacity}
           scrollYProgress={scrollYProgress}
           imageRect={imageRect}
         />
