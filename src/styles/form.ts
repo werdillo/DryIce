@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 export const inputClass = cn(
-  "w-full bg-transparent",
+  "w-full bg-transparent h-9!",
   "border border-primary-foreground",
   "px-3 py-1 text-sm text-primary-foreground",
   "placeholder:text-primary-foreground/60",
