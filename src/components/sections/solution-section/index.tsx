@@ -4,6 +4,7 @@ import type { SolutionSectionProps } from "./types";
 import { PromoButton } from "../../PromoButton";
 import Pattern from "./Pattern";
 import PatternMobile from "./PatternMobile";
+import { FileText } from "lucide-react";
 
 export function SolutionSection(props: Partial<SolutionSectionProps>) {
   const settings = { ...solutionConfig, ...props };
@@ -62,7 +63,10 @@ export function SolutionSection(props: Partial<SolutionSectionProps>) {
           style={{ animationDelay: "0.1s" }}
         >
           <PromoButton href="/catalogue2026.pdf" download>
-            All products in PDF file
+            <span className="flex items-center gap-3">
+              <span>All products in PDF file</span>
+              <FileText className="size-5 shrink-0" />
+            </span>
           </PromoButton>
         </div>
       </div>
