@@ -86,7 +86,7 @@ export function MainSection(props: Props) {
   const rawOpacity = useTransform(
     scrollYProgress,
     [0, 0.15, 0.35, 0.75, 0.9, 1],
-    [0, 0, 1, 1, 0, 0],
+    [0, 0, 1, 1, 1, 0],
   );
 
   // videoOpacity is a plain MotionValue we drive manually so we can
