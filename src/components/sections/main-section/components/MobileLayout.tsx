@@ -14,7 +14,12 @@ export function MobileLayout({ s, imageRef }: MobileLayoutProps) {
       {/* Title2 + Subtitle — mobile only, above image */}
       <div className="flex flex-col gap-1 lg:hidden">
         <h1
-          className="text-center lg:text-left hero-slide-right anim-delay-1 text-[clamp(72px,11vw,160px)]! font-black leading-none tracking-tight text-white uppercase"
+          className="
+            text-center lg:text-left
+            hero-slide-right anim-delay-1
+            text-[21vw]! lg:text-[160px]
+            font-black leading-[0.8] tracking-tight text-white uppercase
+          "
           style={{ fontFamily: "var(--font-orbitron)" }}
         >
           {s.title2}

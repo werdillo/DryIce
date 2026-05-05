@@ -103,11 +103,16 @@ export function MainSection(props: Props) {
       <section className="relative min-h-svh bg-[#151515]">
         {/* Main content — sticky so it stays visible while video expands over it */}
         <div className="sticky top-0 min-h-svh bg-[#151515]">
-          <div className="container-padding-x relative mx-auto max-w-7xl pt-28 pb-0 lg:pt-32 lg:pb-0">
+          <div className="px-4 relative mx-auto max-w-7xl pt-28 pb-0 lg:pt-32 lg:pb-0">
             <div className="flex flex-col gap-1 lg:gap-2">
               {/* Title line 1 */}
               <h1
-                className="text-center lg:text-left hero-slide-left text-[clamp(72px,11vw,160px)]! font-black leading-none tracking-tight text-primary uppercase"
+                className="
+                  text-center lg:text-left
+                  hero-slide-left
+                  max-sm:text-[20vw]! lg:text-[160px]!
+                  font-black max-sm:leading-[0.6]! tracking-tight text-primary uppercase
+                "
                 style={{ fontFamily: "var(--font-orbitron)" }}
               >
                 {s.title1}

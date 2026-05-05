@@ -62,7 +62,7 @@ export function BookCall(props: BookCallProps) {
             placeholder={settings.placeholder}
             required
             aria-label="Phone number"
-            className={cn(inputClass, "flex-1 min-w-0")}
+            className={cn(inputClass, "flex-1 h-12! min-w-0")}
           />
 
           <button

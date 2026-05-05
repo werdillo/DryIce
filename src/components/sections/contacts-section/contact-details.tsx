@@ -36,16 +36,30 @@ export function ContactDetails({
         </div>
 
         <div className="flex flex-col gap-6 md:flex-row">
-          {offices.map((office, index) => (
-            <div key={index} className="flex flex-1 flex-col gap-2">
-              <h5 className="text-card-foreground font-semibold">
-                {office.city}
-              </h5>
-              <h4 className="text-primary whitespace-pre-line">
-                {office.address}
-              </h4>
-            </div>
-          ))}
+          {offices.map((office, index) => {
+            const query = encodeURIComponent(
+              `${office.city} ${office.address}`,
+            );
+
+            return (
+              <div key={index} className="flex flex-1 flex-col gap-2">
+                <h5 className="text-card-foreground font-semibold">
+                  {office.city}
+                </h5>
+
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${query}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary whitespace-pre-line underline hover:no-underline"
+                >
+                  <h4 className="text-primary whitespace-pre-line">
+                    {office.address}
+                  </h4>
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
 
