@@ -16,16 +16,16 @@ export function Footer({ config }: FooterProps = {}) {
       role="contentinfo"
       aria-label={footerConfig.ariaLabel}
     >
-      <div className="container-padding-x mx-auto flex max-w-7xl flex-col gap-12 py-16 lg:py-24 lg:pb-60">
+      <div className="px-4 mx-auto flex max-w-7xl flex-col gap-12 py-16 lg:py-24 lg:pb-60">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-12 md:items-center md:justify-between lg:flex-row">
             <div className="relative flex flex-col items-center gap-12 lg:flex-row">
               <img
                 src="/images/logo-footer.svg"
                 alt=""
-                width={350}
-                height={350}
-                className="pointer-events-none absolute -top-40 -left-40 z-0"
+                width={450}
+                height={450}
+                className="pointer-events-none absolute -top-40 -left-40 z-0 hidden lg:block"
                 aria-hidden="true"
               />
               <div className="relative z-10">

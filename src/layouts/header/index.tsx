@@ -49,8 +49,7 @@ export function Header({
       {/* Right side: lang dropdown + button + circle decoration */}
       <div className="relative flex items-center gap-4 pt-1">
         {/* Big circle decoration */}
-        <div className="pointer-events-none absolute -right-10 -top-14 lg:-top-10 lg:right-14 size-32 rounded-full border border-white/20 lg:right-20" />
-
+        <div className="pointer-events-none absolute -right-10 -top-14 lg:-top-10 lg:right-20 size-32 rounded-full border border-white/20 hidden lg:block" />
         {/* Language Dropdown */}
         <div
           ref={ref}

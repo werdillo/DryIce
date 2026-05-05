@@ -1,8 +1,7 @@
-"use client";
-
 import { useState } from "react";
 import { servicesConfig } from "./config";
 import { ServiceListItem } from "./service-item";
+import ServicesHeading from "./Services-Heading.svg?url";
 import { PromoButton } from "@/components/PromoButton";
 import type { ServicesSectionProps } from "./types";
 
@@ -20,7 +19,7 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
   return (
     <section className="bg-background section-padding-y relative overflow-hidden">
       <div className="container-padding-x mx-auto max-w-7xl">
-        <span
+        {/*<span
           aria-hidden
           className="pointer-events-none absolute left-0 top-24 w-full select-none whitespace-nowrap leading-none text-foreground/10 block"
           style={{
@@ -31,7 +30,8 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
           }}
         >
           {settings.heading}
-        </span>
+        </span>*/}
+
         <span
           className="border-b relative border-foreground/10 pb-2 text-lg font-semibold text-primary"
           style={{ fontFamily: "'Orbitron', sans-serif" }}
@@ -39,7 +39,12 @@ export function ServicesSection(props: Partial<ServicesSectionProps>) {
         >
           {settings.sectionLabel}
         </span>
-        <div className="grid grid-cols-1 gap-12 pt-12 lg:grid-cols-[400px_1fr_auto] lg:gap-10 lg:pt-20">
+        <img
+          src={ServicesHeading}
+          alt=""
+          className="w-full mt-4 h-auto select-none pointer-events-none"
+        />
+        <div className="grid grid-cols-1 gap-12 pt-1 lg:grid-cols-[400px_1fr_auto] lg:gap-10 lg:pt-4">
           {/* Col 2: active item description + image — desktop only */}
           <div
             className="hidden lg:flex flex-col justify-between gap-8 lg:order-2"
